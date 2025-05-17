@@ -1,0 +1,146 @@
+[Init]
+language=English
+codepage=1252
+
+[Menu]
+101=Full expand
+102=Full collapse
+103=Sort child nodes
+104=Copy XPath
+105=Copy JPath
+106=Copy XPath 2
+107=Filter by XPath
+108=Remove Filter
+109=Copy
+110=Select All
+111=View in Browser
+112=Search
+113=Search stop
+114=Locate in Tree
+115=View Formatted
+116=View Source/Validation
+117=View Source
+118=View XSLT Transform
+119=XSD/XSLT files
+120=Hide Tree
+121=Show Tree
+122=Word Wrap
+123=Reload
+124=Load from Clipboard
+125=Encoding
+126=Settings
+127=About
+128=Default ANSI
+129=Default ASCII
+130=Copy with format
+131=Clear node selection
+
+[Settings]
+200=Settings
+271=Close
+272=Defaults
+273=Restore default settings?
+
+[Settings.Tree]
+201=Tree
+202=Font
+203=Size
+204=Indent, pxs
+205=Background
+206=Declaration
+207=Node
+208=Attribute
+209=Value
+210=Text
+211=Comment
+212=JSON Array
+213=Line
+214=Dotted
+215=Show icons
+216=Full expand on start
+217=Initial width
+218=Previous
+219=This can significantly increase the file opening time
+
+[Settings.Text]
+221=Text
+222=Font
+223=Size
+224=Indent, spaces
+225=Background
+226=Declaration
+227=Node
+228=Attribute
+229=Value
+230=Text
+231=Comment
+232=Namespace
+233=Symbol
+234=JSON Token
+235=Selected
+236=Active Line
+237=Gutter
+238=Line Number
+239=Indent Line
+240=Dotted
+241=Show line numbers
+242=Show indent lines
+243=Wide glyphs processing
+244=Enabling this option allows to correctly display wide characters (for example, hieroglyphs), but significantly slows down the processing of strings
+245=Escape special characters
+246=Escape special characters in formatted view to get the valid xml and json
+247=On error scroll to the end
+248=Attributes on separate lines
+
+[Settings.INI]
+251=INI File
+252=Plugin's folder
+253=Total Commander's folder
+
+[Settings.Interface]
+261=Interface
+262=Language
+263=Style
+
+[XSD/XSLT]
+301=XSD files
+302=XSLT files
+303=All files
+
+[Validation]
+401=MSXML version 6.0 needed
+402=stylesheet not specified
+403=can''t load
+404=file not found
+405=Error loading
+406=Warning: Root namespace "%s" of the xml document does not match target namespace "%s" of the xsd schema.
+407=Errors
+408=Error
+409=The first error is shown
+
+[Browser]
+500=Web Browser
+501=Close
+
+[Common]
+601=Viewing large files can lead to memory overflow.
+602=clipboard
+603=Not found
+604=Found
+605=Position
+606=Freeing up memory...
+607=Nodes:
+608=Objects:
+609=Parsing... (ESC to cancel)
+610=XSLT transform
+611=Validation
+612=Validation: schema
+613=Validation: failed
+614=Formatting...
+615=Invalid code page
+616=Lines:
+617=Insufficient memory. Total Commander will be closed.
+618=OK
+619=Cancel
+620=Yes
+621=No

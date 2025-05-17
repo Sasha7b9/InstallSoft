@@ -1,0 +1,6 @@
+
+#define IDI_ICON		1000
+#define IDD_HELP_DIALOG		2000
+#define IDD_HELP_DIALOG_EDIT	2001
+#define IDD_HELP_DIALOG_OK	IDCANCEL
+#define ID_VERSION		1  // must be 1!

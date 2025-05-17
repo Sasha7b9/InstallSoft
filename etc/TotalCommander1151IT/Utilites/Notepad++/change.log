@@ -1,0 +1,37 @@
+Notepad++ v8.7.7 regression-fix from v8.7.6:
+
+ 1. Add new API NPPM_ADDSCNMODIFIEDFLAGS to fix eventual regression regarding SCN_MODIFIED for some plugins.
+
+
+Notepad++ v8.7.6 regression-fixes, bug-fixes & enhancements:
+
+ 1. Update to scintilla 5.5.3 & Lexilla 5.4.1.
+ 2. Enhance performance of syntax highlighting for large files.
+ 3. Make "Show close/pin button on each inactive tab" optional.
+ 4. Add ShortcutMapper Multilingual ability, allowing the use of specific keys for non-en-US keyboards.
+ 5. Fix vertical tab crashes when enabling/disabling the pin tab feature.
+ 6. Fix crash when passing an invalid buffer with NPPM_SETUNTITLEDNAME.
+ 7. Fix floating panels position resetting regression in multi-monitor configurations.
+ 8. Fix incorrect "Replace all" behavior during the second replace in selection.
+ 9. Fix backup file renaming bug for untitled tabs.
+10. Enhance UX in "Find in file" action when the Directory field is empty.
+11. Make the current line/position copyable in the Go to Line dialog.
+12. GUI enhancement: hide right menu shortcuts on the fly.
+13. Minor enhancements for JavaScript, CSS & HTML.
+
+
+
+Get more info on
+https://notepad-plus-plus.org/downloads/v8.7.7/
+
+
+Included plugins:
+
+1.  NppExport v0.4
+2.  Converter v4.6
+3.  Mime Tool v3.1
+
+
+Updater (Installer only):
+
+* WinGUp (for Notepad++) v5.3.1

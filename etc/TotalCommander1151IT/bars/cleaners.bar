@@ -1,0 +1,24 @@
+[Buttonbar]
+Buttoncount=5
+button1=wcmicons.dll,244
+cmd1=%COMMANDER_PATH%\Utilites\Ccleaner\CCleaner.exe
+iconic1=0
+menu1=CCleaner (finds and removes junk files)
+button2=wcmicons.dll,309
+cmd2=%COMMANDER_PATH%\Utilites\WiseDiskCleaner\WiseDiskCleaner.exe
+iconic2=0
+menu2=Wise Disk Cleaner
+button3=wcmicons.dll,262
+cmd3=%COMMANDER_PATH%\Utilites\WiseRegCleaner\WiseRegCleaner.exe
+iconic3=0
+menu3=Wise Registry Cleaner
+button4=wcmicons.dll,261
+cmd4=%COMMANDER_PATH%\Utilites\revo\exe\RevoUn.exe
+path4=%COMMANDER_PATH%\Utilites\revo\exe\
+iconic4=0
+menu4=Revo Uninstaller (uninstall tool)
+button5=wcmicons.dll,301
+cmd5=%COMMANDER_PATH%\Utilites\Dism++\Dism++x64.exe
+path5=%COMMANDER_PATH%\Utilites\Dism++\
+iconic5=0
+menu5=Dism++ (cleaning OS from garbage collected)

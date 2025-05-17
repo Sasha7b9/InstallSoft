@@ -1,0 +1,45 @@
+
+2019-04-02 02-52-11:
+====================
+'ctags.exe' not found!
+   at SourceCookifier.CTagsExe.Init()
+   at SourceCookifier.Settings.LoadSettings(TreeView treeview)
+   at SourceCookifier.frmMain..ctor()
+   at SourceCookifier.Main.InitFrmMain()
+   at SourceCookifier.Main.ShowFrmMain()
+
+2019-04-02 02-52-23:
+====================
+'ctags.exe' not found!
+   at SourceCookifier.CTagsExe.Init()
+   at SourceCookifier.Settings.LoadSettings(TreeView treeview)
+   at SourceCookifier.frmMain..ctor()
+   at SourceCookifier.Main.InitFrmMain()
+   at SourceCookifier.Main.ShowFrmMain()
+
+2019-04-02 02-53-17:
+====================
+'ctags.exe' not found!
+   at SourceCookifier.CTagsExe.Init()
+   at SourceCookifier.Settings.LoadSettings(TreeView treeview)
+   at SourceCookifier.frmMain..ctor()
+   at SourceCookifier.Main.InitFrmMain()
+   at SourceCookifier.Main.ShowFrmMain()
+
+2019-04-02 02-56-32:
+====================
+'ctags.exe' not found!
+   at SourceCookifier.CTagsExe.Init()
+   at SourceCookifier.Settings.LoadSettings(TreeView treeview)
+   at SourceCookifier.frmMain..ctor()
+   at SourceCookifier.Main.InitFrmMain()
+   at SourceCookifier.Main.ShowFrmMain()
+
+2019-04-02 02-56-53:
+====================
+'ctags.exe' not found!
+   at SourceCookifier.CTagsExe.Init()
+   at SourceCookifier.Settings.LoadSettings(TreeView treeview)
+   at SourceCookifier.frmMain..ctor()
+   at SourceCookifier.Main.InitFrmMain()
+   at SourceCookifier.Main.ShowFrmMain()

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="1">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="623" startPos="0" endPos="0" selMode="0" offset="0" wrapCount="1" lang="None (Normal Text)" encoding="-1" userReadOnly="no" filename="d:\My\Prog\GitHub\Work\Linia\LICENSE" backupFilePath="" originalFileLastModifTimestamp="2033502279" originalFileLastModifTimestampHigh="31179154" tabColourId="-1" RTL="no" tabPinned="no" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="271" startPos="112" endPos="112" selMode="0" offset="0" wrapCount="1" lang="Markdown (preinstalled)" encoding="-1" userReadOnly="no" filename="d:\My\Prog\GitHub\Work\Network\GTC-3\README.md" backupFilePath="" originalFileLastModifTimestamp="678119547" originalFileLastModifTimestampHigh="31179152" tabColourId="-1" RTL="no" tabPinned="no" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>

@@ -1,0 +1,21 @@
+[Buttonbar]
+Buttoncount=4
+button1=wcmicons.dll,257
+cmd1=%COMMANDER_PATH%\Utilites\NetScan\netscan.exe
+path1=%COMMANDER_PATH%\Utilites\NetScan\
+iconic1=0
+menu1=NetScan (network scan)
+button2=wcmicons.dll,303
+cmd2=%COMMANDER_PATH%\Utilites\Cports\cports.exe
+path2=%COMMANDER_PATH%\Utilites\Cports\
+iconic2=0
+menu2=CurrPorts (monitoring TCP/IP network ports/connections)
+button3=wcmicons.dll,259
+cmd3=cd %COMMANDER_PATH%\Utilites\Putty
+iconic3=0
+menu3=Putty (telnet and SSH client)
+button4=wcmicons.dll,304
+cmd4=%COMMANDER_PATH%\Utilites\netrouteview\NetRouteView.exe
+path4=%COMMANDER_PATH%\Utilites\netrouteview\
+iconic4=0
+menu4=NetRouteView (GUI alternative to Route.exe)

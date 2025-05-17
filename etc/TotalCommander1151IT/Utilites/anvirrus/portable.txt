@@ -1,0 +1,92 @@
+This document describes how to run AnVir Software program as portable application.
+==========================================================
+
+List of programs that can be run as portable application:
+-	AnVir Task Manager Free
+-	AnVir Task Manager Pro
+-	AnVir Task Manager 
+
+You can download portable version of AnVir Task Manager Free from download page http://www.anvir.com/download.htm
+
+Perform following steps to run AnVir Software program as portable application:
+
+1.    Install the software.
+2.    Copy AnVir.exe, AnvirHook{ver}.dll (optional), usbhdd.exe (optional) and VirusTotalUpload.exe (optional) to the destination folder.
+3.    Run AnVir.exe from the destination folder. Setup some program options that you need. Open Tools->Options->Advanced->Where to store settings. Select anvir.ini. Press Apply. All settings will be stored in anvir.ini in the destination folder. If file anvir.ini is found in the folder of executable, all setting will be loaded and stored to this file (instead of registry). If some settings are missed in anvir.ini, default values will be used. To use default settings, exit the program and place empty file anvir.ini to the folder.
+4.    Copy all files from "c:\Documents and Settings\{user name}\Local Settings\Application Data\AnVir" (for XP) or "c:\Users\{user name}\AppData\Local\AnVir" (for Windows 7) to the destination folder. If startup.dat is found in the folder with anvir.exe, all extended setting will be stored to this folder instead of "Local Settings" folder. To use default settings, exit the program and place empty file startup.dat to the folder.
+5.    If you run the program on USB device you will be asked for the registration data, when you run the program the first time from the USB device (only 1 time for the device).
+
+========================================================
+COMMAND LINE OPTIONS
+========================================================
+"AnVir.exe Minimized"
+Run program minimized to the system tray. Run delayed startup programs.
+
+========================================================
+SETTINGS FILES
+========================================================
+Some settings are stored in files:
+autotray.dat
+	List of windows that will be auto hidden to tray when minimized
+blockpr.dat
+List of processes that will be terminated when they start
+List of processes which priority will be changed when they start
+comments.dat
+	Comments and risk level of files added by user
+delayed.dat
+	Custom delay time and process priority for startup items
+detectDl.dat
+detectDr.dat
+detectPr.dat
+detectSr.dat
+	Path to file and time when DLL, driver, process, or service was detected first time
+favdirssave.dat
+	List of favorites folders that appear in Save/Open dialogs
+folders.dat
+	List of recently opened folders that appear in tray menu
+lnkcash.dat
+	List of links from startup menu that is used to build list of last launched programs in tray menu
+recentsave.dat
+	List of recently used folders that appear in Save/Open dialogs
+runasserv.dat
+	List of processes that will be launched on Windows restart
+signcash.dat
+	Cash of files signatures used for security analysis
+startup.dat
+	List of current startup programs used to detect new startup items
+trayfiles.dat
+	List of custom files in tray
+version.dat
+	Information about current version downloaded from web server
+
+========================================================
+MODULES
+========================================================
+AnVir.exe
+	Main module of the program
+
+anvir64.exe 
+	Allows to use AnvirHook for 64-bit processes
+	
+AnvirHook{VERSION}.dll	
+Implementation of system wide hook.
+It implements Windows enhancements:
+    * Additional buttons in the titles of windows
+    * Enhanced system menu in title of windows
+    * List of recently used folders in "Open"/"Save" dialogs
+	
+AnvirHook{VERSION}_64.dll
+AnvirHook for 64-bit processes
+
+anvirlauncher.exe 
+	Allows to start Anvir with admin rights even if it was not started by the Scheduler.
+
+AnvirRunServ.exe	
+Module that is installed as system service.
+It allows to Run programs as services on Windows startup.
+
+usbhdd.exe 
+Monitoring of USB disks temperature
+
+VirusTotalUpload.exe
+Module that is used to send any file to virustotal.com and check files with 30+ antivirus engines

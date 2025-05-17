@@ -1,0 +1,11 @@
+[Buttonbar]
+Buttoncount=3
+button1=wcmicons.dll,203
+cmd1=em_CurrentDateFolder
+menu1=Create folder with the name of the current date(yyyy.mm.dd-hh.mm.ss)   Shift+F7
+button2=wcmicons.dll,204
+cmd2=em_FolderAsFilename
+menu2=Create folder with the name of the selected file
+button3=wcmicons.dll,205
+cmd3=em_FolderTreeEmpty
+menu3=Create folder with subdirectories and empty files in another panel

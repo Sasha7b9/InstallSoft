@@ -1,0 +1,79 @@
+'Plugin name: anmXNpp.dll (Array of Numerical Methods for Notepad++)
+'Version: 0.0.4.4 - Built: 1336. (Unicode version)
+'By: Carlo Somigliana, email: somic@libero.it, site: www.semelinanno.com
+'Original Web Page: www.semelinanno.com\downloads\anmxnpp\anmXNpp_Page.html
+'---------------------------------------------------------------------------
+
+BatchRun : Time 07/07/2009 - 00:08:17
+Log File : "C:\Program Files\Notepad++\unicode\plugins\anmXNpp\anmXNpp.dbg"
+-------------------------------------------------------------------
+Proc: AttachProcess()     : Attach To Process: START
+Proc: pinSetMenuItem()    : MenuName = Eval CurFile To File, *ShC0 = 0
+Proc: pinSetMenuItem()    : MenuName = Eval CurLine To File, *ShC0 = 0
+Proc: pinSetMenuItem()    : MenuName = , *ShC0 = 0
+Proc: pinSetMenuItem()    : MenuName = Eval CurLine To Wnd, *ShC0 = 18947728
+Proc: pinSetMenuItem()    : MenuName = Eval SelText To Wnd, *ShC0 = 18947744
+Proc: pinSetMenuItem()    : MenuName = Eval Expression To Wnd, *ShC0 = 18947760
+Proc: pinSetMenuItem()    : MenuName = , *ShC0 = 0
+Proc: pinSetMenuItem()    : MenuName = Show Memory, *ShC0 = 18947776
+Proc: pinSetMenuItem()    : MenuName = Insert filename, *ShC0 = 18947792
+Proc: pinSetMenuItem()    : MenuName = , *ShC0 = 0
+Proc: pinSetMenuItem()    : MenuName = About Math Evaluator, *ShC0 = 0
+Proc: AttachProcess()     : Attach To Process: End
+Proc: AttachProcess(): ----------------------------------------------------------------------
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=, pos=-1
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=&File, pos=0
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=&Edit, pos=1
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=&Search, pos=2
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=&View, pos=3
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=For&mat, pos=4
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=&Language, pos=5
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=Se&ttings, pos=6
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=Macro, pos=7
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=Run, pos=8
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=&?, pos=9
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=X, pos=10
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=, pos=-1
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=&File, pos=0
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=&Edit, pos=1
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=&Search, pos=2
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=&View, pos=3
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=For&mat, pos=4
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=&Language, pos=5
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=Se&ttings, pos=6
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=Macro, pos=7
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=Run, pos=8
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=Plugins, pos=9
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=Run, pos=8
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=TextFX, pos=9
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=Plugins, pos=10
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=TextFX, pos=9
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=Plugins, pos=10
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=TextFX, pos=9
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=Plugins, pos=10
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=TextFX, pos=9
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=Plugins, pos=10
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=TextFX, pos=9
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=Plugins, pos=10
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=TextFX, pos=9
+Proc: TestPlugInsMenu()   : hPluginMenu_Name=Plugins, pos=10
+Proc: TestPlugInsMenu()   : AddMenus(): cntF=5
+Proc: AddMenus()          : START
+Proc: AddMenus()          : LocalNppData\_nppHandle = 5374176
+Proc: AddMenus()          : hMenu = 14746875
+Proc: AddMenus()          : hMenu_Name = &File
+Proc: AddMenus()          : hPlugInMenu = 3671509
+Proc: AddMenus()          : hPlugInMenuName = Math Evaluator
+Proc: AddMenus()          : hMathMenu = 5637727
+Proc: AddMenus()          : hMathMenu_Name = Eval CurFile 
+Proc: AddMenus()          : InsertMenuItem: retVal = 1
+Proc: AddMenus()          : LastError(183) Cannot create a file when that file already exists.
+
+Proc: AddMenus()          : ghOptionsSubMenu_Name = Options
+Proc: AddMenus()          : SetWindowLong: pOldProc = -63659
+Proc: AddMenus()          : SetWindowLong: GetLastError = 183
+Proc: AddMenus()          : wpHandle = 5374176
+Proc: AddMenus()          : \_ScintillaMainHandle = 3867632
+Proc: AddMenus()          : \_NppHandle = 5374176
+Proc: AddMenus()          : END
+Proc: AddMenus()     : ----------------------------------------------------------------------

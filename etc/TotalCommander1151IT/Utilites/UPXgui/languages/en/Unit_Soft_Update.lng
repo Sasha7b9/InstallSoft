@@ -1,0 +1,64 @@
+CFGDATA
+s0000000015LanguageName_en0000000007English0000000031the name of language in English
+s0000000012LanguageName0000000007English0000000043the name of language on the native language
+s0000000020#USU_WebSiteLanguage0000000002en0000000013en OR ru ONLY
+s0000000013#USU_msg_Wait0000000023Please wait a moment...0000000000
+s0000000022#USU_msg_FileSize_Wait0000000055Checking file size to download. Please wait a moment...0000000000
+s0000000027#USU_msg_ErrorDownloadInfo10000000106Error while downloading information about applications versions.
+Check your internet connection or visit 0000000048don't forget space at the end
+
++WebSiteReserve
+s0000000027#USU_msg_ErrorDownloadInfo20000000013 for updates.0000000050don't forget space at the begin
+
+WebSiteReserve+
+s0000000029#USU_msg_ErrorProcessingInfo10000000105Error while processing information about applications versions.
+Check your internet connection or visit 0000000048don't forget space at the end
+
++WebSiteReserve
+s0000000029#USU_msg_ErrorProcessingInfo20000000013 for updates.0000000050don't forget space at the begin
+
+WebSiteReserve+
+s0000000021#USU_msg_ErrorNoInfo10000000085Can''t find information about application.
+Maybe this application is to old.
+Visit 0000000048don't forget space at the end
+
++WebSiteReserve
+s0000000021#USU_msg_ErrorNoInfo20000000040 and try to find current version of the 0000000069don't forget space at the end and begin
+
+WebSiteReserve+...+AppName
+s0000000021#USU_msg_ErrorNoInfo30000000007 there.0000000043don't forget space at the begin
+
++AppName
+s0000000023#USU_msg_ErrorNoNewVer10000000028Your current version of the 0000000041don't forget space at the end
+
++AppName
+s0000000023#USU_msg_ErrorNoNewVer20000000054 is the latest.
+
+There are no updates available now.0000000043don't forget space at the begin
+
+AppName+
+s0000000021#USU_msg_NewVerAvail10000000019New version of the 0000000019don't forget spaces
+s0000000021#USU_msg_NewVerAvail20000000015 is available (0000000019don't forget spaces
+s0000000021#USU_msg_NewVerAvail30000000027),  file size to download: 0000000019don't forget spaces
+s0000000021#USU_msg_NewVerAvail40000000016Download it now?0000000019don't forget spaces
+s0000000024#USU_msg_DownloadingInfo0000000054Downloading information about applications versions...0000000000
+s0000000023#USU_msg_ProcessingInfo0000000053Processing information about applications versions...0000000000
+s0000000018#USU_msg_InstallOK0000000035New version installed successfully.0000000000
+s0000000021#USU_msg_InstallError0000000058New version installed with ERRORS.
+Please do it Manually.0000000000
+s0000000020#USU_msg_Unarchiving0000000016Unarchiving file0000000022Unarchiving file "xxx"
+s0000000020#USU_msg_Downloading0000000014Downloading...0000000000
+s0000000018#USU_msg_Download10000000040Downloaded archive successfully saved as0000000000
+s0000000018#USU_msg_Download20000000025Install new version now ?0000000000
+s0000000026#USU_msg_DownloadProgress10000000016Downloading file0000000000
+s0000000026#USU_msg_DownloadProgress20000000009Saving as0000000000
+s0000000026#USU_msg_DownloadProgress300000000000000000000
+s0000000026#USU_msg_DownloadProgress40000000004 of 0000000000
+s0000000026#USU_msg_DownloadProgress50000000011 downloadad0000000000
+s0000000038Button\Form_Soft_Update.ButtonWhatsNew0000000011What's new?0000000000
+s0000000033Button\Form_Soft_Update.ButtonYes0000000003Yes0000000000
+s0000000032Button\Form_Soft_Update.ButtonNo0000000002No0000000000
+s0000000032Button\Form_Soft_Update.ButtonOK0000000002OK0000000000
+s0000000036Button\Form_Soft_Update.ButtonCancel0000000006Cancel0000000000
+s0000000013#USU_Caption100000000000000000000
+s0000000013#USU_Caption20000000006Update0000000000

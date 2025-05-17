@@ -1,0 +1,2 @@
+'this is a comment line
+sDiff(x) = 1 + 12*x - x*sin(x) + 2*x^2

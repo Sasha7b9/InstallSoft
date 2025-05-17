@@ -1,0 +1,20 @@
+'Plugin name: anmXNpp.dll (Array of Numerical Methods for Notepad++)
+'Version: 0.0.4.4 - Built: 1335. (Unicode version)
+'By: Carlo Somigliana, email: somic@libero.it, site: www.semelinanno.com
+'Original Web Page: www.semelinanno.com\downloads\anmxnpp\anmXNpp_Page.html
+'---------------------------------------------------------------------------
+BatchRun      : Time 07/07/2009 - 00:00:59
+INI File      : "C:\Program Files\Notepad++\unicode\plugins\anmXNpp\anmXNpp.INI"
+Log File      : "C:\Program Files\Notepad++\unicode\plugins\anmXNpp\anmCmds.log"
+Command Line  : "/i C:\Program Files\Notepad++\unicode\plugins\anmXNpp\Full_SyntSamp.anm /o /log /pbar /"
+Input File    : "C:\Program Files\Notepad++\unicode\plugins\anmXNpp\Full_SyntSamp.anm"
+Output File   : "C:\Program Files\Notepad++\unicode\plugins\anmXNpp\Result.anm"
+Save Plot Path: "0"
+Current Folder: "C:\Program Files\Notepad++\unicode\plugins\anmXNpp\"
+LoadFromFile  : "C:\Program Files\Notepad++\unicode\plugins\anmXNpp\Full_SyntSamp.anm"
+Eval Executed : Commands: 58, Errors: 4
+Eval Codes    : Ret = 6272, ExitCode = -1
+SaveToFile    : "C:\Program Files\Notepad++\unicode\plugins\anmXNpp\Result.anm"
+            1 : Command Line Executed.
+Evaluation End: Exit code: -1
+-----------------------------------------------------

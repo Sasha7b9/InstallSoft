@@ -1,0 +1,9 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="1">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="3712" startPos="0" endPos="0" selMode="0" lang="Normal Text" encoding="-1" userReadOnly="no" filename="C:\Users\JMP\Desktop\new 1.txt" backupFilePath="" originalFileLastModifTimestamp="-1334136787" originalFileLastModifTimestampHigh="30730473" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="69993515" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1" startPos="0" endPos="0" selMode="0" lang="XML" encoding="-1" userReadOnly="no" filename="D:\Install\notepads\npp\Notepad++\contextMenu.xml" backupFilePath="" originalFileLastModifTimestamp="1976672448" originalFileLastModifTimestampHigh="30667891" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="1139802112" mapWrapIndentMode="-1" mapIsWrap="no" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>

@@ -1,0 +1,174 @@
+'MathPad.dll Full Syntax Sample file
+'Version: 0.0.4.8
+'By Carlo Somigliana, email: somic@libero.it, website: www.semelinanno.com
+'
+'Calculates and plots expressions, polynomials, integrals, matrices, symbolic derivatives
+'----------------------------------------------------------------------------------------
+'This file contains information on syntax, keywords and operators for the program.
+
+'Comments are identified by this ' character (as in VB) and will be ignored
+'Lines to be reported in the Output start with ''
+'KeyWords are case insensitive but space sensitive (es. 'Expr = 'is correct, while 'Expr=' is wrong).
+'Wrong KeyWords will be ignored.
+'Parameters' separator is ;
+
+'Supported Functions and Operators
+'=================================
+'Functions: abs, exp, fix, int, log, ln, log10, rnd=(Random(arg)), sgn,  sqr      
+'Trigon Functions
+'           atan, sin, tan, cos, cosec, cotan, sec, arcsin, arccos, arcsec, arccos, arccotan
+'Hyperbolic functions
+'           sinh, cosh, tanh, sech, cosech, cotanh, arcsinh, arccosh, arctanh, arcsech, arccosech, arccotanh
+'Operators: (, ), +, -, *, /, ^, & hexadecimal, ! binary
+'Logical Operators: and, eqv, imp, mod, not, or, xor
+'Stat Functions: min, max, avg, sum, prod, sum2 (=sum^2), prod2 (=prod^2), stddev, count, geom_mean, median, mean
+'Matrix Operators: det trace syst vcoeff (es. det([mA]) calculates the determinant of [mA])
+'Keywords & Syntax:  (case insensitive)
+'======================================
+'      aElemOrderEx()     self detect way matrices are stored internally
+aElemOrderEx()
+'      Debug              0 = Disable Debug Log, 
+'						  1 = Enable Debug of executable (internal use)
+'						  2 = Enable show a MessageBox on Error
+'						  4 = Enable recording of a Debug Log
+'                        Recorded DEBUG Messages can be seen with menu: Plugins > Math Evaluator > Options > Show Debug Log
+'					     WARNING: This feature can heavily slow down the execution, expecially with big script files
+'                        it is automatically disabled with Integrate and Plot commands
+Debug = 0
+
+'      ErrorMsgs         0 = Disable Error Messages recording, 
+'						 1 = Enable Error Messages recording
+'                        Recorded ERROR Messages can be seen with menu: Plugins > Math Evaluator > Options > Show Error Messages
+ErrorMsgs = 1
+
+'' ================================ EXPRESSION EVALUATION ============================================================
+'      Expr =             calculate result of expression after 'Expr = '
+'                         used variables, functions, matrices and vectors must be defined before relevant Expr =
+'                         Refer to Var = and Funct = instructions
+Expr = 12+sin(3)+sin(1*#to_rad)-Log(10)/(1.5+2^2.2)
+
+Expr = min(1;2;3;0.5)+avg(1;3;6)-median(1;3;45;70) 'some statistic
+
+'' *** This is a SAMPLE ERROR EXPRESSION. Error condition will be reported in the Output.
+Expr = 12+sin(3)+sin(1*#to_rad-Log(10)/(1.5+2^2.2)
+Expr = 12+sin(3)+sin(1*#to_rad)-Log(10)/(1.5+2^2.2)
+
+'<ver. 0.0.4.6>  Hexadecimal numbers and conversions 
+Hex = 123				  ' gives &7B
+Hex = FF				  ' gives ERROR n. = -5: Undefined function (Module: eval)
+Hex = &123				  ' gives &123
+Expr = &123				  ' gives 291.0000
+
+'<ver. 0.0.4.6>  Binary numbers and conversions 
+Bin = 123				  ' gives !1111011
+Bin = FF				  ' gives ERROR n. = -5: Undefined function (Module: eval)
+Bin = !100				  ' gives !100
+Expr = !0100			  ' gives 4.0000
+
+'      Var =              define and store a variable in memory (xx = 12)
+'      Funct =            define and store a function expression in memory (Func1 = xx+yy)
+'      FunctF =           read function expression from a text file and define and store in memory
+'                         syntax: FunctF = FunctName InputFile.txt (comments lines are allowed, starting with ')
+Var = xx ; 12             'store in memory variable (xx = 12)
+Var = yy ; 2              'store in memory variable (yy = 2)
+Funct = Func1 ; xx+yy   'store in memory function expression (Func1 = xx+yy)
+Funct = Func2 ; xx-yy   'store in memory function expression (Func2 = xx-yy)
+FunctF = Func3 Funct3.txt 'read function expression from a text file and define and store it in memory
+'Expr = xx+ func1+func2+func3+sin(yy*#to_rad)-Log(10)/(1+yy^2)
+Expr = xx+ func1+func2+sin(yy*#to_rad)-Log(10)/(1+yy^2)
+Expr = 12+ (12+2)+(12-2)+(12*2)+sin(2*0.017453)-Log(10)/(1+2^2)   'equivalent to previous
+
+'' *** This is a SAMPLE ERROR EXPRESSION (Fun123 is not defined). Error condition will be reported in the Output.
+Expr = xx+ func1+func2+fun123+sin(yy*#to_rad)-Log(10)/(1+yy^2)
+'      ExprF =	          evaluate expression in a text file showing or writing the result in another text file (if present)
+'			                    Syntax: ExprF = InpFileName.txt [OutFileName.txt] (comments lines are allowed, starting with ')
+ExprF = Expr01.txt Res01.txt
+'      StoExpr(varName) = calculate result of expression after '=' and define and store result in variable varName
+StoExpr(zz) = 12+13-1     'calculate expression and store result in variable zz
+
+Expr = zz+1             'calculate expression zz+1
+'      Plot(fromValue; variable; ToValue; Steps; [OutFileName.txt]) = expression
+'Calculate and Plot a function of x after '=' for x from -100 to 100, with 200 steps, writing points to file OutFileName.txt (optional) 
+'and saving the output to disk in the current folder with serial number filename
+Plot(-100; x; 100; 200; Plot_01.txt; Save) = 25000+12*x^2-ln(abs(x))
+Plot(-10; x; 100; 200; ; Save) = -25000+12*x^2-ln(abs(x))
+'Plot(-50; x; 50; 200) = sin(x)^2
+'Plot(-10; x; 10; 200) = cos(x)^2
+'' ================================ INTEGRATION & DERIVATION ============================================================
+'      VarPolyn =          define and store the variable after '=' 
+'      Derivate =          Derivate Polynomium after '=' (valid espressions: 3*x^2 and 3x^2)
+
+VarPolyn = x               'define and store variable of Polynomium defined in Derivate
+						   'must be set before using Derivate
+Derivate = 1+12*x-3*x^3+2x^4-5x^5
+'      DerivateF =         derivate polynomium in text file showing or writing the result in another file (if present)
+'                          Syntax: DerivateF = InpFileName.txt [OutFileName.txt] (comments lines are allowed, starting with ')
+DerivateF = Polyn02.txt Res02.txt
+'
+'      sDiff(sVar) = f(x)  Symbolic Differentiate the function of sVar after '=' by sVar
+'						   Syntax: sDiff(x) = f(x)
+sDiff(x) = sin(2*x^3+x) + ln(x)
+'						   Symbolic Differentiate by x the function 'sin(2*x^3+x) + ln(x)', i.e. given f(x), df(x)/dx = f'(x)
+'						   result: f'(x) = cos(2*x^3+x)*(2*3*x^2+1) + 1/x
+sDiffF = dFn04.txt Res04.txt
+'      sDiffF =            Symbolic Differentiate the expression in text file showing or writing the result in another file (if present)
+'                          Syntax: sDiffF = InpFileName.txt [OutFileName.txt] (comments lines are allowed, starting with ')
+'
+'Debug = 0				   'disable Debug
+'ErrorMsgs = 0			   'diseble error message recording
+IntegrateF = iFn03.txt Res03.txt
+'
+'      Integrate() =       Integration of the expression written after '='
+'                          Syntax: Integrate(fromValue; toValue; Steps; method; variable) = expression 
+'									fromValue = value to start the integration from
+'									toValue = value to end the integration to
+'									Steps = number of Steps (number of intervals between fromValue to toValue); integer > 1
+'									method = method to use for the integration (rect = Rectangular, trap = Trapezoidal)
+Integrate(-10; 100; 200; trap; x) = 1+12*x-x*sin(x)+2*x^2
+'      IntegrateF =        Integrate the expression in text file showing or writing the result in another file (if present)
+'                          Syntax: IntegrateF = InpFileName.txt [OutFileName.txt] (comments lines are allowed, starting with ')
+'' ================================ MATRIX CALCULATIONS ============================================================
+'      calculate expressions of matrices. Must firstly define each matrix used. Can use expressions.
+'      Matr =              define and store matrix in memory (can use expressions). Elements must be written by row. Separator is ;
+'                          Syntax: Matr = Name;rows;cols;mB(0,0);mB(0,1);mB(0,2);...
+Matr = [mB];   3;   3;   0;   1; 2; 1.2; 2.2; 3.2; 1; 2; 16.6866*Sin(0.5)
+Matr = [mC];   3;   3;   1;   1; 4; 0; 3; 1; 4; 3; (3+2)
+Matr = [mD];   4;   4;   3;   1; 4; 0;  2; 1; 4; 3;  5; 2; -1; -3; 9 ; -3 ; 2 ; 0
+'      Vect =              store Vector (can use expressions). Elements must be written by row. Separator is ;
+Vect = [vB];   3;   0;      1;      2; 4
+'      DimX =              store matrix or vector (alternative method-can use expressions). Elements must be written by row
+DimX = mE(3,3); mE(0,0)=1; mE(0,1)=2 ; mE(0,2)=3 
+DimX = mE(3,3); mE(1,0)=0; mE(1,1)=-2; mE(1,2)=3 'definition 'Matr = mE(3,3)' has to be repeated
+DimX = mE(3,3); mE(2,0)=0; mE(2,1)=-8; mE(2,2)=4 'on each line
+'      MatrF/VectF =       alternatively the matrix definition can be written in a file 
+'                          Syntax: MatrF = InpFileName.txt or VectF = InpFileName.txt. The 'Pick File...' button can be used to locate and insert the filename
+MatrF = mBExpr.txt
+Expr = ([mB]*[mB]+2*[mC]*[mB]-[mC]^2)   'calculate expression
+'      ExprF =	          evaluate expression of matrices in a text file showing or writing the result in another text file (if present)
+'			                    Syntax: ExprF = InpFileName.txt [OutFileName.txt] (comments lines are allowed, starting with ')
+ExprF = m01Expr.txt m01Res.txt
+Expr = det([mE])           'calculate determinant of [mE] defined above
+'' *** This is a SAMPLE ERROR EXPRESSION (mE123 is not defined). Error condition will be reported in the Output box
+Expr = det([mE123])        'calculate determinant of [mE123] that is not defined, then will report an error
+'      StoExpr() =         calculate expressions of matrices; define and store result in memory
+'                          Syntax: StoExpr([mA]) = Epression of matrices
+StoExpr([mEi]) = [mE]I     'calculate Inverse of [mE] and store result in [mEi] in memory
+'                          result can also be written in a text file 
+'                          Syntax: StoExpr([MatrName]; FileOut; FileName.txt)
+StoExpr([mEi]; FileOut; mEiExpr.txt) = [mE]I       'calculate Inverse of [mE]; define and store result in [mEi] and in text file Matr_mEi.txt
+Expr = det([mEi])          'calculate determinant of [mEi]                 
+Expr = [mEi]I              'calculate Inverse of [mEi] (=[mE])
+Expr = det([mE]I)          'calculate determinant of Inverse of [mE]
+Expr = [mE]T               'calculate Transpose of [mE]
+Expr = [mE]D               'calculate Diagonal Matrix of [mE]
+'      Expr = Syst()       calculate solutions of linear system {vX} = [A(rc,rc)]*{vB} (result is a vector). 
+'                          Takes TWO parameters separated by ';'-Accept expressions
+Expr = syst([mC];[vB])    
+Expr = syst((2*[mC]);[vB])+[vB]    
+'      Expr = vcoeff()     calculate vector of coefficients of Polynomial with rank 2 (3-1). 
+'                          i.e. solve the formula: {vB} = ([aX]T*[aX])^(-1)*([aX]T*{vY} (result is a vector).
+'                          Takes THREE parameters separated by ';'-Accept expressions
+Expr = vcoeff([mC]; [vB]; 2)  '[vB] vector of observed points 
+Expr = vcoeff(([mC]+[mC]); [vB]; (3-1))
+StoExpr([vD]) = vcoeff(([mC]+[mC]); [vB]; (3-1))
+Show(vD)

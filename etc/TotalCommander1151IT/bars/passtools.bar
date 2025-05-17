@@ -1,0 +1,7 @@
+[Buttonbar]
+Buttoncount=1
+button1=wcmicons.dll,252
+cmd1=%COMMANDER_PATH%\Utilites\KeePass\KeePass.exe
+path1=%COMMANDER_PATH%\Utilites\
+iconic1=0
+menu1=KeePass (password manager)

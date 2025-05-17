@@ -1,0 +1,41 @@
+
+// encoding: UTF-8 without BOM
+
+// CCompletion plugin for Notepad++, (C) 2007-2010 Boštjan Mihorič
+
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of the GNU General Public License
+// as published by the Free Software Foundation; either
+// version 2 of the License, or (at your option) any later version.
+
+
+
+#include "resfile.h"
+#include "winuser.h"
+
+IDI_ICON	ICON	"icon.ico"
+
+
+ID_VERSION VERSIONINFO
+FILEVERSION 1,19,0,0
+{
+	BLOCK "StringFileInfo" // to je predefinirano ime - prej tip kot ime, pravzaprav
+	{
+		BLOCK "040904B0" // ta konstanta specificira language (0409 -> us english) in charset, 0x4B0 == 1200 (unicode)
+		{
+			VALUE "FileVersion", "1.19"
+			VALUE "OriginalFilename", "NppCCompletionPlugin.dll"
+			VALUE "ProductName", "CCompletion plugin"
+			VALUE "ProductVersion", "1.19"
+		}
+	}
+}
+
+
+IDD_HELP_DIALOG DIALOGEX 0, 0, 500, 300
+STYLE WS_POPUP | WS_SYSMENU | WS_CAPTION | DS_MODALFRAME | DS_CENTER
+FONT 9, "Tahoma"
+{
+	EDITTEXT IDD_HELP_DIALOG_EDIT, 0, 0, 500, 280, WS_BORDER | ES_MULTILINE | ES_LEFT | WS_VSCROLL | ES_READONLY
+	DEFPUSHBUTTON "Ok", IDD_HELP_DIALOG_OK, 230, 282, 40, 16
+}

@@ -1,0 +1,343 @@
+<html>
+<head>
+<title>DBLister readme</title>
+<style>
+BODY
+{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: normal;
+}
+TD
+{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: normal;
+}
+TH
+{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	background-color: #ffffff;
+	color: #000000;
+	text-align: left;
+}
+.mainheader
+{
+	font-size: 14pt;
+	font-weight: bold;
+	padding: 2px;
+	padding-left: 15px;
+	background: #eeeeee;
+	border: 1px solid #000000;
+	margin-bottom: 10px;
+	color: #000000;
+}
+.sectionheader
+{
+	font-size: 12pt;
+	font-weight: bold;
+	padding: 2px;
+	padding-left: 15px;
+	background: #eeeeee;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	color: #000000;
+}
+.subheader
+{
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+.versiontd
+{
+	padding-bottom: 2px;
+	padding-right: 10px;
+}
+</style>
+</head>
+<body>
+<div class="mainheader">
+	DBLister Plugin v2.01
+</div>
+This plugin enables you to browse and edit database tables of several types.
+<ul style="list-style-type: square">
+	<li>Native mode direct access</li>
+		<ul style="list-style: disc">
+			<li>MySQL 3.20 - 4.1 (3.23 and 4.0 tested)</li>
+			<li>PostgreSQL 6.5 - 7.3</li>
+			<li>Firebird 1.0 - 1.5 (1.5 tested)</li>
+			<li>Interbase 5.0 - 7.5 (6.0 tested)</li>
+			<li>Microsoft SQL Server 7, 2000 (7.0 tested)</li>
+			<li>Sybase ASE 12.0, 12.5</li>
+		</ul>
+	<li>Any ODBC database through either a .DSN link file or the file system plugin</li>
+	<li>Any server with an OLEDB provider through the file system plugin. MySQL and MSSQL support is built in, but you can <a href='#addprovider'>add your own</a></li>
+	<li>FlashFiler server databases and BDE aliases using the file system plugin</li>
+	<li>FlashFiler 2 (view .FF2 files without a server)</li>
+	<li>Paradox DB</li>
+	<li>dBase and FoxPro DBF</li>
+	<li>Microsoft Access</li>
+</ul>
+<div class="subheader">This plugin lets you:</div>
+<ul>
+	<li>Browse and edit data</li>
+	<li>View table structure</li>
+	<li>View indexes and sort your data by them when applicable</li>
+	<li>Browse through servers and databases</li>
+</ul>
+We've also included a database viewer application for use when you're not running Total Commander.<br>
+If you want more, send us an <a href="mailto:support@commsoft.nu">e-mail</a> and we'll take your request into consideration!
+<div class="sectionheader">
+	System requirements
+</div>
+The plugin requires Total Commander 5.5+<br>
+Browsing Paradox, dBase or FoxPro tables requires an installed Borland Database Engine.<br>
+Browsing an Access or ODBC table requires that ADO is installed on that computer. So does using OLEDB.<br>
+Native mode access to a database requires that the correct drivers are installed. Using MySQL requires a DLL named libmysqlXXX.dll, where XXX is either 320, 323 or 400. Just copy your libMySQL.dll into the system folder with the required name.<br>
+<div class="sectionheader">
+	Database name restrictions
+</div>
+Database servers that use path names to access databases are treated specially. A path name can't be displayed or treated as a sub directory, so it's 'mangled' into an acceptable form. This doesn't look good, but you can avoid this by creating an 'alias' for the database(s) that you want to access.
+<div class="sectionheader">
+	Installation
+</div>
+<div class="subheader">Install the lister plugin like this:</div>
+<ol>
+	<li>Unzip the contents of this archive into a directory (we suggest the Total Commander directory)</li>
+	<li>Locate a supported database table in Total Commander. Bring it into the Lister with F3. You could view any file, but using a table gives more feedback.</li>
+	<li>Choose Configure from the Options menu</li>
+	<li>Click the LS-Plugins button</li>
+	<li>Press the Add button</li>
+	<li>Locate the DBLister.wlx file in the directory where you unzipped it and click Open.</li>
+	<li>Click the OK button to close the Lister Plugins dialog, and the other OK button to close Configure.</li>
+</ol>
+If you've done everything right, the garbled display should clear magically into a readable database table, with most columns accessible.<br><br>
+<div class="subheader">Install the file system plugin like this:</div>
+<ol>
+	<li>Unzip the archive as described above, if you haven't already done so.</li>
+	<li>Add the plugin to Total Commander:
+		<ol style="list-style-type: lower-alpha">
+			<li>Choose Options from the Configuration menu</li>
+			<li>Locate and click the FS Plugins button. It's in the Functions branch in Total Commander 6+.</li>
+			<li>Click the Add button</li>
+			<li>Browse to and open DBLister.wfx</li>
+		</ol>
+	</li>
+</ol>
+Select the Network item in one of the drive selectors. DBLister should appear in the list.<br><br>
+<div class="subheader">Install the applications like this (only necesary if you want to run the applications):</div>
+<ol>
+	<li>Unzip the archive as described above, if you haven't already done so.</li>
+	<li>Run the SetupDBLister.exe file if you want icons to be created on the Start menu</li>
+</ol>
+You can run the SetupDBLister.exe program again to uninstall the application settings.<br><br>
+<div class="sectionheader">
+	Lister shortcuts
+</div>
+<div class="subheader">Viewing tables from an ODBC data source</div>
+Create a .DSN file like this:
+<ol>
+	<li>Open Control Panel/Administrative Tools/Data sources (might be marked ODBC)</li>
+	<li>Click the File DSN tab</li>
+	<li>Click Add</li>
+	<li>Select the driver you want, and click Next</li>
+	<li>Click the Browse button, and choose where your finished .DSN file will be saved</li>
+	<li>Click Next, and then Finish to proceed to driver specific setup</li>
+</ol>
+Once you go through the above process, a .DSN file should appear in the location you selected. Don't be alarmed if it doesn't show up in the box in the Data sources applet, this only shows files in it's own location.<br><br>
+Viewing this .DSN file in DBLister will bring you right into the database.<br><br>
+Want even more ease of use? If you often view the same table, you can export a list of the tables from the ODBC database, and then view that exported file to load the table directly, without selecting it first.
+<div class="subheader">Viewing tables from databases opened in the file system plugin</div>
+Creating shortcuts to these tables are easy as pie - just select the tables you want and copy the 'files' to your hard disk. View any of these files, and you'll see the table in it's associated viewer.
+<div class="sectionheader">
+	The lister window
+</div>
+The listing of a database table is shown in a window with four tabs, as follows: 
+<dl style="margin-top: 5px">
+  <dt><strong>Data tab</strong></dt>
+  <dd>Here you see the data contained in your table. Memo fields are listed below the grid, and can of course be edited. BLOB fields of other kinds are not yet shown.</dd>
+  <dt><strong>Structure tab</strong></dt>
+  <dd>This tab shows all fields in the table, with their types and sizes.</dd>
+  <dt><strong>Indexes tab</strong></dt>
+  <dd>All indexes of your table is listed here, and you can see what fields they're comprised of. You can also double-click an index to see your data sorted by that index.</dd>
+  <dt><strong>About tab</strong></dt>
+  <dd>Version and copyright information is shown, as well as a link to the CommSoft web site at <a target="_blank" href="http://www.commsoft.nu">www.commsoft.nu</a>.</dd>
+</dl>
+<div class="sectionheader">
+	Lister and keyboard input
+</div>
+Having all keyboard activity sent to Total Commander (as it is by default) may not always be ideal. DBLister doesn't send keys when you've already begun editing a record, but this sometimes isn't enough. The data grid takes any key to begin editing, but some keys (1-5, others) will cause Total Commander to leave the plugin. So each lister window has a checkbox at the top to toggle whether keys are sent to Total Commander or not. If you want this to be unchecked by default, you can change this in the Preferences for the plugin.
+<div class="sectionheader">File system plugin</div>
+The first thing you see is a list of 'drivers', or data sources that DBLister can connect to. You can execute the "!Preferences.cmd" file to select which ones you want to see, and to change how commands are presented.<br><br>
+Many drivers lets you add your own servers. Execute the "!Register server.cmd" file to do this. You can edit the server settings by displaying the property sheet for the 'directory'.<br><br>
+Some native mode drivers require you to manually add the databases that you want to access. Do so by executing the !Register database.cmd file. For MySQL and MSSQL servers, you can execute the !Update database listing.cmd file to get a list of all databases.<br><br>
+Once you've drilled down so that you're seeing a server or an individual database/alias, a file named "!Disconnect.cmd" appears in each directory. Execute this file if you're done with the database/server and want to disconnect from it.
+<a name="#addprovider"><div class="sectionheader">Extending DBLister with your own OLEDB provider</div></a>
+Doing this requires a fair amount of knowledge about the OLEDB provider that you want to use, and of the database server that it connects to. The reason for this is that each OLEDB provider requires its own format for the connection string, and each database server has its own way to get a database list. Let's dive right in with a sample. We'll add the "My MySQL" provider, which isn't really useful but goes to show how to add a provider. Begin the process by executing the "!Register OLEDB provider.cmd" file.
+<div class="subheader">Enter the following in the form that displays:</div>
+<table border="1" cellspacing="0" cellpadding="1">
+	<tr>
+		<th>Entry</th>
+		<th>Value</th>
+		<th>Explanation</th>
+	</tr>
+	<tr>
+		<td valign="top">Display name</td>
+		<td valign="top">My MySQL</td>
+		<td valign="top">A descriptive name that can contain most any characters</td>
+	</tr>
+	<tr>
+		<td valign="top">Short name</td>
+		<td valign="top">MyMySQL</td>
+		<td valign="top">Shorter name which can only contain letters A-Z and numbers.</td>
+	</tr>
+	<tr>
+		<td valign="top">Connection string template</td>
+		<td valign="top">Provider=MySqlProv.3.0;Data Source=%DB%;Integrated Security="";Password="%password%";User ID=%username%;Location=%server%;Extended Properties=""</td>
+		<td valign="top">Used to create the final connection string that's used when connecting to this provider.</td>
+	</tr>
+	<tr>
+		<td valign="top">List databases command</td>
+		<td valign="top">SHOW DATABASES</td>
+		<td valign="top">The command that results in a list of all databases on the server</td>
+	</tr>
+	<tr>
+		<td valign="top">Field name with database name</td>
+		<td valign="top">Database</td>
+		<td valign="top">The list databases command results in a dataset that may contain any number of fields. This value is the name of the field that has the database name in it.</td>
+	</tr>
+</table><br>
+<div class="subheader">Values in the connection string template:</div>
+<table border="1" cellspacing="0" cellpadding="1">
+	<tr>
+		<th>Value</th>
+		<th>Explanation</th>
+	</tr>
+	<tr>
+		<td valign="top">%DB%</td>
+		<td valign="top">The database that is to be used</td>
+	</tr>
+	<tr>
+		<td valign="top">%password%</td>
+		<td valign="top">Your password</td>
+	</tr>
+	<tr>
+		<td valign="top">%username%</td>
+		<td valign="top">Your user name</li>
+	</tr>
+	<tr>
+		<td valign="top">%server%</td>
+		<td valign="top">The server that you'll connect to</td>
+	</tr>
+</table><br>
+The easiest way to construct the value for the connection string template is to use a connection string builder, which can be found in the Delphi IDE (and perhaps other IDE's as well). Once you have a working string, substitute the actual values with the values listed above (%DB% instead of the database, etc.).<br><br>
+<div class="sectionheader">Native mode versus OLEDB</div>
+Try native mode first, since that should be faster. If that doesn't work, you'll have to make do with OLEDB.<br><br>
+Microsoft SQL Server is one case where we suggest using OLEDB instead of native mode. The DB-Library that is used for native mode lacks support for (at least) the ntext type. DBLister contains a workaround for this ntext problem, but it incurs a performance penalty. DB-Library is also limited in that it only returns the first 255 characters of varchar and char columns. Other servers might have the same or other limitations, so your mileage may vary.
+<div class="sectionheader">Request for input</div>
+We'd appreciate it if you'd be willing to share your settings with us and other DBLister users! We want input on the following:
+<ul>
+	<li>Once you have a working connection to an OLEDB provider, please report all the fields from the "OLEDB properties" form</li>
+	<li>How to show databases? We know how to do this for Microsoft SQL Server and MySQL, but not for the other native mode drivers. So if you know how to do this for any of the other drivers, please report the following:</li>
+		<ul style="list-style-type: lower-alpha">
+			<li>The SQL command to get a result set with database names</li>
+			<li>The name of the field that contains the database name in each record</li>
+		</ul>
+	<li>Test results with any of the native drivers that we haven't tested, or with OLEDB providers you've added</li>
+</ul>
+Send your input to <a href="mailto:support@commsoft.nu">support@commsoft.nu</a>. We'll use everything we get to enhance future versions.
+<div class="sectionheader">License</div>
+DBLister is designed for private and commercial use without sale ("Freeware"), if the following rules are respected:
+<ul>
+	<li>CommSoft AB, has no responsibility if errors occures in direct or indirect relation with the software.</li>
+	<li>DBLister can be distributed through non-commercial channels.</li>
+	<li>DBLister is distributed in its original unaltered form, along with this documentation</li>
+</ul>
+<div class="sectionheader">
+	Contact information
+</div>
+<table border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td style="padding-right: 10px">
+			Web site
+		</td>
+		<td>
+			<a target="_blank" href="http://www.commsoft.nu">www.commsoft.nu</a>
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 10px">
+			E-mail address
+		</td>
+		<td>
+			<a href="mailto:support@commsoft.nu">support@commsoft.nu</a>
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 10px">
+			Phone
+		</td>
+		<td>
+			+46-44-103435
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 10px">
+			Fax
+		</td>
+		<td>
+			+46-44-248874
+		</td>
+	</tr>
+</table>
+<div class="sectionheader">
+	Version history
+</div>
+<table border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td valign="top" class="versiontd">10/21/2004</td>
+		<td valign="top" class="versiontd">2.01</td>
+		<td valign="top" class="versiontd">
+			Added the ability to double-click an index in the index list to sort by that index. This applies to listings of BDE, FlashFiler and ADO tables.
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" class="versiontd">07/26/2004</td>
+		<td valign="top" class="versiontd">2.0</td>
+		<td valign="top" class="versiontd">
+			Fixed field size display for strings in Paradox tables.<br>
+			Made the Structure and Indexes tabs use listviews instead of grids, with resizable columns to allow long entries to be viewed.<br>
+			Added a file system plugin to view servers and databases.<br>
+			Added native access to MySQL, PostgreSQL, Microsoft SQL Server, Sybase, InterBase and Firebird.<br>
+			Split the plugin into two stubs (.wlx and .wfx), and one common DLL file.
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" class="versiontd">02/01/2004</td>
+		<td valign="top" class="versiontd">1.1</td>
+		<td valign="top" class="versiontd">
+			Added the ability to list Access database tables.<br>
+			Added the ability to list <b>any</b> ODBC database through a .DSN file
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" class="versiontd">11/19/2003</td>
+		<td valign="top" class="versiontd">1.02</td>
+		<td valign="top" class="versiontd">Now all keyboard activity is passed to Total Commander, so that you can use the keyboard normally in the Lister. You can close the window, change modes and so on.<br>We also added a navigator at the top of the data grid, for easier adding and deleting.</td>
+	</tr>
+	<tr>
+		<td valign="top" class="versiontd">11/04/2003</td>
+		<td valign="top" class="versiontd">1.01</td>
+		<td valign="top" class="versiontd">Responds to mouse and keyboard scrolling without an initial click</td>
+	</tr>
+	<tr>
+		<td valign="top" class="versiontd">10/23/2003</td>
+		<td valign="top" class="versiontd">1.0</td>
+		<td valign="top" class="versiontd">Initial release</td>
+	</tr>
+</table>
+</body>
+</html>

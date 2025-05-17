@@ -1,0 +1,11 @@
+[Buttonbar]
+Buttoncount=2
+button1=wcmicons.dll,250
+cmd1=%COMMANDER_PATH%\Utilites\FSCapture\FSCapture.exe
+path1=%COMMANDER_PATH%\Utilites\FSCapture\
+iconic1=0
+menu1=FSCapture (screen/video capture tool)
+button2=wcmicons.dll,277
+cmd2=cd %COMMANDER_PATH%\Utilites\FSCapture\ScreenShots
+iconic2=0
+menu2=FSCapture Screenshots Folder

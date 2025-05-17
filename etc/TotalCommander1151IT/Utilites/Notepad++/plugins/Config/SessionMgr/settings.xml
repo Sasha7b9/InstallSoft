@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SessionMgr>
+    <Settings>
+        <automaticSave value="1"/>
+        <automaticLoad value="0"/>
+        <loadIntoCurrent value="0"/>
+        <loadWithoutClosing value="0"/>
+        <showInTitlebar value="0"/>
+        <showInStatusbar value="0"/>
+        <useGlobalProperties value="1"/>
+        <cleanGlobalProperties value="0"/>
+        <useContextMenu value="1"/>
+        <backupOnStartup value="1"/>
+        <sessionSaveDelay value="3"/>
+        <settingsSavePoll value="2"/>
+        <sessionDirectory value="D:\Install\notepads\npp\Notepad++\plugins\Config\SessionMgr\sessions\"/>
+        <sessionExtension value=".npp-session"/>
+        <currentMark value="9674"/>
+        <currentFavMark value="9830"/>
+        <previousMark value="9702"/>
+        <previousFavMark value="8226"/>
+        <defaultMark value="9653"/>
+        <defaultFavMark value="9652"/>
+        <favoriteMark value="183"/>
+        <useFilterWildcards value="0"/>
+        <sessionSortOrder value="1"/>
+        <currentSession value="Default"/>
+        <previousSession value="Default"/>
+        <defaultSession value="Default"/>
+        <menuLabelMain value="&Session Manager"/>
+        <menuLabelSub1 value="&Sessions..."/>
+        <menuLabelSub2 value="Se&ttings..."/>
+        <menuLabelSub3 value="Sa&ve current"/>
+        <menuLabelSub4 value="Load &previous"/>
+        <menuLabelSub5 value="&Help"/>
+        <menuLabelSub6 value="&About..."/>
+        <sessionsDialogWidth value="297"/>
+        <sessionsDialogHeight value="408"/>
+        <settingsDialogWidth value="0"/>
+        <settingsDialogHeight value="0"/>
+        <debugLogLevel value="0"/>
+        <debugLogFile value=""/>
+    </Settings>
+    <Favorites/>
+    <Filters>
+        <item value="*"/>
+    </Filters>
+</SessionMgr>

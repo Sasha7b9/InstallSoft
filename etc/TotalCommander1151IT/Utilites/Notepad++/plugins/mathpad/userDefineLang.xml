@@ -1,0 +1,36 @@
+<NotepadPlus>
+    <UserLang name="anmEval" ext="anm">
+        <Settings>
+            <Global caseIgnored="yes" />
+            <TreatAsSymbol comment="yes" commentLine="yes" />
+            <Prefix words1="no" words2="no" words3="no" words4="no" />
+        </Settings>
+        <KeywordLists>
+            <Keywords name="Delimiters">[00]00</Keywords>
+            <Keywords name="Folder+">!\</Keywords>
+            <Keywords name="Folder-">!/</Keywords>
+            <Keywords name="Operators">- # % ( ) * , . ; ^ + &lt; = &gt;</Keywords>
+            <Keywords name="Comment">1\\ 2// 0&apos;</Keywords>
+            <Keywords name="Words1">aAbout&#x000D;&#x000A;aElemOrderEx&#x000D;&#x000A;Debug DebugLog ErrorMsgs&#x000D;&#x000A;Derivate DerivateF&#x000D;&#x000A;DimX&#x000D;&#x000A;Expr ExprF&#x000D;&#x000A;Funct FunctF&#x000D;&#x000A;Hex Bin&#x000D;&#x000A;Integrate IntegrateF&#x000D;&#x000A;Matr MatrF&#x000D;&#x000A;Plot Pause&#x000D;&#x000A;sDiff sDiffF&#x000D;&#x000A;sVar StoExpr&#x000D;&#x000A;Show Var&#x000D;&#x000A;VarPolyn Vect&#x000D;&#x000A;VectF</Keywords>
+            <Keywords name="Words2">abs&#x000D;&#x000A;exp&#x000D;&#x000A;fix&#x000D;&#x000A;int&#x000D;&#x000A;log&#x000D;&#x000A;ln&#x000D;&#x000A;log10&#x000D;&#x000A;sgn&#x000D;&#x000A;sqr&#x000D;&#x000A;rnd&#x000D;&#x000A;atan&#x000D;&#x000A;sin&#x000D;&#x000A;tan&#x000D;&#x000A;cos&#x000D;&#x000A;cosec&#x000D;&#x000A;cotan&#x000D;&#x000A;sec&#x000D;&#x000A;arcsin&#x000D;&#x000A;arccos&#x000D;&#x000A;arcsec&#x000D;&#x000A;arccos&#x000D;&#x000A;arccotan&#x000D;&#x000A;sinh&#x000D;&#x000A;cosh&#x000D;&#x000A;tanh&#x000D;&#x000A;sech&#x000D;&#x000A;cosech&#x000D;&#x000A;cotanh&#x000D;&#x000A;arcsinh&#x000D;&#x000A;arccosh&#x000D;&#x000A;arctanh&#x000D;&#x000A;arcsech&#x000D;&#x000A;arccosech&#x000D;&#x000A;arccotanh&#x000D;&#x000A;and&#x000D;&#x000A;eqv&#x000D;&#x000A;imp&#x000D;&#x000A;mod&#x000D;&#x000A;not&#x000D;&#x000A;or&#x000D;&#x000A;xor&#x000D;&#x000A;min&#x000D;&#x000A;max&#x000D;&#x000A;avg&#x000D;&#x000A;sum&#x000D;&#x000A;prod&#x000D;&#x000A;sum2&#x000D;&#x000A;prod2&#x000D;&#x000A;stddev&#x000D;&#x000A;count&#x000D;&#x000A;geom_mean&#x000D;&#x000A;median&#x000D;&#x000A;mean&#x000D;&#x000A;det&#x000D;&#x000A;trace&#x000D;&#x000A;syst&#x000D;&#x000A;vcoeff&#x000D;&#x000A;to_rad&#x000D;&#x000A;to_grad</Keywords>
+            <Keywords name="Words3">ERROR n.</Keywords>
+            <Keywords name="Words4"></Keywords>
+        </KeywordLists>
+        <Styles>
+            <WordsStyle name="DEFAULT" styleID="11" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="FOLDEROPEN" styleID="12" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="1" />
+            <WordsStyle name="FOLDERCLOSE" styleID="13" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="1" />
+            <WordsStyle name="KEYWORD1" styleID="5" fgColor="0000FF" bgColor="FFFFFF" fontName="Courier New" fontStyle="1" fontSize="10" />
+            <WordsStyle name="KEYWORD2" styleID="6" fgColor="0000FF" bgColor="FFFFFF" fontName="Courier New" fontStyle="0" fontSize="10" />
+            <WordsStyle name="KEYWORD3" styleID="7" fgColor="FF0000" bgColor="FFFF00" fontName="Courier New" fontStyle="1" fontSize="10" />
+            <WordsStyle name="KEYWORD4" styleID="8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="COMMENT" styleID="1" fgColor="FF8040" bgColor="FFFFFF" fontName="Courier New" fontStyle="0" fontSize="10" />
+            <WordsStyle name="COMMENT LINE" styleID="2" fgColor="8C8C8C" bgColor="FFFFFF" fontName="Courier New" fontStyle="2" fontSize="10" />
+            <WordsStyle name="NUMBER" styleID="4" fgColor="FF0000" bgColor="FFFFFF" fontName="Courier New" fontStyle="0" fontSize="10" />
+            <WordsStyle name="OPERATOR" styleID="10" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="DELIMINER1" styleID="14" fgColor="FF0080" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="DELIMINER2" styleID="15" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="DELIMINER3" styleID="16" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+        </Styles>
+    </UserLang>
+</NotepadPlus>

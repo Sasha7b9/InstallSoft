@@ -1,0 +1,8 @@
+The Release Extractor cannot be started stand-alone.
+You have to integrate it into the nice Total Commander.
+The file rlsex.bat has to be linked into the Button-Bar:
+
+ Command:    Complete path and name of rlsex.bat
+ Parameters: %F %p
+ Start path: The complete path to rlsex.bat and its tools.
+ Icon:       %windir%\system32\shell32.dll,155 (45 for Vista)

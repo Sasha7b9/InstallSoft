@@ -1,0 +1,104 @@
+﻿{
+   "Application": {
+      "SaveHistoryPath": "",
+      "HistoryFilterFavorites": false,
+      "HistoryFilter": ""
+   },
+   "Exceptions": {
+      "Disabled": [["", "SysListView32"], ["", "SysTreeView32"], ["", "ListBox"], ["", "ScrollBar"], ["", "ComboBox"], ["", "msctls_hotkey32"], ["", "ConsoleWindowClass"], ["mstsc.exe", ""]],
+      "Enabled": [],
+      "DisabledMode": true
+   },
+   "Contents": {
+      "EditBackTranslation": "",
+      "SaveOnExit": true,
+      "EditTranslation": "",
+      "EditSource": ""
+   },
+   "Advanced": {
+      "LayoutIndicator": 0,
+      "EnableGuiTranslation": false,
+      "CopyAction": 0,
+      "DefaultBrowserId": ""
+   },
+   "Appearance": {
+      "EnableWindowStyle": false,
+      "PopupAutoSize": true,
+      "ColorFrame": 8023133,
+      "Transparency": 217,
+      "PopupIcons": 30,
+      "ColorText": 0,
+      "ThemeName": "",
+      "ColorBack": 15790320
+   },
+   "Internet": {
+      "Timeout": 10000
+   },
+   "HotKeys": {
+      "EnableHotKeys": false,
+      "HotKeyListenText": 581,
+      "HotKeyReplaceSelection": 0,
+      "HotKeyHistory": 0,
+      "HotKeySwitchMouseMode": 0,
+      "HotKeyCopyTranslation": 0,
+      "HotKeyDictionary": 2129,
+      "HotKeyTranslateClipboard": 0,
+      "HotKeyKeyboard": 0,
+      "HotKeyPopupWindow": 593,
+      "HotKeyMainWindow": 33280
+   },
+   "DisabledServices": [],
+   "Proxy": {
+      "Password": "",
+      "Host": "",
+      "ProxyType": 0,
+      "Username": "",
+      "Port": 8080
+   },
+   "DictionariesOrder": [10, 19, 20, 14, 17, 18, 21, 22, 24, 25, 26],
+   "DisabledLanguages": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 47, 48, 49, 50, 51, 52, 53, 54, 56, 57, 58, 59],
+   "DisabledDictionaries": [],
+   "LanguagePairs": [[46, 17], [17, 46]],
+   "General": {
+      "InstantTranslation": false,
+      "LanguageDictionary": 46,
+      "LanguageKeyboard": 17,
+      "AutoCleanupOfTranslation": false,
+      "MouseMode": 0,
+      "WindowPopupPlacement": "",
+      "EnableHistory": true,
+      "WindowKeyboardPlacement": "",
+      "ShowServicesPane": true,
+      "MinimizeToTrayOnMinimize": false,
+      "WindowMainPlacement": "2C0000001000000001000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF92020000400200007B04000023030000",
+      "BackTranslation": false,
+      "WindowHistoryPlacement": "",
+      "WindowOptionsPlacement": "2C0000000000000001000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBA0000008C0000004103000006020000",
+      "ActiveServices": [1],
+      "UseSmartDetection": true,
+      "ShowMiddlePane": true,
+      "LanguageTo": 46,
+      "WindowDictionaryPlacement": "",
+      "ShowTopPane": true,
+      "MidSplitterPos": 54,
+      "LanguageFrom": 23,
+      "LocaleFoderName": "English",
+      "ReadPhonetically": false,
+      "FontName": "",
+      "MainWindowStartupAction": 0,
+      "ActiveDictionaryServices": [10],
+      "MainWindowShowOnLoad": true,
+      "MinimizeToTrayOnClose": true,
+      "ExpandHistoryItems": false,
+      "BackTranslationSplitterPos": -1,
+      "MouseModeOn": false,
+      "SpellChecking": true,
+      "ClearOnDragDrop": true,
+      "TextSize": 9
+   },
+   "ServicesOrder": [1, 5, 12, 13, 9, 11, 26],
+   "AutoDetection": {
+      "LanguageFirst": 17,
+      "LanguageSecond": 46
+   }
+}

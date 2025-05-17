@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tcmediainfo>
+    <options>
+        <Formats>AVI,DIVX,MPEG,MPE,MPA,DAT,MPG,ASF,VOB,MKV,OGM,MP1,MP2,MP3,MP4,M4A,M4V,AVC,FLV,3GP,TS,WAV,AIFF,OGG,WMA,MOV,WMV,QT,AC3,DTS,AU,D2V,RA,RM,APE,FLAC</Formats>
+        <MultiSeparator> / </MultiSeparator>
+        <BasePath>base.db</BasePath>
+        <MemoryBase>False</MemoryBase>
+        <UseBase>False</UseBase>
+        <SqlitePath>Sqlite3.dll</SqlitePath>
+        <Sqlite64Path>Sqlite3_x64.dll</Sqlite64Path>
+        <MediaInfoPath>MediaInfo.dll</MediaInfoPath>
+        <MediaInfo64Path>MediaInfo_x64.dll</MediaInfo64Path>
+        <MissedField>&lt;empty&gt;</MissedField>
+        <DebugMode>0</DebugMode>
+    </options>
+    <sources>
+        <!-- General -->
+        <source name="Duration" field="Duration"/>
+        <source name="OverallBitRate" field="OverallBitRate"/>
+        <source name="GeneralFormat" field="Format"/>
+        <source name="EncDate" field="Encoded_Date"/>
+        <source name="RecDate" field="Recorded_Date"/>
+        <source name="StreamCount" field="StreamCount"/>
+        <!-- Tag info -->
+        <source name="Title" field="Title" process="fix_cp"/>
+        <source name="Album" field="Album" process="fix_cp"/>
+        <source name="Performer" field="Performer" process="fix_cp"/>
+        <source name="Copyright" field="Copyright" process="fix_cp"/>
+        <source name="Comment" field="Comment" process="fix_cp"/>
+        <source name="Composer" field="Composer" process="fix_cp"/>
+        <source name="Genre" field="Genre"/>
+        <source name="TrackNumber" field="Track/Position"/>
+        <source name="Medium" field="OriginalSourceMedium"/>
+        <source name="Source" field="OriginalSourceForm"/>
+        <source name="EncodedWith" field="Encoded_Application"/>
+        <!-- Video -->
+        <source name="VideoFormat" field="Format" context="Video"/>
+        <source name="VideoBr" field="BitRate" context="Video"/>
+        <source name="VideoCodecID" field="CodecID" context="Video"/>
+        <source name="VideoFrameWidth" field="Width" context="Video"/>
+        <source name="VideoFrameHeight" field="Height" context="Video"/>
+        <source name="VideoFPS" field="FrameRate" context="Video"/>
+        <source name="VideoFrameCount" field="FrameCount" context="Video"/>
+        <!-- Audio -->
+        <source name="AudioStreamCount" field="StreamCount" context="Audio"/>
+        <source name="AudioLang" field="Language" context="Audio" stream="*"/>
+        <source name="AudioFormat" field="Format" context="Audio"/>
+        <source name="AudioBr" field="BitRate" context="Audio"/>
+        <source name="AudioCodecID" field="CodecID" context="Audio"/>
+        <source name="AudioBrMode" field="BitRate_Mode" context="Audio"/>
+        <source name="AudioSamplingRate" field="SamplingRate" context="Audio"/>
+        <source name="AudioChannels" field="Channel(s)" context="Audio"/>
+        <source name="AudioResolution" field="BitDepth" context="Audio"/>
+        <source name="AudioFormatSettingsMode" field="Format_Settings_Mode" context="Audio"/>
+        <!-- Text -->
+        <source name="TextStreamCount" field="StreamCount" context="Audio"/>
+        <source name="TextLang" field="Language" context="Text" stream="*"/>
+        <source name="TextFormat" field="Format" context="Text"/>
+    </sources>
+    <columns>
+        <!-- General -->
+        <column name="Duration">
+            <unit name="hh:mm:ss" type="script">Output:=TimingFormat('%hh:%mm:%ss', Duration);</unit>
+            <unit name="hh:mm:ss.fff" type="script">Output:=TimingFormat('%hh:%mm:%ss.%fff', Duration);</unit>
+            <unit name="s" type="script">Output:=Trunc(Duration/1000);</unit>
+            <unit name="z">Duration</unit>
+            <unit name="Custom" type="script">
+            <![CDATA[
+              Output:='';
+              if Duration = '' then Exit;
+              Hour:=Trunc(Duration/3600000);
+              Min:=Trunc((Duration-Hour*3600000)/60000);
+              Sec:=Trunc((Duration-Hour*3600000-Min*60000)/1000);
+              if (Hour <> 0) then Output:=IntToStr(Hour)+' hr ';
+              if  (Min <> 0) then Output:=Output+IntToStr(Min) +' min ';
+              if  (Sec <> 0) then Output:=Output+IntToStr(Sec) +' sec ';
+            ]]>
+            </unit>
+        </column>
+        <column name="Format">GeneralFormat</column>
+        <column name="Bitrate">
+            <unit name="Bps">OverallBitRate</unit>
+            <unit name="KBps" type="script">Output:=Format('%f', OverallBitRate/1000);</unit>
+            <unit name="MBps" type="script">Output:=Format('%f', OverallBitRate/1000000);</unit>
+        </column>
+        <column name="Recorded Date" coltype="ft_datetime">RecDate</column>
+        <column name="Encoded Date" coltype="ft_datetime">EncDate</column>
+        <column name="Stream Count">
+            <unit name="All streams">StreamCount</unit>
+            <unit name="Audio only">AudioStreamCount</unit>
+            <unit name="Subtitles only">TextStreamCount</unit>
+        </column>
+        <separator/>
+        <!-- Tag info -->
+        <column name="Title">Title</column>
+        <column name="Album">Album</column>
+        <column name="Performer">Performer</column>
+        <column name="Copyright">Copyright</column>
+        <column name="Comment">Comment</column>
+        <column name="Composer">Composer</column>
+        <column name="Genre">Genre</column>
+        <column name="Track Number">TrackNumber</column>
+        <column name="Medium">Medium</column>
+        <column name="Source">Source</column>
+        <column name="Encoded With">EncodedWith</column>
+        <separator/>
+        <!-- Video -->
+        <column name="Video Format">VideoFormat</column>
+        <column name="Video Codec">VideoCodecID</column> <!-- For AVI this field return FOURCC -->
+        <column name="Video Bitrate">
+            <unit name="Bps">VideoBr</unit>
+            <unit name="KBps" type="script">Output:=Format('%f', VideoBr/1000);</unit>
+            <unit name="MBps" type="script">Output:=Format('%f', VideoBr/1000000);</unit>
+        </column>
+        <column name="Frame Size" type="script">
+        <![CDATA[
+          if (VideoFrameWidth = '') and (VideoFrameHeight = '') then
+            Output:=''
+          else
+            Output:=VideoFrameWidth+' x '+VideoFrameHeight;
+        ]]>
+        </column>
+        <column name="Frame Rate">VideoFPS</column>
+        <column name="Frame Count">VideoFrameCount</column>
+        <column name="All video as string" type="script">
+        <![CDATA[
+		  if (VideoFrameWidth = '') and (VideoFrameHeight = '') then
+            Output:=''
+          else
+            Output:=VideoFrameWidth+'x'+VideoFrameHeight;
+          if (VideoFPS <> '') then Output:=Output+', '+VideoFPS+' fps';
+          if (VideoFormat <> '') then Output:=Output+', '+VideoFormat;
+        ]]>     
+        </column>
+        <separator/>
+        <!-- Audio -->
+        <column name="Audio Language">AudioLang</column>
+        <column name="Audio Format">AudioFormat</column>
+		<column name="Audio Bitrate"> 
+             <unit name="Bps">AudioBr</unit> 
+             <unit name="KBps" type="script"><![CDATA[if (AudioBr <> '') then Output:=Format('%f', AudioBr/1000);]]></unit> 
+		</column>
+        <column name="Bitrate Mode">AudioBrMode</column>
+        <column name="Sampling Rate">AudioSamplingRate</column>
+        <column name="Channels">AudioChannels</column>
+        <column name="Resolution">AudioResolution</column>
+        <column name="All audio as string" type="script">
+        <![CDATA[
+          Output:='';
+          if (AudioBrMode <> '') then 
+		  begin
+			  Output:=AudioBrMode;
+	          if (AudioBr <> '') then Output:=Output+'@'+Format('%d kbps', Trunc(AudioBr/1000));
+		  end
+		  else
+	          if (AudioBr <> '') then Output:=Format('%d kbps', Trunc(AudioBr/1000));			
+          if (AudioSamplingRate <> '') then Output:=Output+', '+AudioSamplingRate+'Hz';
+          if (AudioResolution <> '') then Output:=Output+', '+AudioResolution+'bit';
+          if (AudioFormatSettingsMode <> '') then
+            Output:=Output+', '+AudioFormatSettingsMode
+          else
+              if (AudioChannels <> '') then
+              case AudioChannels of
+                1: Output:=Output+', Mono';
+                2: Output:=Output+', Stereo';
+              end;
+        ]]>     
+        </column>
+        <separator/>
+        <!-- Subtitles -->
+        <column name="Subtitles">TextLanguage</column>
+        <column name="Subtitles Format">TextFormat</column>
+        <separator/>
+        <!-- Almost demo purpose, retrieve custom values from lists -->
+        <column name="Video codec custom" type="list" list="VideoCodecs">VideoCodecID</column>
+        <column name="Audio codec custom" type="script">Output:=GetListValue('AudioCodecs', Format('%4.4d', AudioCodecID), AudioCodecID);</column>
+    </columns>
+    <lists>
+        <list name="VideoCodecs" type="ini" file="Codecs.cfg" section="VIDEO"/>
+        <list name="AudioCodecs" type="ini" file="Codecs.cfg" section="AUDIO"/>
+    </lists>
+    <listeroptions>
+		<display>
+			<Background color="16777215"/>
+			<HeaderFont color="0" name="Courier New" size="17" style="1"/>
+			<FieldFont color="8421504" name="Courier New" size="13" style="1"/>
+			<InfoFont color="0" name="Courier New" size="13" style="0"/>
+			<LineHeight>0</LineHeight>
+			<SeparatorPos>300</SeparatorPos>
+		</display>
+		<views>
+			<view name="Simple">
+			<![CDATA[
+				LineAddHeader(GetName('General'));
+				Title:=Get('Title');
+				if Title <> '' then LineAddText(GetName('Title'), FixCP(Get('Title')));
+//				AddCheck('Title', 'General');
+				fmt:=GetC('Format', 'General', 0) + GetB('Format_Profile', 'General', 0) + Get('Duration/String1');
+				LineAddText(GetName('Format'), fmt);
+				AddCheck('OverallBitRate/String', 'General');
+				AddCheck('Encoded_Date', 'General');
+				AddCheck('Recorded_Date', 'General');
+				if GetCount('Video') > 0 then
+				begin
+					LineAddHeader(GetName('Video'));
+					for i:=0 to GetCount('Video')-1 do
+					begin
+						Stream:=i;
+						stream:=GetC('Language/String', 'Video', i) + 
+						GetC('BitRate/String', 'Video', i) + 
+						Get('Width', 'Video', i) + 'x' + Get('Height', 'Video', i) + ' ' +
+						GetB('DisplayAspectRatio/String', 'Video', i) + 
+						GetC('FrameRate/String', 'Video', i) +  
+						Get('Format', 'Video', i) + ' ' +
+						GetB('Format_Profile', 'Video', i);
+						LineAddText('Stream '+IntToStr(i), stream);					
+					end;
+				end;
+				if GetCount('Audio') > 0 then
+				begin
+					LineAddHeader(GetName('Audio'));
+					for i:=0 to GetCount('Audio')-1 do
+					begin
+						stream:=GetC('Language/String', 'Audio', i) + 
+						GetC('BitRate/String', 'Audio', i) + 
+						GetC('SamplingRate/String', 'Audio', i) + 
+						GetC('Channel(s)/String', 'Audio', i) + 
+						Get('Format', 'Audio', i) + ' ' +
+						GetB('Format_Profile', 'Audio', i);
+						LineAddText('Stream '+IntToStr(i), stream);					
+					end;
+				end;
+				if GetCount('Text') > 0 then
+				begin
+					LineAddHeader(GetName('Text'));
+					for i:=0 to GetCount('Text')-1 do
+					begin
+						stream:=GetC('Language/String', 'Text', i) + 
+						GetC('BitRate/String', 'Text', i) + 
+						Get('Format', 'Text', i);
+						LineAddText('Stream '+IntToStr(i), stream);					
+					end;
+				end;
+
+				procedure AddCheck(Field, Context);
+				begin
+					R:=Get(Field, Context);
+					if R = '' then Exit;
+					LineAddField(Field, Context);
+				end;
+				function GetC(Field, Context, Stream);
+				begin
+					Result:=Get(Field, Context, Stream);
+					if Result = '' then Exit;
+					Result:=Result+', ';
+				end;
+				function GetB(Field, Context, Stream);
+				begin
+					Result:=Get(Field, Context, Stream);
+					if Result = '' then Exit;
+					Result:='('+Result+'), ';
+				end;
+			]]>     
+			</view>
+			<view name="Splitted long lines (test)">
+			<![CDATA[
+				LineAddHeader(GetName('General'));
+				// split possible long filename
+				Name:=GetName('CompleteName');
+				Info:=Get('CompleteName');
+				LineAddSplit(Name, Info, ' ', 80);
+				
+				Title:=Get('Title');
+				if Title <> '' then LineAddText(GetName('Title'), FixCP(Get('Title')));
+				LineAddField('OverallBitRate/String');
+				LineAddField('Duration');
+				LineAddHeader(GetName('Video'));
+
+				// split complete name
+				Name:=GetName('Encoded_Library_Settings', 'Video');
+				Info:=Get('Encoded_Library_Settings', 'Video');
+				LineAddSplit(Name, Info, ' ', 80);
+
+				procedure LineAddSplit(name, line, char, max);
+				begin
+					while StrLen(line) > 0 do
+					begin
+						str:=StrLeft(line, max);
+						for i:=max downto 0 do
+						begin
+							if StrMid(line, i, 1) = char then Break;
+						end;
+						if i = 0 then
+						begin
+							part:=StrMid(line, 1, max);
+							line:=StrMid(line, max + 1);
+						end
+						else
+						begin
+							part:=StrMid(line, 1, i-1);
+							line:=StrMid(line, i+1);
+						end;
+						LineAddText(name, part);
+						if (name <> '') then name:='';
+					end;
+				end;
+			]]>     
+			</view>
+			<view name="Raw info">
+			<![CDATA[
+				LineAddHeader('General');
+				Fill('General');
+				LineAddHeader('Video');
+				Fill('Video');
+				LineAddHeader('Audio');
+				Fill('Audio');
+				LineAddHeader('Text');
+				Fill('Text');
+				LineAddHeader('Other');
+				Fill('Other');
+				LineAddHeader('Image');
+				Fill('Image');
+				LineAddHeader('Menu');
+				Fill('Menu');
+
+				procedure Fill(C);
+				begin
+					F:=FieldGetFirst(C);
+					LineAddField(F, C);
+					while F <> '' do
+					begin
+					  F:=FieldGetNext;
+					  if F = '' then Continue;
+					  if F = 'Inform' then Continue;
+					  if StrPos(F, '/') then Continue;
+					  R:=Get(F, C);
+					  LineAddText(F, R);
+					end;
+				end;
+			]]>     
+			</view>
+			<view name="Translation of fields">
+			<![CDATA[
+				LineAddHeader('General');
+				Fill('General');
+				LineAddHeader('Video');
+				Fill('Video');
+				LineAddHeader('Audio');
+				Fill('Audio');
+				LineAddHeader('Text');
+				Fill('Text');
+				LineAddHeader('Other');
+				Fill('Other');
+				LineAddHeader('Image');
+				Fill('Image');
+				LineAddHeader('Menu');
+				Fill('Menu');
+
+				procedure Fill(C);
+				begin
+					F:=FieldGetFirst(C);
+					LineAddField(F, C);
+					while F <> '' do
+					begin
+					  F:=FieldGetNext;
+					  if F = '' then Continue;
+					  if F = 'Inform' then Continue;
+					  if StrPos(F, '/') then Continue;
+					  R:=Get(F, C);
+					  LineAddText(F, GetName(F, C));
+					end;
+				end;
+			]]>     
+			</view>
+		</views>
+		<ViewMode>Default</ViewMode>
+		<Language></Language>
+    </listeroptions>
+</tcmediainfo>

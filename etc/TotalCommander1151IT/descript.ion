@@ -1,0 +1,32 @@
+FILTER32 DirectShow filters (32-bit) for use in Lister - Media Player
+LANGUAGE Additional Totalcmd languages can be found on our addons page on www.ghisler.com
+BLAKEX32.DLL 32-bit DLL to support the fast BLAKE3 hash algorithm
+CABRK.DLL CAB unpacker DLL
+CGLPTNT.SYS Parallel port driver for Windows NT/2000/XP/Vista/7/8/8.1/10/11
+descript.ion This file contains these descriptions! Use Ctrl+Z to change them.
+LIBDEFLATE.DLL Library used for very fast packing and unpacking of deflated ZIP files on supported processors
+NO.BAR Empty button bar file
+NOCLOSE.EXE Used when launching command line program with Shift+Enter to keep the console open
+SFXHEAD.SFX Self extracting header for ZIP
+SHARE_NT.EXE Helper tool to show share/unshare dialog on Windows NT
+TC7Z.DLL 7-Zip packer/unpacker DLL
+TC7Z.SFX Self extracting header for 7-ZIP
+TC7ZIPIF.DLL Unpacker interface DLL to access 7-Zip DLL
+TCBIT7Z.DLL Packer interface DLL to access 7-Zip DLL
+TCMADMIN.EXE Tool to copy/delete/create folder/remove folder with administrator rights
+TCMDLZMA.DLL Library to unpack WinZIP12 LZMA compression method (14)
+TCMDX64.EXE 64-bit shell extension support for right click context menu
+TCshareWin10.dll Used to show Windows 10 "Share" menu (32-bit)
+TCUNZLIB.DLL Library used for unpacking thumbnails and for FTP MODE Z
+TcUsbRun.exe USB cable insert notification handler (run to activate/deactivate)
+TCZSTD32.DLL Library used for unpacking ZSTD files (zip standard compression by Facebook)
+TOTALCMD.CHM Total Commander help file
+TOTALCMD.EXE Total Commander main program
+TOTALCMD.EXE.MANIFEST Enables XP style on PCs where the internal manifest resource is ignored
+TOTALCMD.INC Command strings for menu and button bar
+UNACEV2.DLL ACE unpacker DLL (patched version)
+UNRAR.DLL RAR unpacker DLL for Windows XP or newer
+VERTICAL.BAR Default vertical button bar file
+WCMICONS.DLL Icons for button bar
+WCMICONS.INC Mapping table: internal command -> icon index
+WCMZIP32.DLL ZIP packer DLL

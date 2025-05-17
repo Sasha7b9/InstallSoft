@@ -1,0 +1,20 @@
+[Buttonbar]
+Buttoncount=5
+button1=wcmicons.dll,220
+cmd1=bars\bar_01.bar
+iconic1=0
+menu1=Switch to the Main Panel
+button2=wcmicons.dll,216
+cmd2=bars\bar_02.bar
+iconic2=0
+menu2=Extended Commands Panel
+button3=wcmicons.dll,218
+cmd3=bars\bar_03.bar
+iconic3=0
+menu3=Utilities Panel
+button4=wcmicons.dll,223
+cmd4=bars\bar_04.bar
+iconic4=0
+menu4=User Panel
+button5=
+iconic5=0

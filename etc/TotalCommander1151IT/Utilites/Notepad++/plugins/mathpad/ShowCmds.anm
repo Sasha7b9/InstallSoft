@@ -1,0 +1,85 @@
+' MathPad.dll Full Syntax Sample file (Version: 0.0.4.6)
+' By Carlo Somigliana, email: somic@libero.it, website: www.semelinanno.com
+'
+' Calculates and plots expressions, polynomials, integrals, matrices, derivatives
+' -------------------------------------------------------------------------------
+' List of Commands (alphabetical order):
+
+aElemOrderEx() : self detect way matrices are stored internally.
+Debug = n :      0 = Disable Debug Log, 
+				 1 = Enable Debug of executable (internal use)
+				 2 = Enable show a MessageBox on Error
+				 4 = Enable recording of a Debug Log
+                 Recorded DEBUG Messages can be seen with menu: Plugins > Math Evaluator > Options > Show Debug Log
+' Syntax: Debug = 0
+ErrorMsgs = n :  0 = Disable Error Messages recording, 
+				 1 = Enable Error Messages recording
+                 Recorded ERROR Messages can be seen with menu: Plugins > Math Evaluator > Options > Show Error Messages
+' Syntax: ErrorMsgs = 0
+Derivate = : Derivate Polynomium after '='. 
+' Syntax: Derivate = Polynomium (es. Derivate = 1 + 2*x -3*x^3) (valid espressions: 3*x^2 and 3x^2)
+
+DerivateF = : derivate polynomium in text file showing or writing the result in another file (if present). 
+' Syntax: DerivateF = InpFileName.txt [OutFileName.txt]
+
+sDiff(x) = Symbolic Differentiate by x the function
+' Syntax: sDiff(x) = f(x) (es. sDiff(x) = sin(2*x^3+x) + ln(x))
+
+sDiffF = Symbolic Differentiate the expression in text file showing or writing the result in another file (if present)
+' Syntax: sDiffF = InpFileName.txt [OutFileName.txt] (comments lines are allowed, starting with ')
+
+DimX = : store matrix or vector (alternative method-can use expressions). Elements must be written by row. 
+' Syntax: DimX = MatrDef; Elements;... (es. DimX = mE(3,3); mE(0,0)=1; mE(0,1)=2 ; mE(0,2)=3)
+
+Expr = : calculate result of expression after '='. 
+' Syntax: Expr = expression (es. Expr = 1+3*sin(3*to_rad))
+
+ExprF = : evaluate expression in a text file showing or writing the result in another text file (if present). 
+' Syntax: ExprF = InpFileName.txt [OutFileName.txt] (es. ExprF = Expr01.txt).
+
+Funct = : define and store a function expression in memory. 
+' Syntax: FuncName = expression (es. Func1 = xx+yy)
+
+FunctF = : read function expression from a text file and define and store in memory. 
+' Syntax: FunctF = FunctName InputFile.txt (es. FunctF = Funct3 Func3File.txt).
+
+<ver. 0.0.4.6>
+Hex = : calculate result of expression after '=' and convert result in hexadecimal string
+' Syntax: Hex = expression (es. Hex = 123 gives 7B)
+
+<ver. 0.0.4.6>
+Bin = : calculate result of expression after '=' and convert result in a binary string
+' Syntax: Bin = expression (es. Bin = 4 gives !100 -> !00000100)
+
+Integrate() : Integration of the expression written after '='. Methods: rect = Rectangular, trap = Trapezoidal. 
+' Syntax: Integrate(fromValue; toValue; Steps; method; variable) = expression
+
+IntegrateF = : Integrate the expression in text file showing or writing the result in another file (if present). 
+' Syntax: IntegrateF = InpFileName.txt [OutFileName.txt].
+
+Matr = : define and store matrix in memory (can use expressions). Elements must be written by row. Separator is ;. 
+' Syntax: Matr = MatrName; rows; cols; values;... (es. Matr = [mB];2;2;0;1;3;1)
+
+MatrF = : alternative method to define and strore a matrix taken from a file. 
+' Syntax: MatrF = InpFileName.txt (es. MatrF = Matr_mB.txt) - can use [Insert FileName] menu.
+
+Plot() : Calculate and Plot a function for variable going from fromValue to toValue, with Steps steps, writing points to file OutFileName.txt (optional). 
+' Syntax: Plot(fromValue; variable; ToValue; Steps; [OutFileName.txt]) = expression. (es. Plot(-10; x; 100; 200) = -25000+12*x^2-ln(abs(x)))
+
+StoExpr() : calculate result of expression after '=' and define and store result in variable varName. 
+' Syntax: StoExpr(varname) = expression. (es. StoExpr(xx) = 1+sin(3))
+
+Show() : Show value(s) of variable or matrix/vector. 
+' Syntax: Show(varname)
+
+Var = : define and store a variable in memory. 
+' Syntax: Var = variable; value (es. Var = xx ; 12)
+
+VarPolyn = : define and store the variable after '='. 
+' Syntax: VarPolyn = varName (es. VarPolyn = x)
+
+Vect = : store Vector (can use expressions). Elements must be written by row. Separator is ;. 
+' Syntax: Vect = VectName; rows; values; ... (es. Vect = [vB];3;1;2;3)
+
+VectF = : alternative method to define and strore a vector taken from a file. 
+' Syntax: VectF = InpFileName.txt (es. VectF = Vect_mB.txt) - can use [Insert FileName] menu.

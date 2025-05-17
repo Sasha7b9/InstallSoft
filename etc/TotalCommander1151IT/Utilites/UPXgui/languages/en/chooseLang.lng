@@ -1,0 +1,10 @@
+CFGDATA
+s0000000015LanguageName_en0000000007English0000000031the name of language in English
+s0000000012LanguageName0000000007English0000000043the name of language on the native language
+s0000000019Form\FormChooseLang0000000014####  -  Setup0000000017#ApplicationLang1
+s0000000027Label\FormChooseLang.Label10000000040Choose the Language
+for ##### interface0000000017#ApplicationLang2
+s0000000027Label\FormChooseLang.Label20000000020and Press "Continue"0000000049Window of a choice of language at the first start
+s0000000027Label\FormChooseLang.Label30000000044In the future you can change the language in0000000049Window of a choice of language at the first start
+s0000000027Label\FormChooseLang.Label40000000013##### options0000000017#ApplicationLang2
+s0000000029Button\FormChooseLang.Button10000000011Continue  >0000000049Window of a choice of language at the first start

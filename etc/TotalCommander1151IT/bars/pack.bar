@@ -1,0 +1,26 @@
+[Buttonbar]
+Buttoncount=5
+button1=wcmicons.dll,208
+cmd1=%Commander_path%\Utilites\WHS\packhere.js
+param1=%S
+iconic1=1
+menu1=Pack selected into a RAR with the parent dir. name
+button2=wcmicons.dll,207
+cmd2=cmd /c title 7z-unpacking... &%COMMANDER_PATH%\Plugins\wcx\Total7zip\7zG x -aoa
+param2=-o"%O" "%O.%E"
+iconic2=1
+menu2=Unpack the selected archive to a folder with the archive name
+button3=wcmicons.dll,280
+cmd3=%Commander_path%\Utilites\AskParam.exe
+param3=/c"Creating an encrypted archive" /t"Enter the password" /p"Add files to archive and protect with password:" %%commander_path%%\Utilites\WHS\packpass.js %%1 %S
+iconic3=0
+menu3=Pass-protected archive from selected with the name of the parent dir. and date
+button4=wcmicons.dll,60
+cmd4=cm_TestArchive
+iconic4=0
+menu4=Test archive
+button5=wcmicons.dll,275
+cmd5=%COMMANDER_PATH%\Utilites\RAR Unlocker.exe
+path5=%COMMANDER_PATH%\Utilites\
+iconic5=0
+menu5=RAR Unlocker (RAR archive information/unlocking the archive)

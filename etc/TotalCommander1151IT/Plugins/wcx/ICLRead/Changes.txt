@@ -1,0 +1,52 @@
+Changes of ICLRead.wcx.
+
+Format:
+A: added;
+C: changed;
+F: fixed.
+
+v1.0.1.0
+A: show some info when adding icons
+A: show 'User Abort!' message when user abort's adding/deleting icons
+F: showing icons containing more 59 subicons (in time section(HH:MM): if subicons more than 59 then format is 01:59 else 00:subicons_count).
+
+v1.2
+C: icon names now has format "0000_IconDescription.ico" (150 symbols max).
+C: small internal changes.
+
+v1.3
+C: speed up add icons and save icon library;
+C: small internal changes.
+
+v1.4
+C: enter to 16-bit ICL in Windows Vista (and possible Seven);
+A: save to 32-bit ICL files in Windows 2000 and up. In Pack dialog need manually change file extension from "icl" to "icl32" (icons will be start named from zero!).
+
+v1.4.1
+C: add/delete icons in 32-bit libraries don't change it to 16-bit.
+
+v1.5
+A: add Unicode filename support;
+A: add Windows x64 support.
+
+v1.5.2
+A: open files with long names (256+, only if 8.3 aliases enabled);
+C: small internal changes.
+
+v1.5.3
+C: when save to 32-bit ICL icons start named from 1 now.
+
+v1.5.4
+F: fixed memory leak when open 16-bit icl files.
+
+v1.5.4.1
+F: fix reading 16-bit files.
+
+v1.5.4.2
+F: fixed memory leak when save to existent library.
+
+v1.5.4.3
+F: fixed header of big icons.
+
+v1.5.4.4
+C: small internal changes.

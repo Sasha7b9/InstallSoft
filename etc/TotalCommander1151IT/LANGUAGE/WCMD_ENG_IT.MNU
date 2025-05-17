@@ -1,0 +1,378 @@
+; $Id 2:13 10.02.2020 DimitarSerg $
+; Extended menu for Total Commander IT EDITION
+; E-mail:            DimitarSerg@mail.ru
+
+POPUP "&Files"
+    POPUP "Run files and programs"
+        MENUITEM "&Open Program as Different Active Local User...", 2800
+        MENUITEM "Windows' Conte&xt Menu...\tShift+F10", 2500
+        MENUITEM "Associate (Windows O&verall)...", 507
+    END_POPUP
+    POPUP "Starting programs with priority"
+        MENUITEM "Start the program under the cursor with Low priority", em_lowstart
+        MENUITEM "Start the program under the cursor with Below Normal priority", em_belownormal
+        MENUITEM "Start the program under the cursor with Above Normal priority", em_abovenormal
+        MENUITEM "Start the program under the cursor with High priority", em_highstart
+        MENUITEM "Start the program under the cursor with Realtime priority", em_realtimestart
+    END_POPUP
+    POPUP "Archiving/encryption"
+        MENUITEM "&Pack Files...\tAlt+F5", 508
+        MENUITEM "&Unpack Files...\tAlt+F9", 509
+        MENUITEM "&Test Archive(s)\tShift+Alt+F9", 518
+        MENUITEM "&Open Self Extracting Archive\tCtrl+PgDn", 2003
+        MENUITEM SEPARATOR
+        MENUITEM "&Encode File (MIME, UUE, XXE)...", 562
+        MENUITEM "&Decode File (MIME, UUE, XXE, BinHex)...", 563
+        MENUITEM SEPARATOR
+        MENUITEM "&Create CRC Checksums (SFV, MD5 or SHA format)...", 564
+        MENUITEM "&Verify CRC Checksums (from SFV, MD5 or SHA files)...", 565
+        MENUITEM SEPARATOR
+        MENUITEM "&Split File...", 560
+        MENUITEM "&Combine Files...", 561
+    END_POPUP
+    MENUITEM SEPARATOR
+    MENUITEM "&Change Attributes...", 502
+    MENUITEM "Show Propert&ies...\tAlt+Enter", 510
+    MENUITEM "Edit File Co&mment...\tCtrl+Z", 2700
+    MENUITEM "Calculate &Occupied Space...\tCtrl+L", 503
+    MENUITEM SEPARATOR
+    MENUITEM "Rename (I&nline)\tF2", 1002    
+    MENUITEM "Multi-&Rename Tool...\tCtrl+M", 2400
+    MENUITEM SEPARATOR
+    POPUP "Prin&t"
+        MENUITEM "Print &Directory...", 2027
+        MENUITEM "Print Directory with &Subdirs...", 2028
+        MENUITEM "Print File &Contents\tCtrl+F9", 504
+    END_POPUP
+    MENUITEM SEPARATOR
+    MENUITEM "Show (Without P&lugins), File Under Cursor...\tShift+Alt+F3", 1006
+    MENUITEM SEPARATOR
+    MENUITEM "&Quit\tAlt+F4", 24340
+END_POPUP
+
+POPUP "&Tools"
+    MENUITEM "&Associate Internal (Only Total Commander)...", 519
+    MENUITEM "Set &Volume Label...", 505
+    MENUITEM SEPARATOR    
+    MENUITEM "&Find Files...\tAlt+F7", 501
+    MENUITEM "Find Files &- Separate Process...\tShift+Alt+F7", 545
+    MENUITEM "Find Files in Folder Under Cursor...", 517
+    MENUITEM "Quic&k Search\tCtrl+S", 2915
+    MENUITEM SEPARATOR    
+    MENUITEM "Background Transfer &Manager...", 559
+    MENUITEM SEPARATOR
+    POPUP "Command &line"
+	MENUITEM "Comman&d Prompt Window...", 511
+        MENUITEM "Command Prompt Window (Administrator) *...", em_ext_cmdelevated
+        MENUITEM SEPARATOR
+        MENUITEM "&Copy Path to Command Line\tCtrl+P", 2019
+        MENUITEM "&Next Command Line", 2005
+        MENUITEM "&Previous Command Line\tCtrl+E", 2006
+        MENUITEM "&Delete Command Line\tCtrl+Y", 2004
+        MENUITEM "&Focus on Command Line\tShift+Right", 4003
+    END_POPUP
+    MENUITEM SEPARATOR
+    POPUP "&Clipboard "
+        MENUITEM "Copy &File Names to Clipboard", 2017
+        MENUITEM "Copy &Path + File Names to Clipboard", 2018
+        MENUITEM "Copy &Network Path + File Names to Clipboard", 2021
+        MENUITEM SEPARATOR
+        MENUITEM "Copy File Names + All &Columns to Clipboard", 2036
+        MENUITEM "Copy Path + File Names + &All Columns to Clipboard", 2037
+        MENUITEM "Copy Network Path + File Names + All C&olumns to Clipboard", 2038
+        MENUITEM "Copy Fil&e Names + All Columns to File...", 2039
+        MENUITEM SEPARATOR
+        MENUITEM "Copy &Source Path to Clipboard", 2029
+        MENUITEM "Copy &Target Path to Clipboard", 2030
+        MENUITEM SEPARATOR
+        MENUITEM "Co&py to Clipboard\tCtrl+C", 2008
+        MENUITEM "C&ut to Clipboard\tCtrl+X", 2007
+        MENUITEM "&Insert from Clipboard\tCtrl+V", 2009
+    END_POPUP
+    MENUITEM SEPARATOR
+    MENUITEM "Compare Co&ntents...", 2022
+    MENUITEM "Compare Contents (Internal)...", 2040
+    MENUITEM "&Compare Directories\tShift+F2", 533
+    MENUITEM "Compare Directories Incl. &Folders", 536
+    MENUITEM "&Mark Newer, Hide Same Files", 534
+    MENUITEM SEPARATOR
+    MENUITEM "Synchroni&ze Directories...", 2020
+    MENUITEM "Sync&hronize Directory Change Source && Target", 2600
+END_POPUP
+
+POPUP "&Selection"
+    POPUP "E&xpand Selection...\tNum +"
+        MENUITEM "E&xpand Selection (as Configured)...\tNum +", 521
+        MENUITEM "Expand Selection (as Configured), Same Ex&tension ...", 546
+        MENUITEM SEPARATOR
+        MENUITEM "&Both Files and Folders...", 3311
+        MENUITEM "&Only Files...", 3312
+        MENUITEM "Only &Folders...", 3313
+    END_POPUP
+    POPUP "S&hrink Selection...\tNum  -"
+        MENUITEM "S&hrink Selection (as Configured)...", 3316
+        MENUITEM SEPARATOR
+        MENUITEM "&Both Files and Folders...\tNum  -", 522
+        MENUITEM "Both Files and Folders, Same Ex&tension...", 547
+        MENUITEM "&Only Files...\tShift+Num  -", 3314
+        MENUITEM "Only &Folders...", 3315
+    END_POPUP
+    POPUP "&Invert Selection\tNum  *"
+        MENUITEM "&Invert Selection (as Configured)\tNum  *", 525
+        MENUITEM SEPARATOR
+        MENUITEM "&Both Files and Folders", 3321
+        MENUITEM "&Only Files", 3322
+        MENUITEM "Only &Folders", 3323
+    END_POPUP
+    MENUITEM SEPARATOR
+        MENUITEM "Save Selection to &Memory", 530
+        MENUITEM "Get Selection from Mem&ory\tNum  /", 529
+        MENUITEM SEPARATOR
+        MENUITEM "&Save Selection to Clipboard", 2018
+        MENUITEM "&Get Selection from Clipboard", 2033
+        MENUITEM SEPARATOR
+        MENUITEM "Save Selection &to File...", 2031
+        MENUITEM "Get Selection &from File...", 2032
+END_POPUP
+
+POPUP "&Layout"
+    POPUP "Advanced settings"
+        MENUITEM "&Button Bar", 2901
+        MENUITEM "Button Bar &2 (Vertical)", 2944
+	MENUITEM "&Drive Buttons", 2902
+    	MENUITEM "    T&wo Sets of Drive Buttons", 2903
+    	MENUITEM "    Flat Drive Button &Icons", 2904
+        MENUITEM "Drive Co&mbobox", 2906
+        MENUITEM "F&older Tabs", 2916
+    	MENUITEM "&Current Directory", 2907
+    	MENUITEM "    Br&eadcrumb Bar", 2926
+    	MENUITEM "    &History and Hotlist Buttons", 2919
+    	MENUITEM "&Tabstop Header", 2908
+    	MENUITEM "&Status Bar", 2909
+    	MENUITEM "Command &Line", 2910
+    	MENUITEM "&Function Key Buttons", 2911
+    	MENUITEM SEPARATOR
+    	MENUITEM "Flat &User Interface", 2905
+    	MENUITEM "Windows &XP theme background", 2923
+    END_POPUP
+  POPUP "&Display"
+    MENUITEM "Show &Hidden Files", 3013
+    MENUITEM "Show &System Files", 3014
+    MENUITEM "Show Hidden Files (&FTP)", 553
+    MENUITEM "Show &Long Filenames", 2010
+    MENUITEM "Show Old &8.3 Filenames", 2013
+    MENUITEM "Always Sort Directories by N&ame", 2012
+    MENUITEM "Show &Overlay Icons", 2917
+    MENUITEM "&Dark Mode", 2950
+    MENUITEM SEPARATOR
+    MENUITEM "Auto S&witch Mode", 2947
+    MENUITEM "&Vertical Alignment", 305
+  END_POPUP
+    POPUP "Configure Columns"
+  	MENUITEM "Configure current...", 2920
+        MENUITEM SEPARATOR
+  	MENUITEM "&Brief View\tCtrl+F1", 301
+  	MENUITEM "&Full View\tCtrl+F2", 302
+	MENUITEM "T&humbnail View\tShift+Ctrl+F1", 269
+  	MENUITEM "F&ile Comments\tShift+Ctrl+F2", 300
+  	MENUITEM "Cust&om Columns\tShift+F1", 270
+  	MENUITEM "    Previous", 5502
+  	MENUITEM "    Next", 5501
+        MENUITEM SEPARATOR
+	MENUITEM "&Tree View\tCtrl+F8", 303
+	  POPUP "S&eparate Tree View"
+	    MENUITEM "&0 (None)", 3200
+	    MENUITEM "&1 (One for Both Panels)", 3201
+	    MENUITEM "&2 (One for Each Panel)", 3202
+	    MENUITEM "&Next\tShift+Ctrl+F8", 3203
+	    MENUITEM SEPARATOR
+	    MENUITEM "&One Tree View On/Off", 3204
+	    MENUITEM "&Two Tree Views On/Off", 3205
+	  END_POPUP
+    END_POPUP
+    POPUP "&Sort"
+	  MENUITEM "Sort by &Name\tCtrl+F3", 321
+	  MENUITEM "Sort by E&xtension\tCtrl+F4", 322
+	  MENUITEM "Sort by Ti&me\tCtrl+F5", 324
+	  MENUITEM "Sort by &Size\tCtrl+F6", 323
+	  MENUITEM "&Unsorted\tCtrl+F7", 325
+	  MENUITEM "&Reverse Order", 330
+    END_POPUP
+    MENUITEM SEPARATOR
+    MENUITEM "&Quick View\tCtrl+Q", 304
+    MENUITEM "Quick View (Without Plu&gins)", 306
+    MENUITEM SEPARATOR
+    MENUITEM "&All Files\tCtrl+F10", 312
+    MENUITEM "&Programs\tCtrl+F11", 311
+    MENUITEM "&Custom...\tCtrl+F12", 314
+    MENUITEM "*.*", 313
+    MENUITEM "Only Se&lected Files", 2023
+    MENUITEM "Branch Vie&w\tCtrl+B", 2026
+    MENUITEM "Branch View (Only Selected)\tShift+Ctrl+B", 2046
+    MENUITEM "Ignore &Files on List", 2922
+    MENUITEM SEPARATOR
+    MENUITEM "Center &Panel Divider", 909
+    MENUITEM "Panel Divider &100% Towards Destination", 910
+    MENUITEM "Vertical Button Bar On/Off", 2944
+    MENUITEM "Vertical Ali&gnment", 305
+    MENUITEM "Sho&w Occupied Space\tShift+Alt+Enter", 2014
+    MENUITEM "Reread So&urce\tF2 / Ctrl+R", 540
+END_POPUP
+
+POPUP "Navigat&e"
+        MENUITEM "Go to F&irst File", 2050
+        MENUITEM "Go to Newest File *", em_ext_gotonewestfile
+        MENUITEM "Go to Oldest File *", em_ext_gotooldestfile
+        MENUITEM "Go to Sm&allest File *", em_ext_gotosmallestfile
+        MENUITEM "Go to Largest File *", em_ext_gotolargestfile
+	MENUITEM "Select &Drive\tAlt+F1 / Alt+F2", 331
+    POPUP "Folders"
+    	MENUITEM "Go to &Parent Directory [ .. ]\tCtrl+PgUp / Backspace", 2002
+        MENUITEM "Go to Root Director&y [ \ ]\tCtrl+ \", 2001
+    	MENUITEM "&Return to Base Directory for Locked Folder Tab", 3011
+        MENUITEM SEPARATOR
+    	MENUITEM "Hi&story [ v ] ...\tAlt+Down", 572
+        MENUITEM "Directory &Tree...\tAlt+F10", 500
+        MENUITEM SEPARATOR
+        MENUITEM "Sync&hronize Directory Change Source && Target", 2600
+        MENUITEM "Directory &Hotlist [ * ] ...\tCtrl+D", 526
+        MENUITEM SEPARATOR
+        MENUITEM "Edit &Current Path", 2912
+        MENUITEM "&Active Path Field (Breadcrumb Bar)", 332
+        MENUITEM "&Button Bar\tShift+Alt+F11", 4004
+    END_POPUP
+    POPUP "Panels"
+    	MENUITEM "Go to Next Dri&ve (C–>D)", 2051
+    	MENUITEM "Go to Previo&us Drive (C<–D)", 2052
+        MENUITEM SEPARATOR
+        MENUITEM "Source &<-> Target\tCtrl+U", 531
+        MENUITEM "Source <-&> Target (Including Tabs)\tShift+Ctrl+U", 535
+        MENUITEM "Source &= Target", 532
+        MENUITEM SEPARATOR
+        MENUITEM "&Watch Directory Changes", 2921
+	MENUITEM "Don't Redirect system&32 Folder", 2925
+    END_POPUP
+    POPUP "&Left Panel"
+        MENUITEM "&Left/Top File Panel", 4001
+        MENUITEM "Left/Top &Path Field\tAlt+F11", 132
+	MENUITEM "Select &Drive\tAlt+F1", 331
+        MENUITEM "Directory/Link at Cursor -> &Left/Top\tCtrl+Left", 2024
+        MENUITEM "Di&rectory tree", $67
+    END_POPUP
+    POPUP "&Right Panel"
+        MENUITEM "&Right/Bottom File Panel", 4002
+        MENUITEM "Right/Bottom Path &Field\tAlt+F12", 232
+	MENUITEM "Select &Drive\tAlt+F2", 331
+        MENUITEM "Directory/Link at Cursor -> &Right/Bottom\tCtrl+Right", 2025
+        MENUITEM "Di&rectory tree", $CB
+    END_POPUP
+    MENUITEM SEPARATOR
+        MENUITEM "&Go to Previous Directory\tAlt+Left", 570
+        MENUITEM "Go to Ne&xt Directory\tAlt+Right", 571
+        MENUITEM "Go &to Previous Directory, Skip FTP", 573
+        MENUITEM "Go t&o Next Directory, Skip FTP", 574
+END_POPUP
+
+POPUP "&Net"
+    MENUITEM "Show Network &Connections", 2125
+    MENUITEM "Map &Network Drive...", 512
+    MENUITEM "&Disconnect Network Drives...", 513
+    MENUITEM "&Share Current Directory...", 514
+    MENUITEM "&Unshare Directory...", 515
+    MENUITEM SEPARATOR
+    MENUITEM "Show &Admin Shares on Network", 2204
+    MENUITEM "&Which Network User has Opened Local File...", 2203
+    MENUITEM "&Open Program as Different Active Local User...", 2800
+    MENUITEM SEPARATOR
+    POPUP "N&TFS  (Only Windows XP and Earlier)"
+        MENUITEM "&Permissions...", 2200
+        MENUITEM "&File Auditing...", 2201
+        MENUITEM "&Take Ownership...", 2202
+    END_POPUP
+END_POPUP
+
+POPUP "F&TP"
+    MENUITEM "&Connect to Server...\tCtrl+F", 550
+    MENUITEM "&Disconnect from Server\tShift+Ctrl+F", 552
+    MENUITEM "&New Connection...\tCtrl+N", 551
+    MENUITEM "&Abort FTP Command", 554
+    MENUITEM SEPARATOR
+    MENUITEM "&Resume Download...", 555
+    MENUITEM "Add to Download &List...", 557
+    MENUITEM "Download &From List", 558
+    MENUITEM "&Background transfer manager...", 559
+    MENUITEM SEPARATOR
+    MENUITEM "&Show Hidden Files", 553
+    MENUITEM "Select &Transfer Mode\tShift+Ctrl+M", 556
+    MENUITEM SEPARATOR
+    MENUITEM "&PORT Connection to Other PC...", 2300
+    MENUITEM "&USB Cable Connection - Server (Separate)...", em_ext_USBcable
+    MENUITEM "LPT1 Cabl&e Connection - Server (Separate)...", em_ext_LPTcable
+    MENUITEM "&Install PORT Driver (Windows NT)...", 2301
+    MENUITEM "Re&move PORT Driver (Windows NT)...", 2302
+    MENUITEM SEPARATOR
+    MENUITEM "C&onfigure FTP...", 489
+END_POPUP
+POPUP "T&abs"
+    MENUITEM "New &Folder Tab\tCtrl+T", 3001
+    MENUITEM "New Folder Tab in &Background\tShift+Ctrl+T", 3002
+    MENUITEM SEPARATOR
+    MENUITEM "&Lock Active Folder Tab", 3010
+    MENUITEM "Lock Active Folder Tab, but Allow Directory C&hanges", 3012
+    MENUITEM SEPARATOR
+    MENUITEM "&Directory Under Cursor in New Tab\tCtrl+Up", 3003
+    MENUITEM "Dir&ectory Under Cursor in New Tab in Opposite Panel\tShift+Ctrl+Up", 3004
+    MENUITEM SEPARATOR
+    MENUITEM "Switch to &Next Folder Tab\tCtrl+Tab", 3005
+    MENUITEM "Switch to &Previous Folder Tab\tShift+Ctrl+Tab", 3006
+    MENUITEM SEPARATOR
+    MENUITEM "&Close Folder Tab\tCtrl+W", 3007
+    MENUITEM "Close &All Folder Tabs\tShift+Ctrl+W", 3008
+    MENUITEM SEPARATOR
+    MENUITEM "Folder Tab &Menu...", 3009
+    MENUITEM "Show Folder &Tabs", 2916
+    MENUITEM "C&onfigure Folder Tabs...", 488
+END_POPUP
+
+POPUP "&Configuration"
+    MENUITEM "&Settings ...", $1EA
+    MENUITEM "Change &Button Bar...", 498
+    MENUITEM SEPARATOR
+    MENUITEM "Edit configuration files...", $245
+    MENUITEM "&Unload Plug-ins", 2913
+    MENUITEM SEPARATOR
+    MENUITEM "&Save Position", 493
+    MENUITEM "Save History", 582
+    MENUITEM "Sa&ve Settings", 580
+END_POPUP
+
+STARTMENU
+
+HELP_BREAK
+
+POPUP "System Folders"
+    MENUITEM "Desktop", $849
+    MENUITEM SEPARATOR
+    MENUITEM "Computer", $84A
+    MENUITEM "Network &Connections", 2125
+    MENUITEM SEPARATOR
+    MENUITEM "TEMP", em_temp
+    MENUITEM "Doc&uments", em_myDocs
+    MENUITEM SEPARATOR
+    MENUITEM "Control Panel", $84B
+    MENUITEM "Printers and Faxes", $84E
+    MENUITEM "Fonts", $84C
+    MENUITEM SEPARATOR
+    MENUITEM "Recycle Bin", $84F
+END_POPUP
+
+POPUP "&Help"
+    MENUITEM "&Index...\tF1", $262
+    MENUITEM "&Keyboard...", $26C
+    MENUITEM SEPARATOR
+    MENUITEM "&Choose Internal command...", $B6C
+    MENUITEM SEPARATOR
+    MENUITEM "System I&nformation...", $1FA
+    MENUITEM SEPARATOR
+    MENUITEM "&About Total Commander [IT 4.7 / Feb.2025]", $2B2
+END_POPUP

@@ -1,0 +1,17 @@
+[Buttonbar]
+Buttoncount=3
+button1=wcmicons.dll,248
+cmd1=%COMMANDER_PATH%\Utilites\WinaeroTweaker\WinaeroTweaker.exe
+path1=%COMMANDER_PATH%\Utilites\WinaeroTweaker\
+iconic1=0
+menu1=Windows 7/8/10/11 Tweaker
+button2=wcmicons.dll,269
+cmd2=%COMMANDER_PATH%\Utilites\OOSU10.exe
+path2=%COMMANDER_PATH%\Utilites\
+iconic2=0
+menu2=Antispy tool for Windows 10
+button3=wcmicons.dll,255
+cmd3=%COMMANDER_PATH%\Utilites\WPD\WPD.exe
+path3=%COMMANDER_PATH%\Utilites\WPD\
+iconic3=0
+menu3=WPD (privacy settings in Windows)

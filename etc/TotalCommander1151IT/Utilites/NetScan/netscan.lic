@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<network-scanner-license>
+  <license>QOmiPps76rL7pdVh14Fg2hjr7MkbEH0mbHBxHULzrNpKW5x1FEYH7r24aoymN9N+EqcGcG1vCGR266ElSe1JT5hfsKFOqqSyOKe8nc78RGQasV9d7Ws+PDP0lpkWpVBUNvTde6DihAcbW4zYwhCmCpEhDkMoY8CmVE3/ZMQo8Q0N7A5+mX1XXWD2qWVyynqbqAfLUngh3Xm533xLID1DFV8zmToLj/tMct/agfDH1z6bkfY8h7IaaJHFBxbP7v2JR8hrC1M04TXoP0jf4uOPVnfeq4SJeGrk+R0UNBFycUvgfoYRbuwb1pqK+E5ifPiqe/zZ/U3FTM6e40nFTWUEnXoUOn+1ADEhNKR+eMGROxcLWqhS6dOINAOEMLeZ+eYG0VRz/90Tp8VaYTxVyh9gM38WNKh2S9HgnG3TE4UZ58KEpzo4fuDUIJowVf/5ecPsKzhDB8CgGlLL6lNdvide345dx01a9oO8vaD8fBdajRpoLoiXmWcc11K1qaZtZkfS</license>
+  <upgrade>0</upgrade>
+  <language>English</language>
+  <nmap/>
+  <autoupdate>
+    <prompt>false</prompt>
+    <enabled>false</enabled>
+    <lastcheck>0</lastcheck>
+  </autoupdate>
+  <darkmode>false</darkmode>
+</network-scanner-license>

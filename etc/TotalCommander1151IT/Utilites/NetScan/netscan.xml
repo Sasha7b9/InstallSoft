@@ -1,0 +1,3869 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<network-scanner-config>
+  <customadurl/>
+  <mintotray>false</mintotray>
+  <monitorinfo>false</monitorinfo>
+  <geolocation>false</geolocation>
+  <termsessions>false</termsessions>
+  <ignored/>
+  <nicvendor>false</nicvendor>
+  <onlinediscovery>true</onlinediscovery>
+  <sortnocase>false</sortnocase>
+  <maxthcount>128</maxthcount>
+  <maxthlimit>1024</maxthlimit>
+  <maxruntime>0</maxruntime>
+  <showdead>false</showdead>
+  <alwaysscan>false</alwaysscan>
+  <randomscan>false</randomscan>
+  <warnmacdup>false</warnmacdup>
+  <macaddr>true</macaddr>
+  <showtime>false</showtime>
+  <getipv6>false</getipv6>
+  <maptype>0</maptype>
+  <hostname>true</hostname>
+  <hosttype>2</hosttype>
+  <reverse>false</reverse>
+  <hostcheck>7</hostcheck>
+  <pshellssl>false</pshellssl>
+  <pshellnop>false</pshellnop>
+  <securewmi>false</securewmi>
+  <bmarkname>false</bmarkname>
+  <nmapinclude/>
+  <nmapexclude/>
+  <scriptfont>10</scriptfont>
+  <devnum>0</devnum>
+  <ssl>
+    <enabled>false</enabled>
+    <types>1</types>
+  </ssl>
+  <macparam>
+    <item>
+      <method>0</method>
+      <enabled>true</enabled>
+    </item>
+    <item>
+      <method>1</method>
+      <enabled>false</enabled>
+    </item>
+    <item>
+      <method>2</method>
+      <enabled>false</enabled>
+      <snmpcomm>public</snmpcomm>
+      <snmpcstr/>
+      <snmpaddr/>
+    </item>
+    <item>
+      <method>3</method>
+      <enabled>false</enabled>
+    </item>
+  </macparam>
+  <mapnames/>
+  <mapcolumns/>
+  <portgroups>
+    <item>
+      <ident>HTTP and proxy</ident>
+      <value>80, 443, 3128, 8080</value>
+    </item>
+    <item>
+      <ident>FTP and SFTP</ident>
+      <value>21, 115</value>
+    </item>
+    <item>
+      <ident>Database servers</ident>
+      <value>1433, 3050, 3306, 5432</value>
+    </item>
+    <item>
+      <ident>Remote control</ident>
+      <value>22, 23, 3389, 4899, 5900</value>
+    </item>
+  </portgroups>
+  <ranges/>
+  <ping>
+    <timeout>1000</timeout>
+    <attempts>1</attempts>
+    <method>2</method>
+    <broadcast>false</broadcast>
+    <arpoutsub>false</arpoutsub>
+    <pingtype>false</pingtype>
+    <timetolive>false</timetolive>
+    <jitter>
+      <enabled>false</enabled>
+      <samples>10</samples>
+    </jitter>
+  </ping>
+  <ports>
+    <tcp>
+      <enabled>false</enabled>
+      <portlist>80</portlist>
+      <getnames>false</getnames>
+    </tcp>
+    <udp>
+      <dns>false</dns>
+      <ntp>false</ntp>
+      <tftp>false</tftp>
+      <nbns>false</nbns>
+      <mssql>false</mssql>
+      <radius>false</radius>
+    </udp>
+    <banner>
+      <enabled>false</enabled>
+      <portlist>21f, 80, 443s, 3128, 8080, 16992</portlist>
+    </banner>
+  </ports>
+  <shares>
+    <method>0</method>
+    <enabled>true</enabled>
+    <filter>1</filter>
+    <secinfo>false</secinfo>
+    <checkwrite>false</checkwrite>
+    <diskspace>false</diskspace>
+  </shares>
+  <workstation>
+    <installedapps>false</installedapps>
+    <omitduplogons>false</omitduplogons>
+    <disregardnames>false</disregardnames>
+    <namestoignore/>
+    <accounts>false</accounts>
+    <comment>false</comment>
+    <datetime>false</datetime>
+    <diskdrives>false</diskdrives>
+    <langroup>false</langroup>
+    <loggedsids>false</loggedsids>
+    <loggedusers>false</loggedusers>
+    <osversion>false</osversion>
+    <roles>false</roles>
+    <uptime>false</uptime>
+  </workstation>
+  <bookmarks/>
+  <recent/>
+  <autoopen>false</autoopen>
+  <history/>
+  <remote>
+    <files>
+      <item>
+        <checked>false</checked>
+        <name>Outlook Version</name>
+        <filename>C:\Program Files\Outlook Express\msimn.exe</filename>
+        <property>2</property>
+      </item>
+    </files>
+    <registry>
+      <item>
+        <checked>false</checked>
+        <name>DirectX Version</name>
+        <keyname>SOFTWARE\Microsoft\DirectX</keyname>
+        <param>version</param>
+        <action>0</action>
+        <root>HKLM</root>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Internet Explorer Version</name>
+        <keyname>SOFTWARE\Microsoft\Internet Explorer</keyname>
+        <param>version</param>
+        <action>0</action>
+        <root>HKLM</root>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>CPU Make/Model</name>
+        <keyname>HARDWARE\DESCRIPTION\System\CentralProcessor\*</keyname>
+        <param>ProcessorNameString</param>
+        <action>2</action>
+        <root>HKLM</root>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>BIOS Version</name>
+        <keyname>HARDWARE\DESCRIPTION\System</keyname>
+        <param>SystemBiosVersion</param>
+        <action>0</action>
+        <root>HKLM</root>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Registered Owner</name>
+        <keyname>SOFTWARE\Microsoft\Windows NT\CurrentVersion</keyname>
+        <param>RegisteredOwner</param>
+        <action>0</action>
+        <root>HKLM</root>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Registered Organisation</name>
+        <keyname>SOFTWARE\Microsoft\Windows NT\CurrentVersion</keyname>
+        <param>RegisteredOrganization</param>
+        <action>0</action>
+        <root>HKLM</root>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Service Pack</name>
+        <keyname>SOFTWARE\Microsoft\Windows NT\CurrentVersion</keyname>
+        <param>CSDVersion</param>
+        <action>0</action>
+        <root>HKLM</root>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Windows Version</name>
+        <keyname>SOFTWARE\Microsoft\Windows NT\CurrentVersion</keyname>
+        <param>CurrentVersion</param>
+        <action>0</action>
+        <root>HKLM</root>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Windows Type</name>
+        <keyname>SOFTWARE\Microsoft\Windows NT\CurrentVersion</keyname>
+        <param>ProductName</param>
+        <action>0</action>
+        <root>HKLM</root>
+      </item>
+    </registry>
+    <services>
+      <item>
+        <checked>false</checked>
+        <name>Messenger status</name>
+        <service>messenger</service>
+        <property>0</property>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Automatic Updates status</name>
+        <service>wuauserv</service>
+        <property>0</property>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Wireless Zero Config startup type</name>
+        <service>WZCSVC</service>
+        <property>2</property>
+      </item>
+    </services>
+    <wmi>
+      <item>
+        <checked>false</checked>
+        <name>Windows Name</name>
+        <query>SELECT Name FROM Win32_OperatingSystem</query>
+        <namespace>CIMV2</namespace>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>CPU Make/Model</name>
+        <query>SELECT Name FROM Win32_Processor</query>
+        <namespace>CIMV2</namespace>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>RAM Size</name>
+        <query>SELECT TotalPhysicalMemory FROM Win32_ComputerSystem</query>
+        <namespace>CIMV2</namespace>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Computer Model</name>
+        <query>SELECT Model FROM Win32_ComputerSystem</query>
+        <namespace>CIMV2</namespace>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Part Number</name>
+        <query>SELECT PartNumber FROM Win32_SystemEnclosure</query>
+        <namespace>CIMV2</namespace>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Serial Number</name>
+        <query>SELECT SerialNumber FROM Win32_BIOS</query>
+        <namespace>CIMV2</namespace>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Asset Tag</name>
+        <query>SELECT SMBIOSAssetTag FROM Win32_SystemEnclosure</query>
+        <namespace>CIMV2</namespace>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Product Key</name>
+        <query>SELECT OA3xOriginalProductKey FROM SoftwareLicensingService</query>
+        <namespace>CIMV2</namespace>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Uptime (sec)</name>
+        <query>SELECT SystemUpTime FROM Win32_PerfFormattedData_PerfOS_System</query>
+        <namespace>CIMV2</namespace>
+      </item>
+    </wmi>
+    <groups>
+      <item>
+        <checked>false</checked>
+        <name>Administrators</name>
+        <member>Administrators</member>
+        <property>0</property>
+        <strip>false</strip>
+        <ignore>false</ignore>
+        <values/>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Guest membership</name>
+        <member>Guest</member>
+        <property>2</property>
+        <strip>false</strip>
+        <ignore>false</ignore>
+        <values/>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Guest membership</name>
+        <member>Guest</member>
+        <property>3</property>
+        <strip>false</strip>
+        <ignore>false</ignore>
+        <values/>
+      </item>
+    </groups>
+    <performance>
+      <item>
+        <checked>false</checked>
+        <name>Uptime (sec)</name>
+        <query>\System\System Up Time</query>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Windows Explorer process ID</name>
+        <query>\Process(explorer)\ID Process</query>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>List of processes and their ID</name>
+        <query>\Process(*)\ID Process</query>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>CPU Usage, %</name>
+        <query>\Processor(_Total)\% Processor Time</query>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Number of queued print jobs</name>
+        <query>\Print Queue(*)\Jobs</query>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Network interface bandwidth</name>
+        <query>\Network Interface(*)\Current Bandwidth</query>
+      </item>
+    </performance>
+    <scripting>
+      <item>
+        <checked>false</checked>
+        <name>File list</name>
+        <lang>0</lang>
+        <script>'List files in Windows
+
+'Input parameters
+strComputer = Input.Current
+
+'List files with WMI
+Set objWMIService = GetObject("winmgmts:" _
+  &amp; "{impersonationLevel=impersonate}!\\" &amp; strComputer &amp; "\root\cimv2")
+Set colFiles = objWMIService. _
+  ExecQuery("Select * from CIM_DataFile where Path = '\\Windows\\'")
+For Each objFile in colFiles
+  Output.Write objFile.Name 
+Next</script>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>User logon time</name>
+        <lang>0</lang>
+        <script>'Input parameters
+strComputer = Input.Current
+
+'Uncomment this line for specific user 
+'strUser = "domain\user"
+
+'Uncomment this line for specific user
+'strPassword = "password" 
+
+'Constants
+
+wbemImpersonationLevelImpersonate = 3
+wbemAuthenticationLevelPktPrivacy = 6
+
+'Connect to machine
+
+If Not strUser = "" Then
+  'Connect using user and password
+   Set objLocator = CreateObject("WbemScripting.SWbemLocator")
+   Set objWMI = objLocator.ConnectServer _
+    (strComputer, "root\cimv2", strUser, strPassword)
+   objWMI.Security_.ImpersonationLevel = wbemImpersonationLevelImpersonate
+   objWMI.Security_.AuthenticationLevel = wbemAuthenticationLevelPktPrivacy
+Else
+  'Connect using current user
+   Set objWMI = GetObject("winmgmts:{impersonationLevel=impersonate}!\\" &amp; strComputer &amp; "\root\cimv2") 
+End If
+
+'Get interactive session
+
+Set colSessions = objWMI.ExecQuery _
+("Select * from Win32_LogonSession Where LogonType = 2") 
+If colSessions.Count = 0 Then
+  'No interactive session found
+  Output.Write "No interactive user found"
+Else
+  'Interactive session found
+  For Each objSession in colSessions 
+  Set colList = objWMI.ExecQuery("Associators of " _
+  &amp; "{Win32_LogonSession.LogonId=" &amp; objSession.LogonId &amp; "} " _
+  &amp; "Where AssocClass=Win32_LoggedOnUser Role=Dependent" ) 
+
+  'Show user info
+  For Each objItem in colList
+    Output.Write "User: " &amp; objItem.Name
+    Output.Write "FullName: " &amp; objItem.FullName
+    Output.Write "Domain: " &amp; objItem.Domain
+  Next 
+
+  'Show session start time
+  Output.Write "Start Time: " &amp; objSession.StartTime
+  Next
+End If</script>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>IP and MAC config</name>
+        <lang>0</lang>
+        <script>'Display IP configuration
+
+strComputer = Input.Current
+
+Set objWMIService = GetObject("winmgmts:" _
+&amp; "{impersonationLevel=impersonate}!\\" &amp; strComputer &amp; "\root\cimv2")
+
+Set colAdapters = objWMIService.ExecQuery _
+("SELECT * FROM Win32_NetworkAdapterConfiguration WHERE IPEnabled = True")
+
+For Each objAdapter in colAdapters
+  Output.Write "Desc: " &amp; objAdapter.Description
+  Output.Write "HW: " &amp; objAdapter.MACAddress
+  Output.Write "Name: " &amp; objAdapter.DNSHostName
+  
+  If Not IsNull(objAdapter.IPAddress) Then
+    For i = 0 To UBound(objAdapter.IPAddress)
+      Output.Write "IP: " &amp; objAdapter.IPAddress(i)
+    Next
+  End If
+  
+  If Not IsNull(objAdapter.IPSubnet) Then
+    For i = 0 To UBound(objAdapter.IPSubnet)
+      Output.Write "Subnet: " &amp; objAdapter.IPSubnet(i)
+    Next
+  End If
+  
+  If Not IsNull(objAdapter.DefaultIPGateway) Then
+    For i = 0 To UBound(objAdapter.DefaultIPGateway)
+      Output.Write "GW: " &amp; _
+      objAdapter.DefaultIPGateway(i)
+    Next
+  End If
+Next</script>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Full logged name</name>
+        <lang>0</lang>
+        <script>'Input parameters
+strComputer = Input.Current
+
+Set objWMIService = GetObject("winmgmts:\\" &amp; strComputer &amp; "\root\cimv2")
+
+'Get those who run Windows Explorer
+Set colItems = objWMIService.ExecQuery _
+  ("Select * from Win32_Process Where Name = 'explorer.exe'")
+
+If colItems.Count = 0 Then
+  Output.Write "No one is logged on to the computer."
+Else
+  For Each objProcess in colItems
+    objProcess.GetOwner strUser,strDomain
+  Next
+End If
+
+Const ADS_SCOPE_SUBTREE = 2
+
+Set objConnection = CreateObject("ADODB.Connection")
+Set objCommand = CreateObject("ADODB.Command")
+objConnection.Provider = "ADsDSOObject"
+objConnection.Open "Active Directory Provider"
+Set objCommand.ActiveConnection = objConnection
+
+'Search Active Directory
+objCommand.Properties("Page Size") = 1000
+objCommand.Properties("Searchscope") = ADS_SCOPE_SUBTREE 
+
+objCommand.CommandText = "SELECT displayName FROM " &amp; _
+  "'LDAP://DC=domain_name,DC=local' WHERE " &amp; _
+    "objectCategory='user' " &amp; _
+    "AND samAccountName = '" &amp; strUser &amp; "'"
+Set objRecordSet = objCommand.Execute
+
+objRecordSet.MoveFirst
+
+'Print all records
+Do Until objRecordSet.EOF
+  Output.Write objRecordSet.Fields("displayName").Value
+  objRecordSet.MoveNext
+Loop</script>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Localhost address</name>
+        <lang>0</lang>
+        <script>'Get all host NICs information
+Set NICs = GetObject("winmgmts:").InstancesOf("Win32_NetworkAdapterConfiguration")
+
+BestAddr = ""
+BestMatch = 0
+
+'Go through the NICs
+For Each NIC in NICs
+  if NIC.IPEnabled then
+    Match = 0
+
+    'Compare target and host address
+    CurrOctets = Split(Input.Current, ".")
+    HostOctets = Split(NIC.IPAddress(0), ".")
+    For i = LBound(CurrOctets) to UBound(CurrOctets)
+      if CurrOctets(i) = HostOctets(i) then
+        Match = Match + 1
+      End if
+    Next
+    if BestMatch &lt; Match then
+      BestMatch = Match
+      BestAddr = NIC.IPAddress(0)
+    End if
+  End if
+Next
+
+'Print out host address
+Output.Write BestAddr</script>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Check each user shortcut</name>
+        <lang>0</lang>
+        <script>'Get values from "User Accounts" column
+strAccounts = Input.Column("user accounts")
+
+'Get target computer address
+strComputer = "\\" &amp; Input.Current
+
+'Split comma-separated users string
+For each user in split(strAccounts, ",")
+  user = trim(user)
+  Set fso = CreateObject("Scripting.FileSystemObject")
+
+  'Build our path string
+  strPath = strComputer &amp; "\C$\Users\" &amp; user &amp; "\Desktop\Dropbox.lnk"
+
+  'Check file existence
+  If fso.FileExists(strPath) Then
+    Output.Write user &amp; " yes"
+  Else
+    Output.Write user &amp; " no"
+  End If
+Next</script>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Built-in Telnet example</name>
+        <lang>0</lang>
+        <script>'Retrieve system info via Telnet
+'This example code can be adapted to work
+'with any device that supports the protocol
+
+'Create internal Telnet object
+set objTelnet = Internal.CreateObject("Telnet")
+
+'Set host name and port
+objTelnet.Host = Input.Current
+objTelnet.Port = 23
+
+'Make connection
+objTelnet.Connect
+
+'Wait for login prompt
+objTelnet.WaitFor("login:")
+'Then send login name
+objTelnet.Send("YourUserName" &amp; vbCrLf)
+
+'Wait for password prompt
+objTelnet.WaitFor("password:")
+'Then send password
+objTelnet.Send("YourPassword" &amp; vbCrLf)
+
+'Wait for shell prompt
+objTelnet.WaitFor("xsh&gt;")
+'Then send command
+objTelnet.Send("show sys versions" &amp; vbCrLf)
+
+'Wait for shell prompt (when command finishes)
+data = objTelnet.Recv("xsh&gt;")
+
+'Return data and disconnect
+Output.Write data
+objTelnet.Disconnect</script>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Built-in DNS example</name>
+        <lang>0</lang>
+        <script>'Resolve a name or IP address via DNS
+'This example performs a reverse lookup
+
+'Create internal DNS object
+set dnsObj = Internal.CreateObject("dns")
+
+'Optionally set DNS server
+'dnsObj.Server = "x.x.x.x"
+
+'Get PTR record for the current IP address
+name = dnsObj.GetName(Input.Current, "ptr")
+
+'Print out resolved name
+Output.Write name</script>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Monitor Info</name>
+        <lang>0</lang>
+        <script>'Input parameters
+strComputer = Input.Current
+
+'Get monitors with WMI
+Set objWMIService = GetObject("winmgmts:" _
+  &amp; "{impersonationLevel=impersonate}!\\" &amp; strComputer &amp; "\root\WMI")
+Set colMonitors = objWMIService. _
+  ExecQuery("SELECT * FROM WmiMonitorID")
+For Each objMonitor in colMonitors
+  'Convert serial number to ASCII
+  SerialNo = ""
+  For I = 0 To Ubound(objMonitor.SerialNumberID)
+    SerialNo = SerialNo &amp; Chr(objMonitor.SerialNumberID(I))
+  Next
+  'Convert model name to ASCII
+  ProductId = ""
+  For I = 0 To Ubound(objMonitor.UserFriendlyName)
+    ProductId = ProductId &amp; Chr(objMonitor.UserFriendlyName(I))
+  Next
+  Output.Write ProductId &amp; " " &amp; SerialNo
+Next</script>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Packet Loss</name>
+        <lang>0</lang>
+        <script>'This runs ping.exe captures its output and extracts reported packet loss
+'It can be adapted to execute any console programs and parse their output
+
+'Create process object and execute ping
+Set proc = Internal.CreateObject("process")
+proc.execute("ping.exe " &amp; Input.Current)
+
+'Check ping exit code
+If proc.ExitCode = 0 Then
+
+  'Setup a regex object
+  Set objRegex = New RegExp
+  objRegex.IgnoreCase = True
+  objRegex.Multiline = True
+  objRegex.Global = True
+  'Look for a string like (X% loss)
+  objRegex.Pattern = "\((\d+%\s\w+)\)"
+
+  'Traverse output lines
+  For Each line in proc.output
+    Set matches = objRegex.Execute(line)
+    'Print matching data
+    For Each match in matches
+      Output.Write match.SubMatches(0)
+    Next
+  Next
+Else
+  Output.Write "Exit code " &amp; proc.ExitCode
+End If</script>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Remote SNMP</name>
+        <lang>0</lang>
+        <script>'Create SNMP object and set target host
+set objSnmp = Internal.CreateObject("snmp")
+objSnmp.Host = Input.Current
+
+'Use version 2 and get sysDescr
+objSnmp.Query.Version = 2
+objSnmp.Query.SetOID("1.3.6.1.2.1.1.1.0")
+If objSnmp.SendRequest then
+  'Success
+  Output.Write objSnmp.Reply.Items(0).Value
+End If
+
+'Now get interface table.
+'In SNMP v2/3 we can use bulk requests
+
+objSnmp.Query.SetOID("1.3.6.1.2.1.2.2.1.2")
+objSnmp.Query.MaxRepetitions = 10
+objSnmp.Query.PDUType = &amp;hA5
+Do While objSnmp.SendRequest
+  'Success
+  For Each Item in objSnmp.Reply.Items
+
+    'Break the loop if found a different OID
+    If InStr(Item.OID, "1.3.6.1.2.1.2.2.1.2") = 0 Then
+      Exit Do
+    End if
+
+    'Write interface name
+    Output.Write Item.Value
+
+    'Continue from the current OID
+    objSnmp.Query.SetOID(Item.OID)
+  Next
+Loop</script>
+      </item>
+    </scripting>
+    <powershell>
+      <item>
+        <checked>false</checked>
+        <name>SQL server version</name>
+        <script>sqlcmd -Q "select @@version;"</script>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Last log messages</name>
+        <script>Get-EventLog system -newest 5 | Format-Wide -Property Message -Column 1</script>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>File list in C:\</name>
+        <script>ls C:\ | Format-Wide -Property Name -Column 1</script>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Running services</name>
+        <script>Get-Service | Where-Object {$_.status -eq "running"} | Format-Wide -Property Name -Column 1</script>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Product Key</name>
+        <script>(Get-WmiObject -query "select * from SoftwareLicensingService").OA3xOriginalProductKey</script>
+      </item>
+    </powershell>
+    <json>
+      <item>
+        <checked>false</checked>
+        <name>Redfish BIOS version</name>
+        <port>443</port>
+        <path>redfish/v1/Systems/1/</path>
+        <proto>1</proto>
+        <query>$.BiosVersion</query>
+        <parse>0</parse>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Redfish Chassis S/N</name>
+        <port>443</port>
+        <path>redfish/v1/Chassis/1/</path>
+        <proto>1</proto>
+        <query>$.SerialNumber</query>
+        <parse>0</parse>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Redfish MAC addresses</name>
+        <port>443</port>
+        <path>redfish/v1/Systems/1/$.EthernetInterfaces/?$expand=.</path>
+        <proto>1</proto>
+        <query>$.Members[*].MACAddress</query>
+        <parse>0</parse>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>HP iLO Version</name>
+        <port>443</port>
+        <path>redfish/v1/</path>
+        <proto>1</proto>
+        <query>$.Oem.Hpe.Manager[0].ManagerFirmwareVersion</query>
+        <parse>0</parse>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>HP iLO System Health</name>
+        <port>443</port>
+        <path>redfish/v1/</path>
+        <proto>1</proto>
+        <query>$.Oem.Hpe.System[0].Status.Health</query>
+        <parse>0</parse>
+      </item>
+    </json>
+    <xml>
+      <item>
+        <checked>false</checked>
+        <name>Integrated Lights-Out S/N</name>
+        <port>17988</port>
+        <path>xmldata?item=All</path>
+        <proto>0</proto>
+        <query>/RIMP/MP/SN</query>
+        <parse>0</parse>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Integrated Lights-Out Model</name>
+        <port>17988</port>
+        <path>xmldata?item=All</path>
+        <proto>0</proto>
+        <query>/RIMP/HSI/SPN</query>
+        <parse>0</parse>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>HTML Page Title</name>
+        <port>80</port>
+        <path/>
+        <proto>0</proto>
+        <query>&lt;title[^&gt;]*&gt;(.*?)&lt;/title&gt;</query>
+        <parse>1</parse>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>PowerLogic EGX100 S/N</name>
+        <port>80</port>
+        <path>diagnostics.htm</path>
+        <proto>0</proto>
+        <query>Serial Number:[^&gt;]*&lt;/td&gt;\s*&lt;td[^&gt;]*&gt;(\w*)&lt;/td&gt;</query>
+        <parse>1</parse>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Cisco IP Phone CP-79XX S/N</name>
+        <port>80</port>
+        <path/>
+        <proto>0</proto>
+        <query>.*Serial Number&lt;/b&gt;&lt;/td&gt;\s*&lt;td[^&gt;]*&gt;\s*&lt;/td&gt;\s*&lt;td[^&gt;]*&gt;&lt;b&gt;([^&lt;]*)</query>
+        <parse>1</parse>
+      </item>
+    </xml>
+    <ssh>
+      <item>
+        <checked>false</checked>
+        <name>System version</name>
+        <command>uname -or</command>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>CPU Speed</name>
+        <command>lscpu | grep "CPU MHz"</command>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>RAM Size</name>
+        <command>cat /proc/meminfo | grep MemTotal</command>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>List of processes</name>
+        <command>ps -A | awk '{ print $4 }' | uniq | sort</command>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>List of directories</name>
+        <command>ls -1 /</command>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Uptime</name>
+        <command>uptime</command>
+      </item>
+    </ssh>
+    <snmp>
+      <item>
+        <checked>false</checked>
+        <name>Host name</name>
+        <oid>1.3.6.1.2.1.1.5.0</oid>
+        <community>public</community>
+        <showcomm>false</showcomm>
+        <version>0</version>
+        <seclevel>0</seclevel>
+        <authtype>0</authtype>
+        <privtype>0</privtype>
+        <username/>
+        <authpass/>
+        <datapass/>
+        <contname/>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Uptime</name>
+        <oid>1.3.6.1.2.1.1.3.0</oid>
+        <community>public</community>
+        <showcomm>false</showcomm>
+        <version>0</version>
+        <seclevel>0</seclevel>
+        <authtype>0</authtype>
+        <privtype>0</privtype>
+        <username/>
+        <authpass/>
+        <datapass/>
+        <contname/>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>System Description</name>
+        <oid>1.3.6.1.2.1.1.1.0</oid>
+        <community>public</community>
+        <showcomm>false</showcomm>
+        <version>0</version>
+        <seclevel>0</seclevel>
+        <authtype>0</authtype>
+        <privtype>0</privtype>
+        <username/>
+        <authpass/>
+        <datapass/>
+        <contname/>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>System Contact</name>
+        <oid>1.3.6.1.2.1.1.4.0</oid>
+        <community>public</community>
+        <showcomm>false</showcomm>
+        <version>0</version>
+        <seclevel>0</seclevel>
+        <authtype>0</authtype>
+        <privtype>0</privtype>
+        <username/>
+        <authpass/>
+        <datapass/>
+        <contname/>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>System Location</name>
+        <oid>1.3.6.1.2.1.1.6.0</oid>
+        <community>public</community>
+        <showcomm>false</showcomm>
+        <version>0</version>
+        <seclevel>0</seclevel>
+        <authtype>0</authtype>
+        <privtype>0</privtype>
+        <username/>
+        <authpass/>
+        <datapass/>
+        <contname/>
+      </item>
+    </snmp>
+    <nmap>
+      <item>
+        <checked>false</checked>
+        <name>OS detection</name>
+        <scantype>0</scantype>
+        <xpathquery>//osmatch/@name</xpathquery>
+        <osscan-limit>true</osscan-limit>
+        <osscan-guess>false</osscan-guess>
+        <version-mode>0</version-mode>
+        <script-name/>
+        <script-params/>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Device Type</name>
+        <scantype>0</scantype>
+        <xpathquery>//osclass/@type[1]</xpathquery>
+        <osscan-limit>true</osscan-limit>
+        <osscan-guess>false</osscan-guess>
+        <version-mode>0</version-mode>
+        <script-name/>
+        <script-params/>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Services version</name>
+        <scantype>1</scantype>
+        <xpathquery>//port[service/@product]/@portid|//port/service[@product]/@product|//port/service[@product]/@version</xpathquery>
+        <osscan-limit>false</osscan-limit>
+        <osscan-guess>false</osscan-guess>
+        <version-mode>0</version-mode>
+        <script-name/>
+        <script-params/>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>SSL Heartbleed</name>
+        <scantype>2</scantype>
+        <xpathquery>//script[@id="ssl-heartbleed"]/@output</xpathquery>
+        <osscan-limit>false</osscan-limit>
+        <osscan-guess>false</osscan-guess>
+        <version-mode>0</version-mode>
+        <script-name>ssl-heartbleed</script-name>
+        <script-params/>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>SSL POODLE</name>
+        <scantype>2</scantype>
+        <xpathquery>//script[@id="ssl-poodle"]/@output</xpathquery>
+        <osscan-limit>false</osscan-limit>
+        <osscan-guess>false</osscan-guess>
+        <version-mode>0</version-mode>
+        <script-name>ssl-poodle</script-name>
+        <script-params/>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>SSL DROWN</name>
+        <scantype>2</scantype>
+        <xpathquery>//script[@id="sslv2-drown"]/@output</xpathquery>
+        <osscan-limit>false</osscan-limit>
+        <osscan-guess>false</osscan-guess>
+        <version-mode>0</version-mode>
+        <script-name>sslv2-drown</script-name>
+        <script-params/>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>SMB EternalBlue</name>
+        <scantype>2</scantype>
+        <xpathquery>//script[@id="smb-vuln-ms17-010"]/@output</xpathquery>
+        <osscan-limit>false</osscan-limit>
+        <osscan-guess>false</osscan-guess>
+        <version-mode>0</version-mode>
+        <script-name>smb-vuln-ms17-010</script-name>
+        <script-params/>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>HTTP Server Time</name>
+        <scantype>2</scantype>
+        <xpathquery>//script[@id="http-date"]/@output</xpathquery>
+        <osscan-limit>false</osscan-limit>
+        <osscan-guess>false</osscan-guess>
+        <version-mode>0</version-mode>
+        <script-name>http-date</script-name>
+        <script-params/>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>SSH Authentication Methods</name>
+        <scantype>2</scantype>
+        <xpathquery>//script[@id="ssh-auth-methods"]/@output</xpathquery>
+        <osscan-limit>false</osscan-limit>
+        <osscan-guess>false</osscan-guess>
+        <version-mode>0</version-mode>
+        <script-name>ssh-auth-methods</script-name>
+        <script-params/>
+      </item>
+      <item>
+        <checked>false</checked>
+        <name>Anonymous FTP Login</name>
+        <scantype>2</scantype>
+        <xpathquery>//script[@id="ftp-anon"]/@output</xpathquery>
+        <osscan-limit>false</osscan-limit>
+        <osscan-guess>false</osscan-guess>
+        <version-mode>0</version-mode>
+        <script-name>ftp-anon</script-name>
+        <script-params/>
+      </item>
+    </nmap>
+  </remote>
+  <virtualcolumns>
+    <item>
+      <checked>false</checked>
+      <name>Numeric Response Time</name>
+      <expression>[Response Time]</expression>
+      <matchpattern>^(\d*)</matchpattern>
+      <matchreplace/>
+    </item>
+    <item>
+      <checked>false</checked>
+      <name>Simple Concatenation</name>
+      <expression>[MAC address] [IP address]</expression>
+      <matchpattern/>
+      <matchreplace/>
+    </item>
+  </virtualcolumns>
+  <assoc/>
+  <liveinfo>
+    <enabled>false</enabled>
+    <discover>2</discover>
+    <maxthcount>4</maxthcount>
+    <clearoff>true</clearoff>
+    <usedelay>false</usedelay>
+    <delaymin>5</delaymin>
+    <writefile>false</writefile>
+    <filename/>
+    <retained>
+      <item>Friendly name</item>
+      <item>Last Scan</item>
+      <item>Last Seen</item>
+      <item>NIC Vendor</item>
+    </retained>
+    <multinotify>
+      <join>
+        <enabled>false</enabled>
+        <sound>
+          <enabled>false</enabled>
+          <filename/>
+        </sound>
+        <execute>
+          <enabled>false</enabled>
+          <filename/>
+        </execute>
+        <logtofile>
+          <enabled>false</enabled>
+          <filename/>
+        </logtofile>
+        <sendemail>
+          <enabled>false</enabled>
+          <recipient/>
+        </sendemail>
+      </join>
+      <leave>
+        <enabled>false</enabled>
+        <sound>
+          <enabled>false</enabled>
+          <filename/>
+        </sound>
+        <execute>
+          <enabled>false</enabled>
+          <filename/>
+        </execute>
+        <logtofile>
+          <enabled>false</enabled>
+          <filename/>
+        </logtofile>
+        <sendemail>
+          <enabled>false</enabled>
+          <recipient/>
+        </sendemail>
+      </leave>
+      <newmac>
+        <enabled>false</enabled>
+        <sound>
+          <enabled>false</enabled>
+          <filename/>
+        </sound>
+        <execute>
+          <enabled>false</enabled>
+          <filename/>
+        </execute>
+        <logtofile>
+          <enabled>false</enabled>
+          <filename/>
+        </logtofile>
+        <sendemail>
+          <enabled>false</enabled>
+          <recipient/>
+        </sendemail>
+      </newmac>
+      <change>
+        <enabled>false</enabled>
+        <sound>
+          <enabled>false</enabled>
+          <filename/>
+        </sound>
+        <execute>
+          <enabled>false</enabled>
+          <filename/>
+        </execute>
+        <logtofile>
+          <enabled>false</enabled>
+          <filename/>
+        </logtofile>
+        <sendemail>
+          <enabled>false</enabled>
+          <recipient/>
+        </sendemail>
+      </change>
+    </multinotify>
+    <email>
+      <autosmtp>false</autosmtp>
+      <smtpserver/>
+      <smtpport>25</smtpport>
+      <smtpuser/>
+      <smtppass/>
+      <smtptype>0</smtptype>
+      <sender/>
+    </email>
+    <window>
+      <width>460</width>
+      <height>500</height>
+      <left>687</left>
+      <top>202</top>
+    </window>
+  </liveinfo>
+  <auth>
+    <credentials/>
+    <wksta>
+      <enabled>false</enabled>
+      <id>{00000000-0000-0000-0000-000000000000}</id>
+    </wksta>
+    <wmi>
+      <enabled>false</enabled>
+      <id>{00000000-0000-0000-0000-000000000000}</id>
+    </wmi>
+    <share>
+      <enabled>false</enabled>
+      <id>{00000000-0000-0000-0000-000000000000}</id>
+    </share>
+    <shutdown>
+      <enabled>false</enabled>
+      <id>{00000000-0000-0000-0000-000000000000}</id>
+    </shutdown>
+    <xml>
+      <enabled>false</enabled>
+      <id>{00000000-0000-0000-0000-000000000000}</id>
+    </xml>
+    <powershell>
+      <enabled>false</enabled>
+      <id>{00000000-0000-0000-0000-000000000000}</id>
+    </powershell>
+    <ssh>
+      <enabled>true</enabled>
+      <id>{00000000-0000-0000-0000-000000000000}</id>
+    </ssh>
+    <json>
+      <enabled>false</enabled>
+      <id>{00000000-0000-0000-0000-000000000000}</id>
+    </json>
+  </auth>
+  <filter>
+    <folder>
+      <enabled>false</enabled>
+      <common>false</common>
+      <printer>false</printer>
+      <writable>false</writable>
+      <restricted>false</restricted>
+      <administrative>false</administrative>
+    </folder>
+    <custom>
+      <visible>false</visible>
+      <recent/>
+    </custom>
+  </filter>
+  <wol>
+    <defaddr>255.255.255.255</defaddr>
+    <defport>30000</defport>
+    <delay>0</delay>
+    <targets/>
+  </wol>
+  <apps>
+    <item>
+      <name>Computer Management</name>
+      <command>mmc.exe compmgmt.msc /computer:%0</command>
+      <hotkey>16461</hotkey>
+      <enabled>true</enabled>
+    </item>
+    <item>
+      <name>Remote Desktop</name>
+      <command>mstsc.exe /v:%0</command>
+      <hotkey>16466</hotkey>
+      <enabled>true</enabled>
+    </item>
+  </apps>
+  <appvars/>
+  <view>
+    <maximized>false</maximized>
+    <left>517</left>
+    <top>152</top>
+    <width>800</width>
+    <height>600</height>
+    <sortcolumn>-1</sortcolumn>
+    <sortdirection>0</sortdirection>
+    <autoexpand>false</autoexpand>
+    <horlines>false</horlines>
+    <verlines>false</verlines>
+    <multiline>false</multiline>
+    <oddcolor>-2147483643</oddcolor>
+    <evencolor>-2147483643</evencolor>
+    <highlightcolor>255</highlightcolor>
+    <localtime>true</localtime>
+    <macseparator>0</macseparator>
+    <foldrepeated>0</foldrepeated>
+    <csvencoding>0</csvencoding>
+    <custcsvdelim>false</custcsvdelim>
+    <csvdelimchar>,</csvdelimchar>
+    <font>
+      <name>default</name>
+      <charset>0</charset>
+      <color>536870912</color>
+      <size>9</size>
+      <style>0</style>
+    </font>
+    <hdrfont>
+      <name>default</name>
+      <charset>1</charset>
+      <color>536870912</color>
+      <size>9</size>
+      <style>0</style>
+    </hdrfont>
+    <shortcuts>
+      <scan>16397</scan>
+      <save>16467</save>
+      <options>16463</options>
+      <find>16454</find>
+      <load>16460</load>
+      <pasteip>16464</pasteip>
+      <remotewmi>16471</remotewmi>
+      <searchforward>114</searchforward>
+      <assignfriendlyname>113</assignfriendlyname>
+      <filter>16457</filter>
+      <freezecolumns>24649</freezecolumns>
+      <unfreezecolumns>24644</unfreezecolumns>
+      <navigator>112</navigator>
+      <newwindow>16462</newwindow>
+    </shortcuts>
+  </view>
+  <columns>
+    <item>
+      <index>4</index>
+    </item>
+    <item>
+      <index>5</index>
+    </item>
+    <item>
+      <index>6</index>
+    </item>
+    <item>
+      <index>7</index>
+    </item>
+    <item>
+      <index>8</index>
+    </item>
+    <item>
+      <index>9</index>
+    </item>
+    <item>
+      <index>10</index>
+    </item>
+    <item>
+      <index>11</index>
+    </item>
+    <item>
+      <index>12</index>
+    </item>
+    <item>
+      <index>13</index>
+    </item>
+    <item>
+      <index>14</index>
+    </item>
+    <item>
+      <index>15</index>
+    </item>
+    <item>
+      <index>16</index>
+    </item>
+    <item>
+      <index>17</index>
+    </item>
+    <item>
+      <index>18</index>
+    </item>
+    <item>
+      <index>19</index>
+    </item>
+    <item>
+      <index>20</index>
+    </item>
+    <item>
+      <index>21</index>
+    </item>
+    <item>
+      <index>22</index>
+    </item>
+    <item>
+      <index>23</index>
+    </item>
+    <item>
+      <index>24</index>
+    </item>
+    <item>
+      <index>25</index>
+    </item>
+    <item>
+      <index>26</index>
+    </item>
+    <item>
+      <index>27</index>
+    </item>
+    <item>
+      <index>28</index>
+    </item>
+    <item>
+      <index>29</index>
+    </item>
+    <item>
+      <index>30</index>
+    </item>
+    <item>
+      <index>31</index>
+    </item>
+    <item>
+      <index>32</index>
+    </item>
+    <item>
+      <index>33</index>
+    </item>
+    <item>
+      <index>34</index>
+    </item>
+    <item>
+      <index>35</index>
+    </item>
+    <item>
+      <index>36</index>
+    </item>
+    <item>
+      <index>37</index>
+    </item>
+    <item>
+      <index>38</index>
+    </item>
+    <item>
+      <index>39</index>
+    </item>
+    <item>
+      <index>40</index>
+    </item>
+    <item>
+      <index>41</index>
+    </item>
+    <item>
+      <index>42</index>
+    </item>
+    <item>
+      <index>43</index>
+    </item>
+    <item>
+      <index>44</index>
+    </item>
+    <item>
+      <index>45</index>
+    </item>
+    <item>
+      <index>46</index>
+    </item>
+    <item>
+      <index>47</index>
+    </item>
+    <item>
+      <index>48</index>
+    </item>
+    <item>
+      <index>49</index>
+    </item>
+    <item>
+      <index>50</index>
+    </item>
+    <item>
+      <index>51</index>
+    </item>
+    <item>
+      <index>52</index>
+    </item>
+    <item>
+      <index>53</index>
+    </item>
+    <item>
+      <index>54</index>
+    </item>
+    <item>
+      <index>55</index>
+    </item>
+    <item>
+      <index>56</index>
+    </item>
+    <item>
+      <index>57</index>
+    </item>
+    <item>
+      <index>58</index>
+    </item>
+    <item>
+      <index>59</index>
+    </item>
+    <item>
+      <index>60</index>
+    </item>
+    <item>
+      <index>61</index>
+    </item>
+    <item>
+      <index>62</index>
+    </item>
+    <item>
+      <index>63</index>
+    </item>
+    <item>
+      <index>64</index>
+    </item>
+    <item>
+      <index>65</index>
+    </item>
+    <item>
+      <index>66</index>
+    </item>
+    <item>
+      <index>67</index>
+    </item>
+    <item>
+      <index>68</index>
+    </item>
+    <item>
+      <index>69</index>
+    </item>
+    <item>
+      <index>70</index>
+    </item>
+    <item>
+      <index>71</index>
+    </item>
+    <item>
+      <index>72</index>
+    </item>
+    <item>
+      <index>73</index>
+    </item>
+    <item>
+      <index>74</index>
+    </item>
+    <item>
+      <index>75</index>
+    </item>
+    <item>
+      <index>76</index>
+    </item>
+    <item>
+      <index>77</index>
+    </item>
+    <item>
+      <index>78</index>
+    </item>
+    <item>
+      <index>79</index>
+    </item>
+    <item>
+      <index>80</index>
+    </item>
+    <item>
+      <index>81</index>
+    </item>
+    <item>
+      <index>82</index>
+    </item>
+    <item>
+      <index>83</index>
+    </item>
+    <item>
+      <index>84</index>
+    </item>
+    <item>
+      <index>85</index>
+    </item>
+    <item>
+      <index>86</index>
+    </item>
+    <item>
+      <index>87</index>
+    </item>
+    <item>
+      <index>88</index>
+    </item>
+    <item>
+      <index>89</index>
+    </item>
+    <item>
+      <index>90</index>
+    </item>
+    <item>
+      <index>91</index>
+    </item>
+    <item>
+      <index>92</index>
+    </item>
+    <item>
+      <index>93</index>
+    </item>
+    <item>
+      <index>94</index>
+    </item>
+    <item>
+      <index>95</index>
+    </item>
+    <item>
+      <index>96</index>
+    </item>
+    <item>
+      <index>97</index>
+    </item>
+    <item>
+      <index>98</index>
+    </item>
+    <item>
+      <index>99</index>
+    </item>
+    <item>
+      <index>100</index>
+    </item>
+    <item>
+      <index>101</index>
+    </item>
+    <item>
+      <index>102</index>
+    </item>
+    <item>
+      <index>103</index>
+    </item>
+    <item>
+      <index>104</index>
+    </item>
+    <item>
+      <index>105</index>
+    </item>
+    <item>
+      <index>106</index>
+    </item>
+    <item>
+      <index>107</index>
+    </item>
+    <item>
+      <index>108</index>
+    </item>
+    <item>
+      <index>109</index>
+    </item>
+    <item>
+      <index>110</index>
+    </item>
+    <item>
+      <index>111</index>
+    </item>
+    <item>
+      <index>112</index>
+    </item>
+    <item>
+      <index>113</index>
+    </item>
+    <item>
+      <index>114</index>
+    </item>
+    <item>
+      <index>115</index>
+    </item>
+    <item>
+      <index>116</index>
+    </item>
+    <item>
+      <index>117</index>
+    </item>
+    <item>
+      <index>118</index>
+    </item>
+    <item>
+      <index>119</index>
+    </item>
+    <item>
+      <index>120</index>
+    </item>
+    <item>
+      <index>121</index>
+    </item>
+    <item>
+      <index>122</index>
+    </item>
+    <item>
+      <index>123</index>
+    </item>
+    <item>
+      <index>124</index>
+    </item>
+    <item>
+      <index>125</index>
+    </item>
+    <item>
+      <index>126</index>
+    </item>
+    <item>
+      <index>127</index>
+    </item>
+    <item>
+      <index>128</index>
+    </item>
+    <item>
+      <index>129</index>
+    </item>
+    <item>
+      <index>130</index>
+    </item>
+    <item>
+      <index>131</index>
+    </item>
+    <item>
+      <index>132</index>
+    </item>
+    <item>
+      <index>133</index>
+    </item>
+    <item>
+      <index>134</index>
+    </item>
+    <item>
+      <index>135</index>
+    </item>
+    <item>
+      <index>136</index>
+    </item>
+    <item>
+      <index>137</index>
+    </item>
+    <item>
+      <index>138</index>
+    </item>
+    <item>
+      <index>139</index>
+    </item>
+    <item>
+      <index>140</index>
+    </item>
+    <item>
+      <index>141</index>
+    </item>
+    <item>
+      <index>142</index>
+    </item>
+    <item>
+      <index>143</index>
+    </item>
+    <item>
+      <index>144</index>
+    </item>
+    <item>
+      <index>145</index>
+    </item>
+    <item>
+      <index>146</index>
+    </item>
+    <item>
+      <index>147</index>
+    </item>
+    <item>
+      <index>148</index>
+    </item>
+    <item>
+      <index>149</index>
+    </item>
+    <item>
+      <index>150</index>
+    </item>
+    <item>
+      <index>151</index>
+    </item>
+    <item>
+      <index>152</index>
+    </item>
+    <item>
+      <index>153</index>
+    </item>
+    <item>
+      <index>154</index>
+    </item>
+    <item>
+      <index>155</index>
+    </item>
+    <item>
+      <index>156</index>
+    </item>
+    <item>
+      <index>157</index>
+    </item>
+    <item>
+      <index>158</index>
+    </item>
+    <item>
+      <index>159</index>
+    </item>
+    <item>
+      <index>160</index>
+    </item>
+    <item>
+      <index>161</index>
+    </item>
+    <item>
+      <index>162</index>
+    </item>
+    <item>
+      <index>163</index>
+    </item>
+    <item>
+      <index>164</index>
+    </item>
+    <item>
+      <index>165</index>
+    </item>
+    <item>
+      <index>166</index>
+    </item>
+    <item>
+      <index>167</index>
+    </item>
+    <item>
+      <index>168</index>
+    </item>
+    <item>
+      <index>169</index>
+    </item>
+    <item>
+      <index>170</index>
+    </item>
+    <item>
+      <index>171</index>
+    </item>
+    <item>
+      <index>172</index>
+    </item>
+    <item>
+      <index>173</index>
+    </item>
+    <item>
+      <index>174</index>
+    </item>
+    <item>
+      <index>175</index>
+    </item>
+    <item>
+      <index>176</index>
+    </item>
+    <item>
+      <index>177</index>
+    </item>
+    <item>
+      <index>178</index>
+    </item>
+    <item>
+      <index>179</index>
+    </item>
+    <item>
+      <index>180</index>
+    </item>
+    <item>
+      <index>181</index>
+    </item>
+    <item>
+      <index>182</index>
+    </item>
+    <item>
+      <index>183</index>
+    </item>
+    <item>
+      <index>184</index>
+    </item>
+    <item>
+      <index>185</index>
+    </item>
+    <item>
+      <index>186</index>
+    </item>
+    <item>
+      <index>187</index>
+    </item>
+    <item>
+      <index>188</index>
+    </item>
+    <item>
+      <index>189</index>
+    </item>
+    <item>
+      <index>190</index>
+    </item>
+    <item>
+      <index>191</index>
+    </item>
+    <item>
+      <index>192</index>
+    </item>
+    <item>
+      <index>193</index>
+    </item>
+    <item>
+      <index>194</index>
+    </item>
+    <item>
+      <index>195</index>
+    </item>
+    <item>
+      <index>196</index>
+    </item>
+    <item>
+      <index>197</index>
+    </item>
+    <item>
+      <index>198</index>
+    </item>
+    <item>
+      <index>199</index>
+    </item>
+    <item>
+      <index>200</index>
+    </item>
+    <item>
+      <index>201</index>
+    </item>
+    <item>
+      <index>202</index>
+    </item>
+    <item>
+      <index>203</index>
+    </item>
+    <item>
+      <index>204</index>
+    </item>
+    <item>
+      <index>205</index>
+    </item>
+    <item>
+      <index>206</index>
+    </item>
+    <item>
+      <index>207</index>
+    </item>
+    <item>
+      <index>208</index>
+    </item>
+    <item>
+      <index>209</index>
+    </item>
+    <item>
+      <index>210</index>
+    </item>
+    <item>
+      <index>211</index>
+    </item>
+    <item>
+      <index>212</index>
+    </item>
+    <item>
+      <index>213</index>
+    </item>
+    <item>
+      <index>214</index>
+    </item>
+    <item>
+      <index>215</index>
+    </item>
+    <item>
+      <index>216</index>
+    </item>
+    <item>
+      <index>217</index>
+    </item>
+    <item>
+      <index>218</index>
+    </item>
+    <item>
+      <index>219</index>
+    </item>
+    <item>
+      <index>220</index>
+    </item>
+    <item>
+      <index>221</index>
+    </item>
+    <item>
+      <index>222</index>
+    </item>
+    <item>
+      <index>223</index>
+    </item>
+    <item>
+      <index>224</index>
+    </item>
+    <item>
+      <index>225</index>
+    </item>
+    <item>
+      <index>226</index>
+    </item>
+    <item>
+      <index>227</index>
+    </item>
+    <item>
+      <index>228</index>
+    </item>
+    <item>
+      <index>229</index>
+    </item>
+    <item>
+      <index>230</index>
+    </item>
+    <item>
+      <index>231</index>
+    </item>
+    <item>
+      <index>232</index>
+    </item>
+    <item>
+      <index>233</index>
+    </item>
+    <item>
+      <index>234</index>
+    </item>
+    <item>
+      <index>235</index>
+    </item>
+    <item>
+      <index>236</index>
+    </item>
+    <item>
+      <index>237</index>
+    </item>
+    <item>
+      <index>238</index>
+    </item>
+    <item>
+      <index>239</index>
+    </item>
+    <item>
+      <index>240</index>
+    </item>
+    <item>
+      <index>241</index>
+    </item>
+    <item>
+      <index>242</index>
+    </item>
+    <item>
+      <index>243</index>
+    </item>
+    <item>
+      <index>244</index>
+    </item>
+    <item>
+      <index>245</index>
+    </item>
+    <item>
+      <index>246</index>
+    </item>
+    <item>
+      <index>247</index>
+    </item>
+    <item>
+      <index>248</index>
+    </item>
+    <item>
+      <index>249</index>
+    </item>
+    <item>
+      <index>250</index>
+    </item>
+    <item>
+      <index>251</index>
+    </item>
+    <item>
+      <index>252</index>
+    </item>
+    <item>
+      <index>253</index>
+    </item>
+    <item>
+      <index>254</index>
+    </item>
+    <item>
+      <index>255</index>
+    </item>
+    <item>
+      <index>256</index>
+    </item>
+    <item>
+      <index>257</index>
+    </item>
+    <item>
+      <index>258</index>
+    </item>
+    <item>
+      <index>259</index>
+    </item>
+    <item>
+      <index>260</index>
+    </item>
+    <item>
+      <index>261</index>
+    </item>
+    <item>
+      <index>262</index>
+    </item>
+    <item>
+      <index>263</index>
+    </item>
+    <item>
+      <index>264</index>
+    </item>
+    <item>
+      <index>265</index>
+    </item>
+    <item>
+      <index>266</index>
+    </item>
+    <item>
+      <index>267</index>
+    </item>
+    <item>
+      <index>268</index>
+    </item>
+    <item>
+      <index>269</index>
+    </item>
+    <item>
+      <index>270</index>
+    </item>
+    <item>
+      <index>271</index>
+    </item>
+    <item>
+      <index>272</index>
+    </item>
+    <item>
+      <index>273</index>
+    </item>
+    <item>
+      <index>274</index>
+    </item>
+    <item>
+      <index>275</index>
+    </item>
+    <item>
+      <index>276</index>
+    </item>
+    <item>
+      <index>277</index>
+    </item>
+    <item>
+      <index>278</index>
+    </item>
+    <item>
+      <index>279</index>
+    </item>
+    <item>
+      <index>280</index>
+    </item>
+    <item>
+      <index>281</index>
+    </item>
+    <item>
+      <index>282</index>
+    </item>
+    <item>
+      <index>283</index>
+    </item>
+    <item>
+      <index>284</index>
+    </item>
+    <item>
+      <index>285</index>
+    </item>
+    <item>
+      <index>286</index>
+    </item>
+    <item>
+      <index>287</index>
+    </item>
+    <item>
+      <index>288</index>
+    </item>
+    <item>
+      <index>289</index>
+    </item>
+    <item>
+      <index>290</index>
+    </item>
+    <item>
+      <index>291</index>
+    </item>
+    <item>
+      <index>292</index>
+    </item>
+    <item>
+      <index>293</index>
+    </item>
+    <item>
+      <index>294</index>
+    </item>
+    <item>
+      <index>295</index>
+    </item>
+    <item>
+      <index>296</index>
+    </item>
+    <item>
+      <index>297</index>
+    </item>
+    <item>
+      <index>298</index>
+    </item>
+    <item>
+      <index>299</index>
+    </item>
+    <item>
+      <index>300</index>
+    </item>
+    <item>
+      <index>301</index>
+    </item>
+    <item>
+      <index>302</index>
+    </item>
+    <item>
+      <index>303</index>
+    </item>
+    <item>
+      <index>304</index>
+    </item>
+    <item>
+      <index>305</index>
+    </item>
+    <item>
+      <index>306</index>
+    </item>
+    <item>
+      <index>307</index>
+    </item>
+    <item>
+      <index>308</index>
+    </item>
+    <item>
+      <index>309</index>
+    </item>
+    <item>
+      <index>310</index>
+    </item>
+    <item>
+      <index>311</index>
+    </item>
+    <item>
+      <index>312</index>
+    </item>
+    <item>
+      <index>313</index>
+    </item>
+    <item>
+      <index>314</index>
+    </item>
+    <item>
+      <index>315</index>
+    </item>
+    <item>
+      <index>316</index>
+    </item>
+    <item>
+      <index>317</index>
+    </item>
+    <item>
+      <index>318</index>
+    </item>
+    <item>
+      <index>319</index>
+    </item>
+    <item>
+      <index>320</index>
+    </item>
+    <item>
+      <index>321</index>
+    </item>
+    <item>
+      <index>322</index>
+    </item>
+    <item>
+      <index>323</index>
+    </item>
+    <item>
+      <index>324</index>
+    </item>
+    <item>
+      <index>325</index>
+    </item>
+    <item>
+      <index>326</index>
+    </item>
+    <item>
+      <index>327</index>
+    </item>
+    <item>
+      <index>328</index>
+    </item>
+    <item>
+      <index>329</index>
+    </item>
+    <item>
+      <index>330</index>
+    </item>
+    <item>
+      <index>331</index>
+    </item>
+    <item>
+      <index>332</index>
+    </item>
+    <item>
+      <index>333</index>
+    </item>
+    <item>
+      <index>334</index>
+    </item>
+    <item>
+      <index>335</index>
+    </item>
+    <item>
+      <index>336</index>
+    </item>
+    <item>
+      <index>337</index>
+    </item>
+    <item>
+      <index>338</index>
+    </item>
+    <item>
+      <index>339</index>
+    </item>
+    <item>
+      <index>340</index>
+    </item>
+    <item>
+      <index>341</index>
+    </item>
+    <item>
+      <index>342</index>
+    </item>
+    <item>
+      <index>343</index>
+    </item>
+    <item>
+      <index>344</index>
+    </item>
+    <item>
+      <index>345</index>
+    </item>
+    <item>
+      <index>346</index>
+    </item>
+    <item>
+      <index>347</index>
+    </item>
+    <item>
+      <index>348</index>
+    </item>
+    <item>
+      <index>349</index>
+    </item>
+    <item>
+      <index>350</index>
+    </item>
+    <item>
+      <index>351</index>
+    </item>
+    <item>
+      <index>352</index>
+    </item>
+    <item>
+      <index>353</index>
+    </item>
+    <item>
+      <index>354</index>
+    </item>
+    <item>
+      <index>355</index>
+    </item>
+    <item>
+      <index>356</index>
+    </item>
+    <item>
+      <index>357</index>
+    </item>
+    <item>
+      <index>358</index>
+    </item>
+    <item>
+      <index>359</index>
+    </item>
+    <item>
+      <index>360</index>
+    </item>
+    <item>
+      <index>361</index>
+    </item>
+    <item>
+      <index>362</index>
+    </item>
+    <item>
+      <index>363</index>
+    </item>
+    <item>
+      <index>364</index>
+    </item>
+    <item>
+      <index>365</index>
+    </item>
+    <item>
+      <index>366</index>
+    </item>
+    <item>
+      <index>367</index>
+    </item>
+    <item>
+      <index>368</index>
+    </item>
+    <item>
+      <index>369</index>
+    </item>
+    <item>
+      <index>370</index>
+    </item>
+    <item>
+      <index>371</index>
+    </item>
+    <item>
+      <index>372</index>
+    </item>
+    <item>
+      <index>373</index>
+    </item>
+    <item>
+      <index>374</index>
+    </item>
+    <item>
+      <index>375</index>
+    </item>
+    <item>
+      <index>376</index>
+    </item>
+    <item>
+      <index>377</index>
+    </item>
+    <item>
+      <index>378</index>
+    </item>
+    <item>
+      <index>379</index>
+    </item>
+    <item>
+      <index>380</index>
+    </item>
+    <item>
+      <index>381</index>
+    </item>
+    <item>
+      <index>382</index>
+    </item>
+    <item>
+      <index>383</index>
+    </item>
+    <item>
+      <index>384</index>
+    </item>
+    <item>
+      <index>385</index>
+    </item>
+    <item>
+      <index>386</index>
+    </item>
+    <item>
+      <index>387</index>
+    </item>
+    <item>
+      <index>388</index>
+    </item>
+    <item>
+      <index>389</index>
+    </item>
+    <item>
+      <index>390</index>
+    </item>
+    <item>
+      <index>391</index>
+    </item>
+    <item>
+      <index>392</index>
+    </item>
+    <item>
+      <index>393</index>
+    </item>
+    <item>
+      <index>394</index>
+    </item>
+    <item>
+      <index>395</index>
+    </item>
+    <item>
+      <index>396</index>
+    </item>
+    <item>
+      <index>397</index>
+    </item>
+    <item>
+      <index>398</index>
+    </item>
+    <item>
+      <index>399</index>
+    </item>
+    <item>
+      <index>400</index>
+    </item>
+    <item>
+      <index>401</index>
+    </item>
+    <item>
+      <index>402</index>
+    </item>
+    <item>
+      <index>403</index>
+    </item>
+    <item>
+      <index>404</index>
+    </item>
+    <item>
+      <index>405</index>
+    </item>
+    <item>
+      <index>406</index>
+    </item>
+    <item>
+      <index>407</index>
+    </item>
+    <item>
+      <index>408</index>
+    </item>
+    <item>
+      <index>409</index>
+    </item>
+    <item>
+      <index>410</index>
+    </item>
+    <item>
+      <index>411</index>
+    </item>
+    <item>
+      <index>412</index>
+    </item>
+    <item>
+      <index>413</index>
+    </item>
+    <item>
+      <index>414</index>
+    </item>
+    <item>
+      <index>415</index>
+    </item>
+    <item>
+      <index>416</index>
+    </item>
+    <item>
+      <index>417</index>
+    </item>
+    <item>
+      <index>418</index>
+    </item>
+    <item>
+      <index>419</index>
+    </item>
+    <item>
+      <index>420</index>
+    </item>
+    <item>
+      <index>421</index>
+    </item>
+    <item>
+      <index>422</index>
+    </item>
+    <item>
+      <index>423</index>
+    </item>
+    <item>
+      <index>424</index>
+    </item>
+    <item>
+      <index>425</index>
+    </item>
+    <item>
+      <index>426</index>
+    </item>
+    <item>
+      <index>427</index>
+    </item>
+    <item>
+      <index>428</index>
+    </item>
+    <item>
+      <index>429</index>
+    </item>
+    <item>
+      <index>430</index>
+    </item>
+    <item>
+      <index>431</index>
+    </item>
+    <item>
+      <index>432</index>
+    </item>
+    <item>
+      <index>433</index>
+    </item>
+    <item>
+      <index>434</index>
+    </item>
+    <item>
+      <index>435</index>
+    </item>
+    <item>
+      <index>436</index>
+    </item>
+    <item>
+      <index>437</index>
+    </item>
+    <item>
+      <index>438</index>
+    </item>
+    <item>
+      <index>439</index>
+    </item>
+    <item>
+      <index>440</index>
+    </item>
+    <item>
+      <index>441</index>
+    </item>
+    <item>
+      <index>442</index>
+    </item>
+    <item>
+      <index>443</index>
+    </item>
+    <item>
+      <index>444</index>
+    </item>
+    <item>
+      <index>445</index>
+    </item>
+    <item>
+      <index>446</index>
+    </item>
+    <item>
+      <index>447</index>
+    </item>
+    <item>
+      <index>448</index>
+    </item>
+    <item>
+      <index>449</index>
+    </item>
+    <item>
+      <index>450</index>
+    </item>
+    <item>
+      <index>451</index>
+    </item>
+    <item>
+      <index>452</index>
+    </item>
+    <item>
+      <index>453</index>
+    </item>
+    <item>
+      <index>454</index>
+    </item>
+    <item>
+      <index>455</index>
+    </item>
+    <item>
+      <index>456</index>
+    </item>
+    <item>
+      <index>457</index>
+    </item>
+    <item>
+      <index>458</index>
+    </item>
+    <item>
+      <index>459</index>
+    </item>
+    <item>
+      <index>460</index>
+    </item>
+    <item>
+      <index>461</index>
+    </item>
+    <item>
+      <index>462</index>
+    </item>
+    <item>
+      <index>463</index>
+    </item>
+    <item>
+      <index>464</index>
+    </item>
+    <item>
+      <index>465</index>
+    </item>
+    <item>
+      <index>466</index>
+    </item>
+    <item>
+      <index>467</index>
+    </item>
+    <item>
+      <index>468</index>
+    </item>
+    <item>
+      <index>469</index>
+    </item>
+    <item>
+      <index>470</index>
+    </item>
+    <item>
+      <index>471</index>
+    </item>
+    <item>
+      <index>472</index>
+    </item>
+    <item>
+      <index>473</index>
+    </item>
+    <item>
+      <index>474</index>
+    </item>
+    <item>
+      <index>475</index>
+    </item>
+    <item>
+      <index>476</index>
+    </item>
+    <item>
+      <index>477</index>
+    </item>
+    <item>
+      <index>478</index>
+    </item>
+    <item>
+      <index>479</index>
+    </item>
+    <item>
+      <index>480</index>
+    </item>
+    <item>
+      <index>481</index>
+    </item>
+    <item>
+      <index>482</index>
+    </item>
+    <item>
+      <index>483</index>
+    </item>
+    <item>
+      <index>484</index>
+    </item>
+    <item>
+      <index>485</index>
+    </item>
+    <item>
+      <index>486</index>
+    </item>
+    <item>
+      <index>487</index>
+    </item>
+    <item>
+      <index>488</index>
+    </item>
+    <item>
+      <index>489</index>
+    </item>
+    <item>
+      <index>490</index>
+    </item>
+    <item>
+      <index>491</index>
+    </item>
+    <item>
+      <index>492</index>
+    </item>
+    <item>
+      <index>493</index>
+    </item>
+    <item>
+      <index>494</index>
+    </item>
+    <item>
+      <index>495</index>
+    </item>
+    <item>
+      <index>496</index>
+    </item>
+    <item>
+      <index>497</index>
+    </item>
+    <item>
+      <index>498</index>
+    </item>
+    <item>
+      <index>499</index>
+    </item>
+    <item>
+      <index>500</index>
+    </item>
+    <item>
+      <index>501</index>
+    </item>
+    <item>
+      <index>502</index>
+    </item>
+    <item>
+      <index>503</index>
+    </item>
+    <item>
+      <index>504</index>
+    </item>
+    <item>
+      <index>505</index>
+    </item>
+    <item>
+      <index>506</index>
+    </item>
+    <item>
+      <index>507</index>
+    </item>
+    <item>
+      <index>508</index>
+    </item>
+    <item>
+      <index>509</index>
+    </item>
+    <item>
+      <index>510</index>
+    </item>
+    <item>
+      <index>511</index>
+    </item>
+    <item>
+      <index>512</index>
+    </item>
+    <item>
+      <index>513</index>
+    </item>
+    <item>
+      <index>514</index>
+    </item>
+    <item>
+      <index>515</index>
+    </item>
+    <item>
+      <index>516</index>
+    </item>
+    <item>
+      <index>517</index>
+    </item>
+    <item>
+      <index>518</index>
+    </item>
+    <item>
+      <index>519</index>
+    </item>
+    <item>
+      <index>520</index>
+    </item>
+    <item>
+      <index>521</index>
+    </item>
+    <item>
+      <index>522</index>
+    </item>
+    <item>
+      <index>523</index>
+    </item>
+    <item>
+      <index>524</index>
+    </item>
+    <item>
+      <index>525</index>
+    </item>
+    <item>
+      <index>526</index>
+    </item>
+    <item>
+      <index>527</index>
+    </item>
+    <item>
+      <index>528</index>
+    </item>
+    <item>
+      <index>529</index>
+    </item>
+    <item>
+      <index>530</index>
+    </item>
+    <item>
+      <index>531</index>
+    </item>
+    <item>
+      <index>532</index>
+    </item>
+    <item>
+      <index>533</index>
+    </item>
+    <item>
+      <index>534</index>
+    </item>
+    <item>
+      <index>535</index>
+    </item>
+    <item>
+      <index>536</index>
+    </item>
+    <item>
+      <index>537</index>
+    </item>
+    <item>
+      <index>538</index>
+    </item>
+    <item>
+      <index>539</index>
+    </item>
+    <item>
+      <index>540</index>
+    </item>
+    <item>
+      <index>541</index>
+    </item>
+    <item>
+      <index>542</index>
+    </item>
+    <item>
+      <index>543</index>
+    </item>
+    <item>
+      <index>544</index>
+    </item>
+    <item>
+      <index>545</index>
+    </item>
+    <item>
+      <index>546</index>
+    </item>
+    <item>
+      <index>547</index>
+    </item>
+    <item>
+      <index>548</index>
+    </item>
+    <item>
+      <index>549</index>
+    </item>
+    <item>
+      <index>550</index>
+    </item>
+    <item>
+      <index>551</index>
+    </item>
+    <item>
+      <index>552</index>
+    </item>
+    <item>
+      <index>553</index>
+    </item>
+    <item>
+      <index>554</index>
+    </item>
+    <item>
+      <index>555</index>
+    </item>
+    <item>
+      <index>556</index>
+    </item>
+    <item>
+      <index>557</index>
+    </item>
+    <item>
+      <index>558</index>
+    </item>
+    <item>
+      <index>559</index>
+    </item>
+    <item>
+      <index>560</index>
+    </item>
+    <item>
+      <index>561</index>
+    </item>
+    <item>
+      <index>562</index>
+    </item>
+    <item>
+      <index>563</index>
+    </item>
+    <item>
+      <index>564</index>
+    </item>
+    <item>
+      <index>565</index>
+    </item>
+    <item>
+      <index>566</index>
+    </item>
+    <item>
+      <index>567</index>
+    </item>
+    <item>
+      <index>568</index>
+    </item>
+    <item>
+      <index>569</index>
+    </item>
+    <item>
+      <index>570</index>
+    </item>
+    <item>
+      <index>571</index>
+    </item>
+    <item>
+      <index>572</index>
+    </item>
+    <item>
+      <index>573</index>
+    </item>
+    <item>
+      <index>574</index>
+    </item>
+    <item>
+      <index>575</index>
+    </item>
+    <item>
+      <index>576</index>
+    </item>
+    <item>
+      <index>577</index>
+    </item>
+    <item>
+      <index>578</index>
+    </item>
+    <item>
+      <index>579</index>
+    </item>
+    <item>
+      <index>580</index>
+    </item>
+    <item>
+      <index>581</index>
+    </item>
+    <item>
+      <index>582</index>
+    </item>
+    <item>
+      <index>583</index>
+    </item>
+    <item>
+      <index>584</index>
+    </item>
+    <item>
+      <index>585</index>
+    </item>
+    <item>
+      <index>586</index>
+    </item>
+    <item>
+      <index>587</index>
+    </item>
+    <item>
+      <index>588</index>
+    </item>
+    <item>
+      <index>589</index>
+    </item>
+    <item>
+      <index>590</index>
+    </item>
+    <item>
+      <index>591</index>
+    </item>
+    <item>
+      <index>592</index>
+    </item>
+    <item>
+      <index>593</index>
+    </item>
+    <item>
+      <index>594</index>
+    </item>
+    <item>
+      <index>595</index>
+    </item>
+    <item>
+      <index>596</index>
+    </item>
+    <item>
+      <index>597</index>
+    </item>
+    <item>
+      <index>598</index>
+    </item>
+    <item>
+      <index>599</index>
+    </item>
+    <item>
+      <index>600</index>
+    </item>
+    <item>
+      <index>601</index>
+    </item>
+    <item>
+      <index>602</index>
+    </item>
+    <item>
+      <index>603</index>
+    </item>
+    <item>
+      <index>604</index>
+    </item>
+    <item>
+      <index>605</index>
+    </item>
+    <item>
+      <index>606</index>
+    </item>
+    <item>
+      <index>607</index>
+    </item>
+    <item>
+      <index>608</index>
+    </item>
+    <item>
+      <index>609</index>
+    </item>
+    <item>
+      <index>610</index>
+    </item>
+    <item>
+      <index>611</index>
+    </item>
+    <item>
+      <index>612</index>
+    </item>
+    <item>
+      <index>613</index>
+    </item>
+    <item>
+      <index>614</index>
+    </item>
+    <item>
+      <index>615</index>
+    </item>
+    <item>
+      <index>616</index>
+    </item>
+    <item>
+      <index>617</index>
+    </item>
+    <item>
+      <index>618</index>
+    </item>
+    <item>
+      <index>619</index>
+    </item>
+    <item>
+      <index>620</index>
+    </item>
+    <item>
+      <index>621</index>
+    </item>
+    <item>
+      <index>622</index>
+    </item>
+    <item>
+      <index>623</index>
+    </item>
+    <item>
+      <index>624</index>
+    </item>
+    <item>
+      <index>625</index>
+    </item>
+    <item>
+      <index>626</index>
+    </item>
+    <item>
+      <index>627</index>
+    </item>
+    <item>
+      <index>628</index>
+    </item>
+    <item>
+      <index>629</index>
+    </item>
+    <item>
+      <index>630</index>
+    </item>
+    <item>
+      <index>631</index>
+    </item>
+    <item>
+      <index>632</index>
+    </item>
+    <item>
+      <index>633</index>
+    </item>
+    <item>
+      <index>634</index>
+    </item>
+    <item>
+      <index>635</index>
+    </item>
+    <item>
+      <index>636</index>
+    </item>
+    <item>
+      <index>637</index>
+    </item>
+    <item>
+      <index>638</index>
+    </item>
+    <item>
+      <index>639</index>
+    </item>
+    <item>
+      <index>640</index>
+    </item>
+    <item>
+      <index>641</index>
+    </item>
+    <item>
+      <index>642</index>
+    </item>
+    <item>
+      <index>643</index>
+    </item>
+    <item>
+      <index>644</index>
+    </item>
+    <item>
+      <index>645</index>
+    </item>
+    <item>
+      <index>646</index>
+    </item>
+    <item>
+      <index>647</index>
+    </item>
+    <item>
+      <index>648</index>
+    </item>
+    <item>
+      <index>649</index>
+    </item>
+    <item>
+      <index>650</index>
+    </item>
+    <item>
+      <index>651</index>
+    </item>
+    <item>
+      <index>652</index>
+    </item>
+    <item>
+      <index>653</index>
+    </item>
+    <item>
+      <index>654</index>
+    </item>
+    <item>
+      <index>655</index>
+    </item>
+    <item>
+      <index>656</index>
+    </item>
+    <item>
+      <index>657</index>
+    </item>
+    <item>
+      <index>658</index>
+    </item>
+    <item>
+      <index>659</index>
+    </item>
+    <item>
+      <index>660</index>
+    </item>
+    <item>
+      <index>661</index>
+    </item>
+    <item>
+      <index>662</index>
+    </item>
+    <item>
+      <index>663</index>
+    </item>
+    <item>
+      <index>664</index>
+    </item>
+    <item>
+      <index>665</index>
+    </item>
+    <item>
+      <index>666</index>
+    </item>
+    <item>
+      <index>667</index>
+    </item>
+    <item>
+      <index>668</index>
+    </item>
+    <item>
+      <index>669</index>
+    </item>
+    <item>
+      <index>670</index>
+    </item>
+    <item>
+      <index>671</index>
+    </item>
+    <item>
+      <index>672</index>
+    </item>
+    <item>
+      <index>673</index>
+    </item>
+    <item>
+      <index>674</index>
+    </item>
+    <item>
+      <index>675</index>
+    </item>
+    <item>
+      <index>676</index>
+    </item>
+    <item>
+      <index>677</index>
+    </item>
+    <item>
+      <index>678</index>
+    </item>
+    <item>
+      <index>679</index>
+    </item>
+    <item>
+      <index>680</index>
+    </item>
+    <item>
+      <index>681</index>
+    </item>
+    <item>
+      <index>682</index>
+    </item>
+    <item>
+      <index>683</index>
+    </item>
+    <item>
+      <index>684</index>
+    </item>
+    <item>
+      <index>685</index>
+    </item>
+    <item>
+      <index>686</index>
+    </item>
+    <item>
+      <index>687</index>
+    </item>
+    <item>
+      <index>688</index>
+    </item>
+    <item>
+      <index>689</index>
+    </item>
+    <item>
+      <index>690</index>
+    </item>
+    <item>
+      <index>691</index>
+    </item>
+    <item>
+      <index>692</index>
+    </item>
+    <item>
+      <index>693</index>
+    </item>
+    <item>
+      <index>694</index>
+    </item>
+    <item>
+      <index>695</index>
+    </item>
+    <item>
+      <index>696</index>
+    </item>
+    <item>
+      <index>697</index>
+    </item>
+    <item>
+      <index>698</index>
+    </item>
+    <item>
+      <index>699</index>
+    </item>
+    <item>
+      <index>700</index>
+    </item>
+    <item>
+      <index>701</index>
+    </item>
+    <item>
+      <index>702</index>
+    </item>
+    <item>
+      <index>703</index>
+    </item>
+    <item>
+      <index>704</index>
+    </item>
+    <item>
+      <index>705</index>
+    </item>
+    <item>
+      <index>706</index>
+    </item>
+    <item>
+      <index>707</index>
+    </item>
+    <item>
+      <index>708</index>
+    </item>
+    <item>
+      <index>709</index>
+    </item>
+    <item>
+      <index>710</index>
+    </item>
+    <item>
+      <index>711</index>
+    </item>
+    <item>
+      <index>712</index>
+    </item>
+    <item>
+      <index>713</index>
+    </item>
+    <item>
+      <index>714</index>
+    </item>
+    <item>
+      <index>715</index>
+    </item>
+    <item>
+      <index>716</index>
+    </item>
+    <item>
+      <index>717</index>
+    </item>
+    <item>
+      <index>718</index>
+    </item>
+    <item>
+      <index>719</index>
+    </item>
+    <item>
+      <index>720</index>
+    </item>
+    <item>
+      <index>721</index>
+    </item>
+    <item>
+      <index>722</index>
+    </item>
+    <item>
+      <index>723</index>
+    </item>
+    <item>
+      <index>724</index>
+    </item>
+    <item>
+      <index>725</index>
+    </item>
+    <item>
+      <index>726</index>
+    </item>
+    <item>
+      <index>727</index>
+    </item>
+    <item>
+      <index>728</index>
+    </item>
+    <item>
+      <index>729</index>
+    </item>
+    <item>
+      <index>730</index>
+    </item>
+    <item>
+      <index>731</index>
+    </item>
+    <item>
+      <index>732</index>
+    </item>
+    <item>
+      <index>733</index>
+    </item>
+    <item>
+      <index>734</index>
+    </item>
+    <item>
+      <index>735</index>
+    </item>
+    <item>
+      <index>736</index>
+    </item>
+    <item>
+      <index>737</index>
+    </item>
+    <item>
+      <index>738</index>
+    </item>
+    <item>
+      <index>739</index>
+    </item>
+    <item>
+      <index>740</index>
+    </item>
+    <item>
+      <index>741</index>
+    </item>
+    <item>
+      <index>742</index>
+    </item>
+    <item>
+      <index>743</index>
+    </item>
+    <item>
+      <index>744</index>
+    </item>
+    <item>
+      <index>745</index>
+    </item>
+    <item>
+      <index>746</index>
+    </item>
+    <item>
+      <index>747</index>
+    </item>
+    <item>
+      <index>748</index>
+    </item>
+    <item>
+      <index>749</index>
+    </item>
+    <item>
+      <index>750</index>
+    </item>
+    <item>
+      <index>751</index>
+    </item>
+    <item>
+      <index>752</index>
+    </item>
+    <item>
+      <index>753</index>
+    </item>
+    <item>
+      <index>754</index>
+    </item>
+    <item>
+      <index>755</index>
+    </item>
+    <item>
+      <index>756</index>
+    </item>
+    <item>
+      <index>757</index>
+    </item>
+    <item>
+      <index>758</index>
+    </item>
+    <item>
+      <index>759</index>
+    </item>
+    <item>
+      <index>760</index>
+    </item>
+    <item>
+      <index>761</index>
+    </item>
+    <item>
+      <index>762</index>
+    </item>
+    <item>
+      <index>763</index>
+    </item>
+    <item>
+      <index>764</index>
+    </item>
+    <item>
+      <index>765</index>
+    </item>
+    <item>
+      <index>766</index>
+    </item>
+    <item>
+      <index>767</index>
+    </item>
+    <item>
+      <index>768</index>
+    </item>
+    <item>
+      <index>769</index>
+    </item>
+    <item>
+      <index>770</index>
+    </item>
+    <item>
+      <index>771</index>
+    </item>
+    <item>
+      <index>772</index>
+    </item>
+    <item>
+      <index>773</index>
+    </item>
+    <item>
+      <index>774</index>
+    </item>
+    <item>
+      <index>775</index>
+    </item>
+    <item>
+      <index>776</index>
+    </item>
+    <item>
+      <index>777</index>
+    </item>
+    <item>
+      <index>778</index>
+    </item>
+    <item>
+      <index>779</index>
+    </item>
+    <item>
+      <index>780</index>
+    </item>
+    <item>
+      <index>781</index>
+    </item>
+    <item>
+      <index>782</index>
+    </item>
+    <item>
+      <index>783</index>
+    </item>
+    <item>
+      <index>784</index>
+    </item>
+    <item>
+      <index>785</index>
+    </item>
+    <item>
+      <index>786</index>
+    </item>
+    <item>
+      <index>787</index>
+    </item>
+    <item>
+      <index>788</index>
+    </item>
+    <item>
+      <index>789</index>
+    </item>
+    <item>
+      <index>790</index>
+    </item>
+    <item>
+      <index>791</index>
+    </item>
+  </columns>
+  <toolbar>
+    <item>
+      <action>clear</action>
+      <visible>true</visible>
+    </item>
+    <item>
+      <action>load</action>
+      <visible>true</visible>
+    </item>
+    <item>
+      <action>save</action>
+      <visible>true</visible>
+    </item>
+    <item>
+      <action>collapse</action>
+      <visible>true</visible>
+    </item>
+    <item>
+      <action>expand</action>
+      <visible>true</visible>
+    </item>
+    <item>
+      <action>find</action>
+      <visible>true</visible>
+    </item>
+    <item>
+      <action>pasteip</action>
+      <visible>true</visible>
+    </item>
+    <item>
+      <action>filterhostsshares</action>
+      <visible>true</visible>
+    </item>
+    <item>
+      <action>filter</action>
+      <visible>true</visible>
+    </item>
+    <item>
+      <action>options</action>
+      <visible>true</visible>
+    </item>
+    <item>
+      <action>discoverdhcp</action>
+      <visible>true</visible>
+    </item>
+    <item>
+      <action>wolmanager</action>
+      <visible>true</visible>
+    </item>
+    <item>
+      <action>autoconfig</action>
+      <visible>true</visible>
+    </item>
+    <item>
+      <action>remotewmi</action>
+      <visible>true</visible>
+    </item>
+    <item>
+      <action>remoteregistry</action>
+      <visible>true</visible>
+    </item>
+    <item>
+      <action>remoteservice</action>
+      <visible>true</visible>
+    </item>
+    <item>
+      <action>remotefiles</action>
+      <visible>true</visible>
+    </item>
+    <item>
+      <action>remotesnmp</action>
+      <visible>true</visible>
+    </item>
+    <item>
+      <action>remotegroups</action>
+      <visible>true</visible>
+    </item>
+    <item>
+      <action>help</action>
+      <visible>true</visible>
+    </item>
+    <item>
+      <action>website</action>
+      <visible>true</visible>
+    </item>
+    <item>
+      <action>importiplist</action>
+      <visible>false</visible>
+    </item>
+    <item>
+      <action>legend</action>
+      <visible>false</visible>
+    </item>
+    <item>
+      <action>livedisplay</action>
+      <visible>false</visible>
+    </item>
+    <item>
+      <action>wol</action>
+      <visible>false</visible>
+    </item>
+    <item>
+      <action>shutdown</action>
+      <visible>false</visible>
+    </item>
+    <item>
+      <action>suspend</action>
+      <visible>false</visible>
+    </item>
+    <item>
+      <action>createbatch</action>
+      <visible>false</visible>
+    </item>
+    <item>
+      <action>discoverupnp</action>
+      <visible>false</visible>
+    </item>
+    <item>
+      <action>discoverwsd</action>
+      <visible>false</visible>
+    </item>
+    <item>
+      <action>duplicateip</action>
+      <visible>false</visible>
+    </item>
+    <item>
+      <action>unmapnetdrive</action>
+      <visible>false</visible>
+    </item>
+    <item>
+      <action>nmapintegration</action>
+      <visible>false</visible>
+    </item>
+    <item>
+      <action>remoteperformance</action>
+      <visible>false</visible>
+    </item>
+    <item>
+      <action>remotepowershell</action>
+      <visible>false</visible>
+    </item>
+    <item>
+      <action>remotescripting</action>
+      <visible>false</visible>
+    </item>
+    <item>
+      <action>remotexml</action>
+      <visible>false</visible>
+    </item>
+    <item>
+      <action>remotessh</action>
+      <visible>false</visible>
+    </item>
+    <item>
+      <action>remotejson</action>
+      <visible>false</visible>
+    </item>
+    <item>
+      <action>ignoredaddresses</action>
+      <visible>false</visible>
+    </item>
+    <item>
+      <action>managebookmarks</action>
+      <visible>false</visible>
+    </item>
+    <item>
+      <action>about</action>
+      <visible>false</visible>
+    </item>
+  </toolbar>
+</network-scanner-config>

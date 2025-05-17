@@ -1,0 +1,17 @@
+[Buttonbar]
+Buttoncount=3
+button1=wcmicons.dll,267
+cmd1=%COMMANDER_PATH%\Utilites\TCColor\colors.exe
+path1=%COMMANDER_PATH%\Utilites\TCColor\
+iconic1=0
+menu1=Change the TC color scheme
+button2=wcmicons.dll,246
+cmd2=%COMMANDER_PATH%\Utilites\DecryptTC\DecrypTC.exe
+path2=%COMMANDER_PATH%\Utilites\DecryptTC\
+iconic2=0
+menu2=DecrypTC (decrypts FTP-passwords from TC)
+button3=wcmicons.dll,278
+cmd3=%COMMANDER_PATH%\CH4TC.exe
+path3=%COMMANDER_PATH%\
+iconic3=0
+menu3=TC history cleaner

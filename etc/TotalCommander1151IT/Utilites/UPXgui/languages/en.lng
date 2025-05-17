@@ -1,0 +1,259 @@
+CFGDATA
+s0000000005Form\0000000011UPX X-Shell0000000023The caption of a window
+s0000000019Label\LabelFileName0000000022File Name (files list)0000000011main window
+s0000000019CheckBox\OutFileBox0000000020Write output to file0000000011main window
+s0000000032CheckBox\ReplaceIfExistsCheckBox0000000017Replace if exists0000000011main window
+s0000000018CheckBox\BackupBox0000000018Make a backup copy0000000011main window
+s0000000017Button\ButtonPack0000000008Compress0000000011main window
+s0000000019Button\ButtonUnPack0000000010Decompress0000000011main window
+s0000000018Button\ButtonPackE0000000001E0000000011main window
+s0000000020Button\ButtonUnPackE0000000001E0000000011main window
+s0000000018Button\ButtonAbout0000000005About0000000011main window
+s0000000023Button\ButtonShowUPXVer0000000007Version0000000020show the upx-version
+s0000000024Button\ButtonShowUPXHelp0000000004Help0000000014show upx-help 
+s0000000021Button\ButtonShowUPXL0000000002-L0000000016show upx-license
+s0000000017Button\ButtonTest0000000004Test0000000012/test files 
+s0000000017Button\ButtonList0000000004List0000000021show info about files
+s0000000025Button\ButtonCloseConsole0000000005Close0000000017close the console
+s0000000029SpeedButton\SpeedButtonAddOpt0000000023Additional Options  -->0000000028show/hide additional options
+s0000000005Var\00000000017Compression level0000000074part of GroupBox caption (that in which TrackBar degrees of compression)
+
+s0000000014Label\LabelMax0000000015Compress better0000000025for the compression level
+s0000000014Label\LabelMin0000000015Compress faster0000000025for the compression level
+s0000000016Label\LabelSize10000000023Size before compression0000000031The information about the sizes
+s0000000016Label\LabelSize20000000022Size after compression0000000031The information about the sizes
+s0000000016Label\LabelRatio0000000005Ratio0000000031The information about the sizes
+s0000000005Var\10000000038UPX X-Shell        Waiting for command0000000022info in the status bar
+s0000000005Var\20000000044Last operation was finished WITHOUT MISTAKES0000000022info in the status bar
+s0000000005Var\30000000041Last operation was finished WITH MISTAKES0000000022info in the status bar
+s0000000005Var\40000000041Last operation was finished WITH WARNINGS0000000022info in the status bar
+s0000000015LanguageName_en0000000007English0000000031the name of language in English
+s0000000012LanguageName0000000007English0000000043the name of language on the native language
+s0000000005Var\60000000005Error0000000073caption of the window informing that there was a mistake at start upx.exe
+s0000000005Var\50000000029Error while launching UPX.EXE0000000077the message in the window informing that there was a mistake at start upx.exe
+s0000000006Var\110000000002KB0000000027the designation of kilobyte
+s0000000006Var\120000000008KB (all)0000000048the designation of kilobyte if is a lot of files
+s0000000016Button\ButtonOpt0000000015X-Shell options0000000020show X-Shell options
+s0000000021SaveDialog\SaveDialog0000000013Choose a file0000000040title of a dialog box for opening files 
+s0000000027SaveDialogFilter\SaveDialog0000000047All files (*.*)|*.*|(*.exe)|*.exe|(*.com)|*.com0000000042filters of a dialog box for opening files 
+s0000000021OpenDialog\OpenDialog0000000013Choose a file0000000057caption of a dialog box for preservation a copy of a file
+s0000000027OpenDialogFilter\OpenDialog0000000047All files (*.*)|*.*|(*.exe)|*.exe|(*.com)|*.com0000000057filters of a dialog box for preservation a copy of a file
+s0000000024OpenDialog\OpenDialogUPX0000000021Choose a file UPX.EXE0000000066caption of a dialog box for the indication of the upx.exe location
+s0000000030OpenDialogFilter\OpenDialogUPX0000000015UPX.EXE|upx.exe0000000066filters of a dialog box for the indication of the upx.exe location
+s0000000026GroupBox\Compress1ValueBox0000000008 Speed/ 0000000072Additional options
+caption of the GroupBox for an option --crp-ms= ... 
+s0000000015Label\LabelC1Ex0000000033Used memory/
+(Compression level)0000000084Additional options
+addition to caption of the GroupBox for an option --crp-ms= ... 
+s0000000026CheckBox\Compress1CheckBox0000000003Use0000000050Additional options
+to use an option --crp-ms= ...
+s0000000014Label\LabelC110000000044Faster/ 
+More memory/
+(Better compression)0000000058Additional options
+parameters for an option --crp-ms= ...
+s0000000014Label\LabelC120000000021Slower/ 
+Less memory0000000058Additional options
+parameters for an option --crp-ms= ...
+s0000000024GroupBox\OverlayGroupBox0000000017 Overlay options 0000000020Additional options
+
+s0000000026ComboBoxItems\OverlayGroup0000000122copy any extra data attached to the file
+strip any extra data attached to the file
+don't compress a file with an overlay0000000020Additional options
+
+s0000000021GroupBox\GroupBoxDOS10000000032 Options for dos .com/.exe/.sys 0000000020Additional options
+
+s0000000021GroupBox\GroupBoxDOS20000000022 Options for dos/.exe 0000000020Additional options
+
+s0000000019GroupBox\GroupBoxPE0000000042 Options for win32/pe, rtm32/pe && arm/pe 0000000020Additional options
+
+s0000000019CheckBox\OptBoxDOS10000000047Create an executable that works on any 8086 CPU0000000020Additional options
+
+s0000000019CheckBox\OptBoxDOS20000000039Put no relocations in to the exe header0000000020Additional options
+
+s0000000026ComboBoxItems\ExportsGroup0000000063do not compress the export section
+compress the export section0000000020Additional options
+
+s0000000024ComboBoxItems\IconsGroup0000000121do not compress any icons
+compress all but the first icon
+compress all but the first icon directory
+compress all icons0000000020Additional options
+
+s0000000021CheckBox\ResourcesBox0000000036Do not compress any resources at all0000000020Additional options
+
+s0000000030ComboBoxItems\RelocationsGroup0000000043do not strip relocations
+strip relocations0000000020Additional options
+
+s0000000021GroupBox\GroupBoxCoff0000000025 Options for djgpp2/coff 0000000020Additional options
+
+s0000000021CheckBox\CheckBoxCoff0000000019produce COFF output0000000020Additional options
+
+s0000000019GroupBox\GroupBoxLe0000000023 Options for watcom/le 0000000020Additional options
+
+s0000000019CheckBox\CheckBoxLe0000000017produce LE output0000000020Additional options
+
+s0000000018Button\ButtonReset0000000008Defaults0000000056Additional options
+To establish parameters "by default"
+s0000000006Var\210000000025File UPX.EXE is not found0000000138This window is shown at start if there are problems with a presence of upx.exe.
+caption of the window informing that upx.exe is not found
+s0000000006Var\200000000083Program Ultimate Packer for eXecutables is not found
+Specify a way to file UPX.EXE0000000100This window is shown at start if there are problems with a presence of upx.exe.
+text in this window
+s0000000006Var\220000000148Program Ultimate Packer for eXecutables is not found
+Check up presence of program UPX
+
+...\UPX X-Shell\upx\upx.exe
+
+Restart program UPX X-Shell0000000134This window is shown at start if there are problems with a presence of upx.exe.
+text in a window after you have not found the upx.exe
+s0000000013Form\FormFTSC0000000046Attention! You open the console the first time0000000071The window informing on those that the console is started first time.
+
+s0000000027Label\FormFTSC.LabelMessage0000000157If you will close a console window with the dagger (the system button) the program will be closed. Close the Console with the buttons from UPX X-Shell window0000000077The window informing on those that the console is started first time.
+advice
+s0000000034CheckBox\FormFTSC.CheckBoxDontShow0000000031Do not show this window further0000000087The window informing on those that the console is started first time.
+text in CheckBox
+s0000000014Form\FormAbout0000000005About0000000013About window.
+s0000000022Label\FormAbout.Label80000000057The shell for the program Ultimate Packer for eXecutables0000000013About window.
+s0000000006Var\310000000007for the0000000093About window.
+Part of the text informing for wat versions of the upx.exe is X-Shell designed
+s0000000022Label\FormAbout.Label30000000027the Author: Yury Golubinsky0000000013About window.
+s0000000022Label\FormAbout.Label40000000040Questions and offers send to the address0000000013About window.
+s0000000022Label\FormAbout.Label60000000048You will find last version and other programs on0000000013About window.
+s0000000006Var\300000000007Version0000000068About window.
+Part of the text informing the version of the X-Shell
+s0000000012Form\FormOpt0000000015X-Shell options0000000048window with the X-Shell options.
+window caption
+s0000000026Button\FormOpt.ButtonReset0000000005Reset0000000080window with the X-Shell options.
+to reset X-Shell options, but to not apply yet
+s0000000033CheckBox\FormOpt.CheckBoxFastShow0000000032Fast open for additional Options0000000061window with the X-Shell options.
+to open quickly or smoothly
+s0000000027Label\FormOpt.LabelLanguage0000000008Language0000000052window with the X-Shell options.
+chooosing language
+s0000000033RadioGroup\FormOpt.RadioGroupDrag0000000048 When dragging a file into UPX X-Shell window : 0000000034window with the X-Shell options.
+
+s0000000038RadioGroupItems\FormOpt.RadioGroupDrag0000000065Do nothing (simply get)
+Compress that file
+Decompress that file0000000034window with the X-Shell options.
+
+s0000000028GroupBox\FormOpt.GroupBoxCon0000000017 Console options 0000000034window with the X-Shell options.
+
+s0000000032RadioButton\FormOpt.RadioButton10000000013Close console0000000034window with the X-Shell options.
+
+s0000000032RadioButton\FormOpt.RadioButton20000000042Close console if no errors and no wornings0000000034window with the X-Shell options.
+
+s0000000032RadioButton\FormOpt.RadioButton30000000019Don't close console0000000034window with the X-Shell options.
+
+s0000000023Button\FormOpt.ButtonCC0000000017Close console now0000000034window with the X-Shell options.
+
+s0000000032RadioGroup\FormOpt.RadioGroupPri0000000025 Priority of UPX process 0000000034window with the X-Shell options.
+
+s0000000037RadioGroupItems\FormOpt.RadioGroupPri0000000027Realtime
+High
+Normal
+Low0000000034window with the X-Shell options.
+
+s0000000038RadioGroup\FormOpt.RadioGroupStayOnTop0000000031 UPX-X-Shell window position : 0000000034window with the X-Shell options.
+
+s0000000043RadioGroupItems\FormOpt.RadioGroupStayOnTop0000000077always On Top
+always On Top and Normally when UPX.exe works
+always Normally0000000034window with the X-Shell options.
+
+s0000000022CheckBox\CheckBoxForce0000000017Force compression0000000000
+s0000000034CheckBox\FormOpt.CheckBoxShowHints0000000045Show Hints for UPX.exe parameters and options0000000034window with the X-Shell options.
+
+s0000000016Button\ButtonMax0000000015Max compression0000000089the button for setting of all parameters for the maximal degree of compression. (Roughly)
+s0000000006Var\400000000017Edit command line0000000034Edit command line Window.
+caption
+s0000000032Button\FormEditExec.ButtonCancel0000000006Cancel0000000025Edit command line Window.
+s0000000030Label\FormOpt.CmdLinesMaxLabel0000000023Commands history states0000000025Edit command line Window.
+s0000000021Hint\CompressValueBar0000000043--best
+-9
+-8
+-7
+-6
+-5
+-4
+-3
+-2
+-1 0000000000
+s0000000014Hint\BackupBox0000000002-k0000000000
+s0000000015Hint\OutFileBox0000000002-o0000000000
+s0000000015Hint\ButtonPack00000000000000000000
+s0000000016Hint\ButtonPackE0000000017Edit command line0000000000
+s0000000017Hint\ButtonUnPack0000000002-d0000000000
+s0000000018Hint\ButtonUnPackE0000000017Edit command line0000000000
+s0000000021Hint\ButtonShowUPXVer0000000029--version
+(Show UPX version)0000000000
+s0000000019Hint\ButtonShowUPXL0000000052-L
+(Show information about distribution of the UPX)0000000000
+s0000000015Hint\ButtonTest0000000023-t
+(Test Packed files)0000000000
+s0000000022Hint\ButtonShowUPXHelp0000000006--help0000000000
+s0000000015Hint\ButtonList0000000041-l
+(List Information about packed files)0000000000
+s0000000023Hint\ButtonCloseConsole0000000013Close console0000000000
+s0000000017Hint\OverlayGroup0000000047--overlay=copy
+--overlay=strip
+--overlay=skip0000000000
+s0000000015Hint\OptBoxDOS10000000006--80860000000000
+s0000000015Hint\OptBoxDOS20000000010--no-reloc0000000000
+s0000000017Hint\ExportsGroup0000000042--compress-exports=0
+--compress-exports=10000000000
+s0000000015Hint\IconsGroup0000000078--compress-icons=0
+--compress-icons=1
+--compress-icons=2
+--compress-icons=30000000000
+s0000000017Hint\ResourcesBox0000000022--compress-resources=00000000000
+s0000000018Hint\CheckBoxForce0000000007--force0000000000
+s0000000021Hint\RelocationsGroup0000000034--strip-relocs=0
+--strip-relocs=10000000000
+s0000000017Hint\CheckBoxCoff0000000006--coff0000000000
+s0000000015Hint\CheckBoxLe0000000004--le0000000000
+s0000000022Hint\Compress1CheckBox0000000023--crp-ms=10000...9999990000000000
+s0000000022Hint\CompressValueBar10000000033--crp-ms=@999999
+...
+...
+100000000000000
+s0000000022Hint\ButtonIntegration0000000025Shell Integration Options0000000000
+s0000000028Label\FormIntegration.Label10000000012Extensions :0000000025Shell Integration Options
+s0000000031Label\FormIntegration.ButtonAdd0000000017Add to Shell Menu0000000025Shell Integration Options
+s0000000034Label\FormIntegration.ButtonRemove0000000022Remove from Shell Menu0000000025Shell Integration Options
+s0000000033Label\FormIntegration.ButtonClose0000000005Close0000000025Shell Integration Options
+s0000000006Var\500000000003UPX0000000025Shell Integration Options
+s0000000020Form\FormIntegration0000000025Shell Integration Options0000000025Shell Integration Options
+s0000000038Label\FormAbout.LabelTranslationAuthor0000000070translated by
+Yury Golubinsky
+astroyura@gmail.com
+(for version 1.4)0000000013About window.
+s0000000005Var\70000000004Best0000000072part of GroupBox caption (that in which TrackBar degrees of compression)
+s0000000017#ApplicationLang10000000011UPX X-Shell0000000000
+s0000000017#ApplicationLang20000000011UPX X-Shell0000000000
+s0000000011Application0000000011UPX X-Shell0000000000
+s0000000018@en\chooseLang.lng00000000000000000001@
+s0000000015#Operation_Wait0000000034UPX is Working now. Wait please...0000000022info in the status bar
+s0000000024@en\Unit_Soft_Update.lng00000000000000000001@
+s0000000026MenuItem\ButtonCheckNewVer0000000032Check for UPX X-Shell Updates...0000000000
+s0000000033Button\FormNewConsole.ButtonClose0000000005Close0000000000
+s0000000035CheckBox\FormOpt.CheckBoxOldConsole0000000021Use old style console0000000000
+s0000000030CheckBox\CheckBoxUseAllMethods0000000015Use all methods0000000000
+s0000000026Hint\CheckBoxUseAllMethods0000000053Try all available compression methods.
+--all-methods0000000000
+s0000000030CheckBox\CheckBoxUseAllFilters0000000015Use all filters0000000000
+s0000000026Hint\CheckBoxUseAllFilters0000000055Try all available preprocessing filters.
+--all-filters0000000000
+s0000000019GroupBox\GroupBoxPS0000000021 Options for ps1/exe 0000000000
+s0000000024CheckBox\CheckBoxPS_8bit0000000026use 8 bit size compression0000000000
+s0000000020Hint\CheckBoxPS_8bit0000000026--8-bit
+[default: 32 bit]0000000000
+s0000000023CheckBox\CheckBoxPS_8mb00000000238 megabyte memory limit0000000000
+s0000000019Hint\CheckBoxPS_8mb0000000026--8mb-ram
+[default: 2 mb]0000000000
+s0000000027CheckBox\CheckBoxPS_NoAlign0000000025don't align to 2048 bytes0000000000
+s0000000023Hint\CheckBoxPS_NoAlign0000000010--no-align0000000000
+s0000000024CheckBox\CheckBoxPS_Boot0000000034the format will only run from a CD0000000000
+s0000000020Hint\CheckBoxPS_Boot0000000011--boot-only0000000000
+s0000000025GroupBox\GroupBoxLinux3860000000023 Options for linux/386 0000000000
+s0000000038CheckBox\CheckBoxLinux386_force_execve0000000054force the use of the generic linux/386 "execve" format0000000000
+s0000000034hint\CheckBoxLinux386_force_execve0000000014--force-execve0000000000
+s0000000037CheckBox\FormOpt.CheckBoxSearchNewWWW0000000031Check for updates automatically0000000000
+s0000000027CheckBox\CheckBoxUltraBrute0000000013--ultra-brute0000000000
+s0000000023Hint\CheckBoxUltraBrute0000000013--ultra-brute0000000000

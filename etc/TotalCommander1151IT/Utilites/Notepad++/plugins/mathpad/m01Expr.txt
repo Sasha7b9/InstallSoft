@@ -1,0 +1,2 @@
+'this is a comment line
+Expr = ([mB]*[mB] + 2*[mC]*[mB] - [mC]^2)

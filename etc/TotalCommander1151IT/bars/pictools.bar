@@ -1,0 +1,17 @@
+[Buttonbar]
+Buttoncount=3
+button1=wcmicons.dll,263
+cmd1=%COMMANDER_PATH%\Utilites\Riot\Riot.exe
+path1=%COMMANDER_PATH%\Utilites\Riot\
+iconic1=0
+menu1=Riot (free image optimizer)
+button2=wcmicons.dll,234
+cmd2=%COMMANDER_PATH%\Plugins\wlx\Imagine\Imagine.exe
+path2=%COMMANDER_PATH%\Plugins\wlx\Imagine\
+iconic2=0
+menu2=Imagine (image and animation editor/viewer)
+button3=wcmicons.dll,276
+cmd3=%COMMANDER_PATH%\Utilites\pixie.exe
+path3=%COMMANDER_PATH%\Utilites\
+iconic3=0
+menu3=Color picker with few extra goodies
